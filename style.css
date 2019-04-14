@@ -7,36 +7,41 @@ html, body, div {
 }
 
 body {
-  background-color: #1da64a;
+  background: url(demo.jpg) no-repeat center fixed;
+  background-size: cover;
 }
 
 .page {
-  margin: 0 auto 0 auto;
-  background-color: #ffffff;
+  margin: 30px auto 0 auto;
+  /*background-color: #ffffff;*/
   max-width: 800px;
   font-size: 16px;
   font-family: "Jost", "Arial";
 }
 
 .section {
+  background-color: #ffffff;
   padding: 16px;
   border-style: none none solid none;
   border-width: 1px;
   border-color: #1da64a;
 }
 
+
 .section:last-of-type {
   border-style: none;
 }
 
 header {
+  /*margin-top: 20px;*/
   display: table;
   table-layout: auto;
   box-sizing: border-box;
   width: 100%;
-  background-color: #0f5325;
+  padding: 16px;
+  /*background-color: #0f5325;
   background-size: cover;
-  background-image: url(demo.jpg);
+  background-image: url(demo.jpg);*/
 }
 
 header > * {
@@ -51,7 +56,7 @@ header > .logo {
 header > h1 {
   vertical-align: middle;
   padding-top: 3px;
-  color: #ffffff;
+  /*color: #ffffff*/;
 }
 
 h1 {
