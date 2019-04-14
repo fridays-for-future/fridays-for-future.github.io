@@ -23,6 +23,7 @@ body {
   border-style: none none solid none;
   border-width: 1px;
   border-color: #1da64a;
+  text-align: center;
 }
 
 .section:last-of-type {
@@ -59,6 +60,20 @@ h1 {
   font-size: 24px;
 }
 
+h2 {
+  font-size: 24px;
+  margin: 0 0 16px;
+  padding: 0;
+  line-height: 1em;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+}
+
 a {
   text-decoration: none;
   color: #46a64b;
@@ -67,8 +82,8 @@ a {
 .icon-list {
   display: flex;
   justify-content: space-around;
-  margin: 0;
   padding: 0;
+  margin: 0 -8px;
 }
 
 .icon-list > li {
@@ -78,14 +93,14 @@ a {
 .button-list {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 0 -8px;
   padding: 0;
   flex-wrap: wrap;
 }
 
 .button-list > li {
   display: inline-block;
-  margin: 16px;
+  margin: 16px 8px 0;
 }
 
 .button-list > li > a {
