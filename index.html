@@ -23,8 +23,23 @@
       <h2>N&auml;chste Demo</h2>
       <p>Freitag, 12.&nbsp;April um&nbsp;11&nbsp;Uhr am&nbsp;Marienplatz</p>
     </div>
-    <div class="section">
-      <p>Route</p>
+    <div id="map-section" class="section map-section">
+      <img class="map" src="map.png" alt="Route">
+      <div
+        class="semi-transparent-layer"
+        id="map-layer"
+        style="visibility: visible; opacity: 0.66;"
+      ></div>
+      <a
+        href="#"
+        id="show-route"
+        style="visibility: visible; transform: translateY(0);"
+      >Route anzeigen</a>
+      <a
+        href="#"
+        id="hide-route"
+        style="visibility: hidden; transform: translateY(36px);"
+      >Route verbergen</a>
     </div>
     <div class="section">
       <p>Bleib auf dem Laufenden</p>
@@ -51,5 +66,6 @@
       <a href="#" target="_blank" rel="noopener noreferrer">Fridays for Future Germany</a>
     </div>
   </div>
+  <script src="map.js" charset="utf-8"></script>
 </body>
 </html>

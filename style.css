@@ -94,3 +94,50 @@ a {
   background-color: #46a64b;
   color: #ffffff;
 }
+
+.map-section {
+  position: relative;
+  height: 56px;
+  transition: height 300ms ease-in-out;
+  overflow: hidden;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.semi-transparent-layer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+  background-color: #ffffff;
+  transition: opacity 300ms linear;
+}
+
+.map-section > a {
+  font-size: 24px;
+  line-height: 1em;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  transition: transform 200ms ease-out;
+  text-shadow: 2px 0 2px #ffffff, -2px 0 2px #ffffff, 0 2px 2px #ffffff, 0 -2px 2px #ffffff;
+}
+
+#hide-route {
+  transition-delay: 100ms;
+}
+
+#show-route {
+}
