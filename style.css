@@ -1,4 +1,6 @@
-html, body, div {
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300');
+
+html, body, div, p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,7 +14,7 @@ body {
 }
 
 .page {
-  margin: 30px auto 0 auto;
+  margin: 50px auto 100px auto;
   /*background-color: #ffffff;*/
   max-width: 800px;
   font-size: 16px;
@@ -27,41 +29,62 @@ body {
   border-color: #1da64a;
 }
 
+.floating {
+  margin: 50px 0px;
+  color: white;
+  font-size: 24px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 
 .section:last-of-type {
   border-style: none;
 }
 
+.route-view {
+  background-color: grey;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header {
-  /*margin-top: 20px;*/
-  display: table;
-  table-layout: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
-  width: 100%;
-  padding: 16px;
-  /*background-color: #0f5325;
-  background-size: cover;
-  background-image: url(demo.jpg);*/
 }
 
-header > * {
-  display: table-cell;
+.logo {
+    padding: 60px 0 60px 0;
 }
 
-header > .logo {
-  vertical-align: top;
-  margin-right: 16px;
-}
-
-header > h1 {
-  vertical-align: middle;
-  padding-top: 3px;
-  /*color: #ffffff*/;
+h1, h2 {
+  font-family: Montserrat;
+  margin:0;
+  display: block;
 }
 
 h1 {
-  text-transform: uppercase;
-  font-size: 24px;
+/*  text-transform: uppercase;*/
+  font-size: 48px;
+  color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 34px;
 }
 
 a {
