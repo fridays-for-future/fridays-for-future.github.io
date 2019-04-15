@@ -1,28 +1,54 @@
 (function () {
+  var viewportElem = document.getElementById('viewport');
   var mapSectionElem = document.getElementById('map-section');
-  var showRouteElem = document.getElementById('show-route');
-  var hideRouteElem = document.getElementById('hide-route');
-  var mapLayerElem = document.getElementById('map-layer');
+  var showMapElem = document.getElementById('show-map');
+  var hideMapElem = document.getElementById('hide-map');
+  var mapContainerElem = document.getElementById('map-container');
   
-  showRouteElem.addEventListener('click', function (e) {
-    var w = 1.2 * mapSectionElem.getBoundingClientRect().width
-    mapSectionElem.style.height = w + 'px';
-    showRouteElem.style.transform = 'translateY(42px)';
-    hideRouteElem.style.visibility = "visible";
-    hideRouteElem.style.transform = 'translateY(0)';
-    window.setTimeout(function () {
-      showRouteElem.style.visibility = "hidden";
-    }, 300);
+  showMapElem.addEventListener('click', function (e) {
+    mapContainerElem.style.visibility = 'visible';
+    var viewportRect = viewportElem.getBoundingClientRect();
+    var xv = viewportRect.x;
+    var yv = viewportRect.y;
+    var showMapRect = showMapElem.getBoundingClientRect();
+    var y0 = showMapRect.y;
+    var x0 = showMapRect.x;
+    var h0 = showMapRect.height;
+    var w0 = showMapRect.width;
+    mapContainerElem.style.top = y0 - yv + 'px';
+    mapContainerElem.style.left = x0 - xv + 'px';
+    mapContainerElem.style.height = "48px";
+    mapContainerElem.style.width = w0 + "px";
+    window.requestAnimationFrame(function () {
+      window.requestAnimationFrame(function () {
+        mapContainerElem.style.transitionProperty = 'top, left, width, height';
+        mapContainerElem.style.top = '0';
+        mapContainerElem.style.left = '0';
+        mapContainerElem.style.width = '100%';
+        mapContainerElem.style.height = '100%';
+        window.setTimeout(function () {
+        }, 300);
+      })
+    })
     e.preventDefault();
   });
-  hideRouteElem.addEventListener('click', function (e) {
-    mapSectionElem.style.height = '56px';
-    showRouteElem.style.visibility = "visible"
-    showRouteElem.style.transform = 'translateY(0)';
-    hideRouteElem.style.transform = 'translateY(42px)';
-
+  
+  hideMapElem.addEventListener('click', function (e) {
+  var viewportRect = viewportElem.getBoundingClientRect();
+  var xv = viewportRect.x;
+  var yv = viewportRect.y;
+  var showMapRect = showMapElem.getBoundingClientRect();
+  var y0 = showMapRect.y;
+  var x0 = showMapRect.x;
+  var h0 = showMapRect.height;
+  var w0 = showMapRect.width;
+    mapContainerElem.style.top = y0 - yv + 'px';
+    mapContainerElem.style.left = x0 - xv + 'px';
+    mapContainerElem.style.height = "48px";
+    mapContainerElem.style.width = w0 + "px";
     window.setTimeout(function () {
-    hideRouteElem.style.visibility = "hidden";
+      mapContainerElem.style.visibility = 'hidden';
+      mapContainerElem.style.transitionProperty = 'none';
     }, 300);
     e.preventDefault();
   });
