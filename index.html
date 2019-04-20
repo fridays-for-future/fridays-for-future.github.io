@@ -25,7 +25,13 @@
       <p>Freitag, 12.&nbsp;April um&nbsp;11&nbsp;Uhr am&nbsp;Marienplatz</p>
     </div>
     <div id="map-section" class="section map-section">
-      <a id="show-map" class="show-map" href="#">Route anzeigen</a>
+      <div id="map-modal" class="map-modal">
+        <iframe id="map" class="map" frameborder="0" width="600" height="600" src="http://umap.openstreetmap.fr/en/map/untitled-map_315457?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false"></iframe>
+        <div class="map-control" id="map-control">
+          <a id="show-map" class="show-map" href="#">Route anzeigen</a>
+          <a id="hide-map" class="hide-map" href="#">&times;</a>
+        </div>
+      </div>
     </div>
     <div class="section">
       <h2>Bleib auf dem Laufenden</h2>
@@ -50,12 +56,6 @@
     </div>
     <div class="section">
       Mehr Informationen auf <a href="https://fridaysforfuture.de" target="_blank" rel="noopener noreferrer">Fridays&nbsp;for&nbsp;Future&nbsp;Germany</a>
-    </div>
-  </div>
-  <div class="map-container" id="map-container" style="visibility: hidden">
-    <div>
-      <iframe frameborder="0" allowfullscreen src="http://umap.openstreetmap.fr/en/map/untitled-map_315457?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false"></iframe>
-      <a href="#" class="hide-map" id="hide-map">&times;</a>
     </div>
   </div>
   <script src="map.js" charset="utf-8"></script>

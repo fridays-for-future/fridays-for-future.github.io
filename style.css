@@ -22,7 +22,7 @@ body {
 .page {
   margin: 0 auto 0 auto;
   background-color: #ffffff;
-  max-width: 800px;
+  max-width: 600px;
   font-size: 16px;
   font-family: "Jost", "Arial";
 }
@@ -120,62 +120,127 @@ a {
 }
 
 .map-section {
-  transition: height 300ms ease-in-out;
-  background-image: url("./map-dark.png");
-  background-size: cover;
   height: 49px;
+  position: relative;
 }
 
-.show-map {
-  display: block;
-  line-height: 1em;
-  text-align: center;
-  margin: -16px;
-  text-align: center;
-  bottom: 0;
+.map-modal {
+  position: relative;
   left: 0;
-  width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-  color: #ffffff;
-  transition: transform 300ms ease-out;
-  width: calc(100% + 32px);
-}
-
-.map-container {
-  position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
-  transition-property: none;
+  transform: translate(0, 0);
+  width: calc(100% + 32px);
+  height: calc(100% + 32px);
+  margin: -16px;
   overflow: hidden;
 }
 
-.map-container > div {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  min-height: 96px;
+.map-section.pre-active .map-modal {
+  position: fixed;
+  margin: 0;
+  overflow: hidden;
 }
 
-.map-container iframe {
+.map-section.active .map-modal {
+  width: 100vw;
+  height: 100vh;
+}
+
+.map-section.trans-active-in .map-modal {
+  transition-property: transform, width, height;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+.map-section.trans-active-out .map-modal {
+  transition-property: transform, width, height;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+
+.map {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
+  transform: translate(calc((600px - 100vw) / 2), -276px);
+  /* width: 600px; */
+  width: 100vw;
+  height: 100vh;
+}
+
+.map-section.trans-active-in .map {
+  transition: transform 300ms ease-in;
+}
+
+.map-section.trans-active-out .map {
+  transition: transform 300ms ease-out;
+}
+
+.map-section.active .map {
+  transform: translate(0, 0);
+}
+
+.map-control {
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 100%;
-  height: 100%;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.map-section.trans-active-in .map-control {
+  transition: width 300ms ease-in;
+}
+
+.map-section.trans-active-out .map-control {
+  transition: width 300ms ease-out;
+}
+
+.map-section.active .map-control {
+  width: 48px;
+}
+
+.show-map, .hide-map {
+  transition: opacity 300ms linear;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.map-section.trans-active .show-map, .map-section.trans-active .hide-map {
+  transition: opacity 300ms linear;
+}
+
+.show-map {
+  position: absolute;
+  display: block;
+  line-height: 1em;
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.map-section.active .show-map {
+  opacity: 0;
+}
+
+.map-section.intra-active .show-map {
+  visibility: hidden;
 }
 
 .hide-map {
-  position: fixed;
+  display: block;
+  text-align: center;
+  position: absolute;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   width: 48px;
   height: 48px;
   margin: 0;
@@ -187,4 +252,43 @@ a {
   box-sizing: border-box;
   line-height: 16px;
   color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.map-section.circum-active .hide-map {
+  visibility: visible;
+}
+
+.map-section.active .hide-map {
+  opacity: 1;
+}
+
+
+@media only screen and (min-height: 696px) {
+  .map-section.trans-active-in {
+    transition: height 300ms ease-in;
+  }
+  
+  .map-section.trans-active-out {
+    transition: height 300ms ease-out;
+  }
+  
+  .map-section.active {
+    height: 600px;
+  }
+  
+  .map-modal {
+    position: relative !important;
+    transform: translate(0, 0) !important;
+    width: calc(100% + 32px) !important;
+    height: calc(100% + 32px) !important;
+    margin: -16px !important;
+  }
+  
+  .map {
+    max-width: 600px;
+    height: 600px;
+    transform: translate(0, -276px);
+  }
 }
