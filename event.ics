@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//Eventable Inc//Eventable Calendar Subscription 4.2//EN
+DESCRIPTION:Powered by Eventable.com
+NAME:Fridays for Future München Events
+SCALE:GREGORIAN
+SOURCE;VALUE=URI:http://broadcast.eventable.com/5cb989a558754c001b825eed.i
+ cs
+TIMEZONE:UTC
+TITLE:Fridays for Future München Events
+UID:5cb989a558754c001b825eed@eventable.com
+BEGIN:VEVENT
+UID:5cb38a5e41527a001d86cdfd@eventable.com
+DTSTART:20190419T090000Z
+DTEND:20190419T120000Z
+CREATED:20190419T084110Z
+DESCRIPTION:\n\nShare this event: http://evt.mx/78XX71xU\n\nRemove this ev
+ ent: http://evt.mx/78XX718f\n\nPowered by Eventable.com
+DTSTAMP:20190419T084110Z
+LOCATION:Marienplatz\, Munich\, Germany
+SUMMARY:Fridays for Future Demo
+URL:http://evt.mx/78XX71xx
+END:VEVENT
+X-WR-CALDESC:Powered by Eventable.com
+X-WR-CALNAME:Fridays for Future München Events
+X-WR-TIMEZONE:UTC
+END:VCALENDAR

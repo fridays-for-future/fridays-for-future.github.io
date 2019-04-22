@@ -1,0 +1,449 @@
+html, body, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+body {
+  background-color: #1da64a;
+}
+
+.viewport {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+.page {
+  margin: 0 auto 0 auto;
+  background-color: #ffffff;
+  max-width: 600px;
+  font-size: 16px;
+  font-family: "Jost", "Arial";
+}
+
+.section {
+  padding: 16px;
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: #1da64a;
+  text-align: center;
+}
+
+.section:last-of-type {
+  border-style: none;
+}
+
+header {
+  display: table;
+  table-layout: auto;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #0f5325;
+  background-size: cover;
+  background-image: url(./demo.jpg);
+}
+
+header > * {
+  display: table-cell;
+}
+
+header > .logo {
+  vertical-align: top;
+  margin-right: 16px;
+}
+
+header > h1 {
+  vertical-align: middle;
+  padding-top: 3px;
+  color: #ffffff;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 26px;
+  line-height: 1em;
+}
+
+h3 {
+  margin: 0 0 4px;
+}
+
+p {
+  font-size: 16px;
+  margin: -5px 0 0;
+  padding: 0;
+  line-height: 26px;
+}
+
+a {
+  text-decoration: none;
+  color: #46a64b;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-list > li {
+  display: inline-block;
+  line-height: 0;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 -8px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.button-list > li {
+  display: inline-block;
+  margin: 16px 8px 0;
+}
+
+.button-list > li > a {
+  padding: 8px 16px;
+  display: block;
+  background-color: #46a64b;
+  color: #ffffff;
+}
+
+.pull-out {
+  position: relative;
+  width: calc(100% + 32px);
+  /* height: calc(100% + 32px); */
+  margin: 4px -16px 4px;
+  height: 48px;
+}
+
+.pull-out:last-child {
+    margin-bottom: -16px;
+}
+
+.calendar-pull-out {
+  overflow: hidden;
+}
+
+.map-pull-out {
+  height: 48px;
+}
+
+.modal {
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: translate(0, 0);
+  width: calc(100%);
+  /* height: calc(100% + 32px); */
+  height: 48px;
+  overflow: hidden;
+}
+
+.pre-active .modal {
+  position: fixed;
+  margin: 0;
+  overflow: hidden;
+}
+
+.active .modal {
+  width: 100vw;
+  height: 100vh;
+}
+
+.trans-active-in .modal {
+  transition-property: transform, width, height;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+.trans-active-out .modal {
+  transition-property: transform, width, height;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+
+.trans-active-in .calendar {
+  transition: height 300ms ease-in, transform 300ms ease-in, opacity 300ms linear;
+}
+
+.trans-active-out .calendar {
+  transition: height 300ms ease-out, transform 300ms ease-out, opacity 300ms linear;
+}
+
+.circum-active .calendar {
+  visibility: visible;
+}
+
+.active .calendar {
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(0, -276px);
+  /* width: 600px; */
+  width: 100vw;
+  height: 100vh;
+}
+
+.trans-active-in .map {
+  transition: transform 300ms ease-in;
+}
+
+.trans-active-out .map {
+  transition: transform 300ms ease-out;
+}
+
+.active .map {
+  transform: translate(0, 0);
+}
+
+.control {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.trans-active-in .control {
+  transition: width 300ms ease-in;
+}
+
+.trans-active-out .control {
+  transition: width 300ms ease-out;
+}
+
+.active .control {
+  width: 48px;
+}
+
+.control a {
+  transition: opacity 300ms linear;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.trans-active a {
+  transition: opacity 300ms linear;
+}
+
+.control > a {
+  position: absolute;
+  display: block;
+  line-height: 1em;
+  text-align: center;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.show {
+  position: absolute;
+  display: block;
+  line-height: 1em;
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.active .show {
+  opacity: 0;
+}
+
+.intra-active .show {
+  visibility: hidden;
+}
+
+.hide {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+  display: block;
+  font-size: 24px;
+  font-family: "Jost", "Arial";
+  box-sizing: border-box;
+  line-height: 16px;
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.circum-active .hide {
+  visibility: visible;
+}
+
+.active .hide {
+  opacity: 1;
+}
+
+.calendar-pull-out {
+  background-image: url(./calendar-narrow.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.active.calendar-pull-out {
+  height: 256px;
+}
+
+.modal {
+  position: relative;
+  padding: 0 16px 16px;
+}
+
+.modal {
+  margin: 0;
+  height: 48px;
+}
+
+.calendar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  visibility: hidden;
+  opacity: 0;
+  padding: 16px;
+  transform: translateY(-104px);
+}
+
+.calendar > div {
+  /* width: calc((100vw - 320px) / 5 * 2 + 144px);
+  min-width: 176px;
+  max-width: 256px; */
+  width: 100%;
+}
+
+.calendar > div:last-of-type {
+  /* margin-right: 0; */
+}
+
+.calendar h4 {
+  display: block;
+  margin: 0 0 16px;
+  padding: 32px 0 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1em;
+  text-align: left;
+}
+
+.trans-active-in.calendar-pull-out {
+  transition: height 300ms ease-in;
+}
+
+.trans-active-out.calendar-pull-out {
+  transition: height 300ms ease-out;
+}
+
+@media only screen and (min-width: 416px) {
+  .calendar-pull-out {
+    background-image: url(./calendar-wide.jpg);
+  }
+  
+  .calendar {
+    transform: translateY(-48px);
+  }
+  
+  .calendar > div {
+    width: calc((100vw - 336px) / 5 * 2 + 144px);
+    min-width: 176px;
+    max-width: 249.6px;
+  }
+  
+  .map {
+    transform: translate(calc((600px - 100vw) / 2), -276px);
+  }
+  
+  .active.calendar-pull-out {
+    height: 144px;
+  }
+}
+
+@media only screen and (min-height: 696px) {
+  .trans-active-in.pull-out {
+    transition: height 300ms ease-in;
+  }
+  
+  .trans-active-out.pull-out {
+    transition: height 300ms ease-out;
+  }
+  
+  .active.map-pull-out {
+    height: auto;
+  }
+  
+  .active.map-pull-out {
+    height: 600px;
+  }
+  
+  .active.map-pull-out .modal {
+    width: 100%;
+    height: 600px;
+  }
+  
+  .map-pull-out .modal {
+    position: relative !important;
+    transform: translate(0, 0) !important;
+    /* width: calc(100% + 32px) !important; */
+    /* height: calc(100% + 32px) !important; */
+    /* margin: -16px !important; */
+  }
+  
+  .map {
+    max-width: 600px;
+    height: 600px;
+    transform: translate(0, -276px);
+  }
+}
+
+
+/*
+background-color: rgba(0, 0, 0, 0.5);
+padding: 2px 0;
+line-height: 26px;
+text-shadow:
+  rgba(0, 0, 0, 0.3) 2px 2px 3px,
+  rgba(0, 0, 0, 0.3) -2px 2px 3px,
+  rgba(0, 0, 0, 0.3) -2px -2px 3px,
+  rgba(0, 0, 0, 0.3) 2px -2px 3px;
+box-shadow:
+  rgba(0, 0, 0, 0.5) 6px 0,
+  rgba(0, 0, 0, 0.5) -6px 0;
+*/
