@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg4511"
+   viewBox="0 0 256 256"
+   height="256"
+   width="256">
+  <defs
+     id="defs4513" />
+  <metadata
+     id="metadata4516">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-796.36216)"
+     id="layer1">
+    <g
+       transform="translate(-2009.7673,2144.8432)"
+       id="g5836">
+      <rect
+         y="1092.4811"
+         x="2009.7673"
+         height="256"
+         width="256"
+         id="rect5352"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ea4335;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         transform="scale(1,-1)" />
+      <g
+         transform="matrix(3.4534651,0,0,-3.4534651,1111.6151,271.77846)"
+         id="g4750-2"
+         style="fill:#ffffff;fill-opacity:1">
+        <g
+           id="g4752-9"
+           style="fill:#ffffff;fill-opacity:1" />
+        <path
+           d="m 318.13699,436.105 -20.5,0 0,-8.5 11.801,0 c -1.102,-5.399 -5.7,-8.5 -11.801,-8.5 -7.199,0 -13,5.8 -13,13 0,7.199 5.801,13 13,13 3.101,0 5.902,-1.102 8.101,-2.899 l 6.399,6.399 c -3.899,3.398 -8.899,5.5 -14.5,5.5 -12.199,0 -22,-9.801 -22,-22 0,-12.2 9.801,-22 22,-22 11,0 21,8 21,22 0,1.3 -0.199,2.699 -0.5,4 z"
+           id="path4782-9" />
+      </g>
+    </g>
+  </g>
+</svg>
