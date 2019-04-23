@@ -7,7 +7,9 @@ html, body, div {
 }
 
 body {
-  background-color: #1da64a;
+  background-color: #9f9f9f;
+  background-size: cover;
+  background-image: url(./demo.jpg);
 }
 
 .viewport {
@@ -21,22 +23,22 @@ body {
 
 .page {
   margin: 0 auto 0 auto;
-  background-color: #ffffff;
   max-width: 600px;
   font-size: 16px;
   font-family: "Jost", "Arial";
+  color: #ffffff;
+  text-shadow:
+    rgba(0, 0, 0, 0.3) 2px 2px 3px,
+    rgba(0, 0, 0, 0.3) -2px 2px 3px,
+    rgba(0, 0, 0, 0.3) -2px -2px 3px,
+    rgba(0, 0, 0, 0.3) 2px -2px 3px,
+    rgba(0, 0, 0, 0.6) 0 0 4px;
 }
 
 .section {
-  padding: 16px;
-  border-style: none none solid none;
-  border-width: 1px;
-  border-color: #1da64a;
+  margin: 16px 0;
+  padding: 0 16px;
   text-align: center;
-}
-
-.section:last-of-type {
-  border-style: none;
 }
 
 header {
@@ -44,9 +46,6 @@ header {
   table-layout: auto;
   box-sizing: border-box;
   width: 100%;
-  background-color: #0f5325;
-  background-size: cover;
-  background-image: url(./demo.jpg);
 }
 
 header > * {
@@ -61,12 +60,12 @@ header > .logo {
 header > h1 {
   vertical-align: middle;
   padding-top: 3px;
-  color: #ffffff;
 }
 
 h1 {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 26px;
+  line-height: 36px;
 }
 
 h2 {
@@ -82,7 +81,7 @@ h3 {
 
 p {
   font-size: 16px;
-  margin: -5px 0 0;
+  margin: 0;
   padding: 0;
   line-height: 26px;
 }
@@ -110,6 +109,7 @@ a {
   margin: 0 -8px;
   padding: 0;
   flex-wrap: wrap;
+  text-shadow: initial;
 }
 
 .button-list > li {
@@ -133,7 +133,7 @@ a {
 }
 
 .pull-out:last-child {
-    margin-bottom: -16px;
+    margin-bottom: 0;
 }
 
 .calendar-pull-out {
@@ -350,10 +350,6 @@ a {
   width: 100%;
 }
 
-.calendar > div:last-of-type {
-  /* margin-right: 0; */
-}
-
 .calendar h4 {
   display: block;
   margin: 0 0 16px;
@@ -430,10 +426,22 @@ a {
   transform: translateY(0);
 }
 
+.demands, .calendar {
+  color: #000000;
+  text-shadow: rgba(255, 255, 255, 0.3) 2px 2px 3px, rgba(255, 255, 255, 0.3) -2px 2px 3px, rgba(255, 255, 255, 0.3) -2px -2px 3px, rgba(255, 255, 255, 0.3) 2px -2px 3px;
+}
+
 h4 {
   font-size: 16px;
   line-height: 24px;
   margin: 8px 0 4px;
+}
+
+footer {
+  border-style: solid none none;
+  border-width: 1px;
+  border-color: #46a64b;
+  padding-top: 16px !important;
 }
 
 @media only screen and (min-width: 416px) {
@@ -496,18 +504,3 @@ h4 {
     transform: translate(0, -276px);
   }
 }
-
-
-/*
-background-color: rgba(0, 0, 0, 0.5);
-padding: 2px 0;
-line-height: 26px;
-text-shadow:
-  rgba(0, 0, 0, 0.3) 2px 2px 3px,
-  rgba(0, 0, 0, 0.3) -2px 2px 3px,
-  rgba(0, 0, 0, 0.3) -2px -2px 3px,
-  rgba(0, 0, 0, 0.3) 2px -2px 3px;
-box-shadow:
-  rgba(0, 0, 0, 0.5) 6px 0,
-  rgba(0, 0, 0, 0.5) -6px 0;
-*/
