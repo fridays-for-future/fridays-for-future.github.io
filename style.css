@@ -372,6 +372,70 @@ a {
   transition: height 300ms ease-out;
 }
 
+.demands-pull-out {
+  background-image: url(./demands.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  max-height: 48px;
+  height: auto;
+}
+
+.demands {
+  padding: 12px 16px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(calc(-50% + 24px));
+}
+
+.demands ul {
+  margin: 4px 0;
+}
+
+.demands li {
+  display: block;
+  line-height: 24px;
+  margin: 4px 0;
+}
+
+.trans-active-in.demands-pull-out {
+  transition: max-height 300ms ease-in !important;
+}
+
+.trans-active-out.demands-pull-out {
+  transition: max-height 300ms ease-out !important;
+}
+
+.active.demands-pull-out {
+  max-height: 332px;
+}
+
+.circum-active .demands {
+  visibility: visible;
+}
+
+.active .demands {
+  opacity: 1;
+}
+
+.trans-active-in .demands {
+  transition: opacity 300ms linear, transform 300ms ease-in;
+}
+
+.trans-active-out .demands {
+  transition: opacity 300ms linear, transform 300ms ease-out;
+}
+
+.active .demands {
+  transform: translateY(0);
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 8px 0 4px;
+}
+
 @media only screen and (min-width: 416px) {
   .calendar-pull-out {
     background-image: url(./calendar-wide.jpg);
