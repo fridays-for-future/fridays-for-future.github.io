@@ -10,6 +10,7 @@ body {
   background-color: #9f9f9f;
   background-size: cover;
   background-image: url(./demo.jpg);
+  background-attachment: fixed;
 }
 
 .viewport {
