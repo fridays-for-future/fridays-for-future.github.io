@@ -59,6 +59,11 @@ header > .logo {
   line-height: 0;
 }
 
+header > .logo img {
+  webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.75));
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.75));
+}
+
 h1, h2 {
   font-size: 23px;
   line-height: 32px;
@@ -96,6 +101,7 @@ a {
 .icon-list > li {
   display: inline-block;
   line-height: 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 1px;
 }
 
 .button-list {
@@ -110,6 +116,7 @@ a {
 .button-list > li {
   display: inline-block;
   margin: 16px 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 1px;
 }
 
 .button-list > li > a {
@@ -126,6 +133,7 @@ a {
   /* height: calc(100% + 32px); */
   margin: 8px -16px 8px;
   height: 44px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 1px;
 }
 
 .pull-out:last-child {
