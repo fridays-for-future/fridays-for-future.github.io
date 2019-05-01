@@ -24,7 +24,7 @@ body {
 
 .page {
   margin: 0 auto 0 auto;
-  max-width: 600px;
+  max-width: 512px;
   font-size: 16px;
   font-family: "Jost", "Arial";
   color: #ffffff;
@@ -57,6 +57,8 @@ header > * {
 header > .logo {
   padding-right: 16px;
   line-height: 0;
+  width: 120px;
+  height: 120px;
 }
 
 header > .logo img {
@@ -130,7 +132,6 @@ a {
 .pull-out {
   position: relative;
   width: calc(100% + 32px);
-  /* height: calc(100% + 32px); */
   margin: 8px -16px 8px;
   height: 44px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 1px;
@@ -149,8 +150,7 @@ a {
   left: 0;
   top: 0;
   transform: translate(0, 0);
-  width: calc(100%);
-  /* height: calc(100% + 32px); */
+  width: 100%;
   height: 44px;
   overflow: hidden;
 }
@@ -236,7 +236,7 @@ a {
 }
 
 .active .control {
-  width: 48px;
+  width: 44px;
 }
 
 .control a {
@@ -290,10 +290,10 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   margin: 0;
-  padding: 16px;
+  padding: 0 !important;
   text-align: center;
   display: block;
   font-size: 24px;
@@ -320,7 +320,7 @@ a {
 }
 
 .active.calendar-pull-out {
-  height: 256px;
+  height: 212px;
 }
 
 .modal {
@@ -340,20 +340,22 @@ a {
 }
 
 .calendar > div {
-  /* width: calc((100vw - 320px) / 5 * 2 + 144px);
-  min-width: 176px;
-  max-width: 256px; */
   width: 100%;
 }
 
 .calendar h4 {
   display: block;
-  margin: 0 0 16px;
-  padding: 32px 0 0;
+  margin: 0 0 13px;
+  padding: 15px 0 0;
   font-size: 16px;
   font-weight: normal;
   line-height: 1em;
   text-align: left;
+}
+
+.icon-list > li {
+  width: 44px;
+  height: 44px;
 }
 
 .trans-active-in.calendar-pull-out {
@@ -435,7 +437,7 @@ h4 {
 }
 
 .section > .icon-list {
-  margin: 8px -16px 0;
+  margin: 8px 0 0;
 }
 
 div.section:last-of-type {
@@ -450,7 +452,30 @@ footer {
   margin: 0 0 16px !important;
 }
 
-@media only screen and (min-width: 416px) {
+/* single row in calendar modal */
+@media only screen and (min-width: 408px) { /*  */
+  .calendar > div {
+    width: calc((100vw - 296px) / 5 * 2 + 132px);
+    min-width: 164px;
+    max-width: 218.4px;
+  }
+  
+  .active.calendar-pull-out {
+    height: 124px;
+  }
+}
+
+/* max page width */
+@media only screen and (min-width: 513px) {
+  .page {
+    max-width: calc(100vw - 32px);
+  }
+  
+  header.section {
+    padding: 0;
+    margin-bottom: -16px;
+  }
+  
   .calendar-pull-out {
     background-image: url(./calendar-wide.jpg);
   }
@@ -460,21 +485,32 @@ footer {
   }
   
   .calendar > div {
-    width: calc((100vw - 336px) / 5 * 2 + 144px);
-    min-width: 176px;
-    max-width: 249.6px;
+    width: calc((100vw - 328px) / 5 * 2 + 132px);
+    min-width: 164px;
+    max-width: 218.4px;
   }
   
   .map {
-    transform: translate(calc((600px - 100vw) / 2), -276px);
+    transform: translate(calc((512px - 100vw) / 2), -276px);
   }
   
-  .active.calendar-pull-out {
-    height: 144px;
+  .button-list {
+      margin: -8px -24px 0;
+  }
+  
+  .section > .icon-list {
+    margin: 8px -16px 0;
   }
 }
 
-@media only screen and (min-height: 696px) {
+/* max page width + padding */
+@media only screen and (min-width: 544px) { /* 512 + 2 * 16 */
+  .page {
+    max-width: 512px;
+  }
+}
+
+@media only screen and (min-height: 608px) { /* 512 + 2 * 48 */
   .trans-active-in.pull-out {
     transition: height 300ms ease-in;
   }
@@ -499,9 +535,6 @@ footer {
   .map-pull-out .modal {
     position: relative !important;
     transform: translate(0, 0) !important;
-    /* width: calc(100% + 32px) !important; */
-    /* height: calc(100% + 32px) !important; */
-    /* margin: -16px !important; */
   }
   
   .map {
