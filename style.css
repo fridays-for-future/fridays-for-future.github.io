@@ -23,7 +23,7 @@ body {
 }
 
 .page {
-  margin: 0 auto 0 auto;
+  margin: 84px auto 0 auto;
   max-width: 512px;
   font-size: 16px;
   font-family: "Jost", "Arial";
@@ -164,6 +164,10 @@ a {
 .active .modal {
   width: 100vw;
   height: 100vh;
+}
+
+.circum-active .modal {
+  z-index: 2000;
 }
 
 .trans-active-in .modal {
@@ -450,6 +454,38 @@ footer {
   border-color: #46a64b;
   padding: 16px 0 0 !important;
   margin: 0 0 16px !important;
+}
+
+.banner {
+  font-family: Jost;
+  color: #fff;
+  background-color: #1da649;
+  padding: 8px 16px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 66px);
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 1px
+}
+
+.lang-switch {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 44px;
+  padding: 11px 16px;
+  background-color: rgba(255, 255, 255, 0.33);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 1px;
+  text-align: center;
+  z-index: 1001;
+  font-family: Jost;
+}
+
+.lang-switch a {
+  color: #fff;
 }
 
 /* single row in calendar modal */
