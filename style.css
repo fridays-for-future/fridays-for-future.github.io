@@ -8,6 +8,7 @@ html, body, div {
 
 html {
   background-color: #9f9f9f;
+  font-family: Jost, Futura, Arial, sans-serif;
 }
 
 body:before {
@@ -39,7 +40,6 @@ body:before {
   margin: 84px auto 0 auto;
   max-width: 512px;
   font-size: 16px;
-  font-family: "Jost", "Arial";
   color: #ffffff;
   text-shadow:
     rgba(0, 0, 0, 0.3) 2px 2px 3px,
@@ -315,7 +315,6 @@ a {
   text-align: center;
   display: block;
   font-size: 24px;
-  font-family: "Jost", "Arial";
   box-sizing: border-box;
   line-height: 16px;
   color: #ffffff;
@@ -471,7 +470,6 @@ footer {
 }
 
 .banner {
-  font-family: Jost;
   color: #fff;
   background-color: #1da649;
   padding: 8px 16px;
@@ -495,7 +493,6 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 1px;
   text-align: center;
   z-index: 1001;
-  font-family: Jost;
 }
 
 .lang-switch a {
