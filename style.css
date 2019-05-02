@@ -6,11 +6,24 @@ html, body, div {
   -webkit-margin-after: 0;
 }
 
-body {
+html {
   background-color: #9f9f9f;
-  background-size: cover;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
   background-image: url(./demo.jpg);
-  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .viewport {
