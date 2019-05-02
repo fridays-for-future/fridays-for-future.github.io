@@ -497,6 +497,7 @@ footer {
 
 .lang-switch a {
   color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 3px, rgba(0, 0, 0, 0.3) -2px 2px 3px, rgba(0, 0, 0, 0.3) -2px -2px 3px, rgba(0, 0, 0, 0.3) 2px -2px 3px, rgba(0, 0, 0, 0.6) 0 0 4px
 }
 
 /* single row in calendar modal */
