@@ -500,6 +500,10 @@ footer {
   text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 3px, rgba(0, 0, 0, 0.3) -2px 2px 3px, rgba(0, 0, 0, 0.3) -2px -2px 3px, rgba(0, 0, 0, 0.3) 2px -2px 3px, rgba(0, 0, 0, 0.6) 0 0 4px
 }
 
+.lang-switch img {
+  padding-top: 2px;
+}
+
 /* single row in calendar modal */
 @media only screen and (min-width: 408px) { /*  */
   .calendar > div {
