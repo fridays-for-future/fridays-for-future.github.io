@@ -597,3 +597,11 @@ footer {
     transform: translate(0, -276px);
   }
 }
+
+.long-text p {
+  text-align: left
+}
+
+.highlight {
+  font-weight: bold;
+}
