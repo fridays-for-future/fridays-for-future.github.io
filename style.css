@@ -108,15 +108,19 @@ a {
 
 .icon-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin: 8px -8px 0;
   padding: 0;
-  margin: 0;
+  flex-wrap: wrap;
 }
 
 .icon-list > li {
   display: inline-block;
   line-height: 0;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 1px;
+  width: 44px;
+  height: 44px;
+  margin: 16px 8px 0;
 }
 
 .button-list {
@@ -370,10 +374,10 @@ a {
   text-align: left;
 }
 
-.icon-list > li {
+/* .icon-list > li {
   width: 44px;
   height: 44px;
-}
+} */
 
 .trans-active-in.calendar-pull-out {
   transition: height 300ms ease-in;
@@ -453,9 +457,10 @@ h4 {
   margin: 8px 0 4px;
 }
 
-.section > .icon-list {
-  margin: 8px 0 0;
-}
+/* .section > .icon-list {
+  margin: 8px -8px 0;
+  justify-content: space-evently;
+} */
 
 div.section:last-of-type {
     margin-bottom: 23px;
@@ -527,7 +532,7 @@ footer {
   
   header.section {
     padding: 0;
-    margin-bottom: -16px;
+    /* margin-bottom: -16px; */
   }
   
   .calendar-pull-out {
@@ -598,10 +603,20 @@ footer {
   }
 }
 
-.long-text p {
+.long-text * {
   text-align: left
+}
+
+.long-text h3 {
+  font-size: 23px;
+  font-weight: normal;
 }
 
 .highlight {
   font-weight: bold;
+}
+
+.down-arrow {
+  position: relative;
+  top: 4px;
 }
