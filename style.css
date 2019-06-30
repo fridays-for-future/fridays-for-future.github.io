@@ -49,6 +49,9 @@ body:before {
     rgba(0, 0, 0, 0.6) 0 0 4px;
 }
 
+.banner-page {
+  margin: 84px auto 0 auto;
+}
 .section {
   margin: 16px 0 16px;
   padding: 0 16px;
