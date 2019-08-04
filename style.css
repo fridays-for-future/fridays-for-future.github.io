@@ -485,7 +485,7 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100% - 66px);
+  width: 100%;
   z-index: 1000;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px 1px
 }
