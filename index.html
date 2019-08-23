@@ -1,92 +1,272 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
   <title>Fridays for Future München</title>
-  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?v=A0mR2k2l4R">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v=A0mR2k2l4R">
-  <link rel="shortcut icon" sizes="48x48" href="./favicon.ico?v=A0mR2k2l4R">
-  <link rel="icon" type="image/png" sizes="96x96"  href="./favicon.png-96x96?v=A0mR2k2l4R">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Fridays for Future München">
+  
+  <link rel="icon" href="./assets/img/fff_icon.png">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- Leaflet for OSM -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+  
+  
+
 </head>
 
-<body class="banner-page">
-  <div class="viewport" id="viewport"></div>
-  <a href="./munich-for-future.html" class="banner">
-    <p>Globaler Klimastreik: 20. September, 12 Uhr, Königsplatz</p>
-  </a>
-  <!-- <div class="lang-switch">
-    <a href="./en.html">En</a>
-  </div> -->
-  <div class="page">
-    <header class="section">
-      <div class="logo">
-        <img src="fff_muc_logo.png" alt="Fridays for Future M&uuml;nchen logo" height="120">
-      </div>
-      <h1>Fridays for Future München</h1>
-    </header>
-    <div class="section intro">
-      <h2>&Uuml;ber uns</h2>
-      <p>Als globale Bewegung streiken wir seit mehreren Monaten w&ouml;chentlich für Ver&auml;nderungen in der Politik, die n&ouml;tig sind, um das Pariser Klimaabkommen einzuhalten und die Erderw&auml;rmung auf 1,5&nbsp;&deg;C zu beschr&auml;nken.</p>
-      <div id="demands-pull-out" class="pull-out demands-pull-out">
-        <div class="demands">
-          <ul>
-            <li>Nettonull 2035 erreichen</li>
-            <li>Kohleausstieg bis 2030</li>
-            <li>100% erneuerbare Energieversorgung bis 2035</li>
-          </ul>
-          <h4>Bis Ende 2019</h4>
-          <ul>
-            <li>Das Ende der Subventionen für fossile Energietr&auml;ger</li>
-            <li>1/4 der Kohlekraft abschalten</li>
-            <li>Eine Steuer auf alle Treibhausgasemissionen. Laut UBA sind das 180€ pro Tonne CO&#8322;</li>
-          </ul>
-        </div>
-        <div class="control">
-          <a id="show-demands" class="show" href="#">Bundesweite Forderungen anzeigen</a>
-          <a id="hide-demands" class="hide" href="#"><img src="./cross.svg" widht="44" height="44"></a>
-        </div>
-      </div>
-      <p>Um zu zeigen, welche Ma&szlig;nahmen auf lokaler Ebene n&ouml;tig sind, um die bundesweiten Forderungen umzusetzen, haben wir diese Woche <a href="./forderungen.html">unsere Forderungen an die Stadt M&uuml;nchen</a> ver&ouml;ffentlicht.</p>
-    </div>
-    <div class="section">
-      <h2>Sei dabei</h2>
-      <p>Der nächste Streik findet am Freitag, 23.&nbsp;August statt. Wir treffen uns um 11&nbsp;Uhr am Marienplatz und von dort ziehen wir über das Sendlinger Tor und Stachus zum Lenbachplatz.</p>
-    </div>
-    <div class="section">
-      <h2>Bleib auf dem Laufenden</h2>
-      <ul class="icon-list">
-        <li><a href="https://chat.whatsapp.com/IQmLwlPp30cF1n267lzBhi" target="_blank" rel="noopener noreferrer"><img src="./icons/whatsapp.svg" alt="WhatsApp" height=44></a></li>
-        <li><a href="https://t.me/joinchat/DEvHuhNGvo9AdcAudNkVGg" target="_blank" rel="noopener noreferrer"><img src="./icons/telegram.svg" alt="Telegramm" height=44></a></li>
-        <li><a href="https://facebook.com/fridaysforfuturemuenchen" target="_blank" rel="noopener noreferrer"><img src="./icons/facebook.svg" alt="Facebook" height=44></a></li>
-        <li><a href="https://twitter.com/fff_muc" target="_blank" rel="noopener noreferrer"><img src="./icons/twitter.svg" alt="Twitter" height=44></a></li>
-        <li><a href="https://instagram.com/fridaysforfuturemuenchen" target="_blank" rel="noopener noreferrer"><img src="./icons/instagram.svg" alt="Instagram" height=44></a></li>
-        <li><a href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng" target="_blank" rel="noopener noreferrer"><img src="./icons/youtube.svg" alt="YouTube" height=44></a></li>
-      </ul>
-    </div>
-    <div class="section">
-      <h2>Students for Future</h2>
-      <p>Du willst dich mit Kommiliton*innen aus deinem Campus vernetzen um noch mehr Studierende zu mobilisieren? Dann komm zu Students for Future, dem studentischen Teil der Fridays for Future Bewegung!</p>
-      <ul class="button-list">
-        <li><a href="https://t.me/s/studentsforfuturemuenchen" target="_blank" rel="noopener noreferrer">Telegram Channel</a></li>
-      </ul>
-    </div>
-    <div class="section">
-      <h2>Unterst&uuml;tze uns</h2>
-      <p>Du willst uns mehr oder anders unterst&uuml;tzen, als nur freitags zu streiken? Wenn Du uns bei der Vorbereitung und Umsetzung der Streiks helfen m&ouml;chtest, spreche einfach freitags eine*n der Order*innen an oder kontaktiere uns über unsere Social Media Kanäle. Außerdem freuen wir uns &uuml;ber Spenden für Sticker, Plakate, Flyer, GEMA, Wagen- &amp; Boxen-Miete, etc. auf unser Spendenkonto:</br>Spendenkonto 200 301 0201</br>IBAN: DE30 7002 0500 2003 0102 01</br>BIC: BFSWDE33MUE</p>
-    </div>
-    <footer class="section">
-      <p>
-        Mehr Informationen auf <a href="https://fridaysforfuture.de" target="_blank" rel="noopener noreferrer">Fridays&nbsp;for&nbsp;Future&nbsp;Germany</a>
-      </p>
-      <p><a href="./impressum.html">Impressum</a> | <a href="./kontakt.html">Kontakt</a></p>
-    </footer>
+  <body>
+      <section id="header">
+      
+<div class="dropdown">
+  <button class="dropbtn">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
+  <div class="dropdown-content">
+    <a class="link" href="#participate" data-scroll>Mach mit!</a>
+    <a class="link" href="#demands" data-scroll>Forderungen</a>
+    <!--<a class="link" href="#calendar" data-scroll>Klimakalender</a>
+    <a class="link" href="#faq" data-scroll>FAQ</a>-->
+    <a class="link" href="#support" data-scroll>Unterstützen</a>
+    <span style="white-space:nowrap"><a class="link" href="#stu4future" data-scroll>Students for Future</a></span>
   </div>
-  <div style="display:none;" class="Hi Workast give free pls"></div>
-  <script src="demands.js" charset="utf-8"></script>
-</body>
-</html>
+</div>
+
+<div class="background">
+  <img src="./assets/img/fff_muc_logo.png" class="header-logo">
+  <div class="header">
+    <span class="site-title">Fridays for Future München</span>
+    <div class="header-links">
+      <a class="link" href="#participate" data-scroll>Mach mit!</a>
+      <a class="link" href="#demands" data-scroll>Forderungen</a>
+      <!--<a class="link" href="#calendar" data-scroll>Klimakalender</a>
+      <a class="link" href="#faq" data-scroll>FAQ</a>-->
+      <a class="link" href="#support" data-scroll>Unterstützen</a>
+      <span style="white-space:nowrap"><a class="link" href="#stu4future" data-scroll>Students for Future</a></span>
+      
+        
+    </div>
+    <!--<a class="language" href="" data-scroll>English</a>-->
+  </div>
+</div>
+
+
+
+  
+<div class="border-top">
+      <div class="next-strike">
+        Globaler Klimastreik: 20.&nbsp;September, 12&nbsp;Uhr, Königsplatz
+        </p>
+        <p style="margin-top:-0.5em">
+        Nächster Streik: Freitag, <span style="white-space:nowrap">11 Uhr</span>, <span style="white-space:nowrap">Marienplatz</span>.</p>
+      </div>
+      <a class="down" href="#participate" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true" style="height: 40px"></i></a>
+      <div class="header-icons" style="margin-top:3em">
+        <a aria-label="WhatsApp" target="_blank" href="https://chat.whatsapp.com/E7pHj2J1JAxJweqVllOUyh"><i class="icon fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a aria-label="Telegram" target="_blank" href="https://t.me/joinchat/DEvHuhNGvo9AdcAudNkVGg"><i class="icon fa fa-telegram" aria-hidden="true"></i></a>
+        <a aria-label="Facebook" target="_blank" href="https://facebook.com/fridaysforfuturemuenchen"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+        <a aria-label="Twitter" target="_blank" href="https://twitter.com/fff_muc"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+        <a aria-label="Instagram" target="_blank" href="https://instagram.com/fridaysforfuturemuenchen"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
+        <a aria-label="YouTube" target="_blank" href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng"><i class="icon fa fa-youtube" aria-hidden="true"></i></a>
+      </div>
+</div>
+  
+
+      </section>
+      <a name="participate"></a>
+      <section id="projects">
+        <div class="user-details">
+  <h1> Mach mit! </h1>
+</div>
+
+
+<p>
+Als globale Bewegung streiken wir seit mehreren Monaten wöchentlich für Veränderungen in der Politik, die nötig sind, um das Pariser Klimaabkommen einzuhalten und die Erderwärmung auf 1,5 °C zu beschränken.
+In München findet der nächste Streik findet am <b>Freitag, dem 30. August</b> statt. Wir treffen uns <b>um 11 Uhr am Marienplatz</b> und ziehen von dort aus zuerst in Richtung Sendlinger Tor und dann weiter zum Lenbachplatz.
+
+<div align="justify">
+  <div id="MapID" style="height:60vh; margin-left: auto; margin-right:auto; width:80%"></div>
+</div>
+
+<script>
+  var mymap = L.map('MapID').setView([48.13725,11.57549], 14);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA', {
+attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+maxZoom: 18,
+id: 'mapbox.streets',
+accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
+  mymap.scrollWheelZoom.disable();
+  var marker = L.marker([48.13725,11.57549]).addTo(mymap);
+  marker.bindPopup("<b>Marienplatz</b><br>Freitag, 30. August, 11 Uhr");
+
+
+</script>
+</p>
+
+
+<h2 style="text-align: center">Gerade nicht in München?</h2>
+<p>
+Kein Problem! Wir sind eine globale Bewegung, und in vielen anderen Städten in Deutschland und weltweit gibt es ebenfalls Fridays for Future-Ortsgruppen. Wenn du also gerade nicht daheim bist, schau einfach hier nach wo überall auch gestreikt wird:
+
+<div style="text-align:center">
+<a class="project-link" href="https://www.fridaysforfuture.de" style="margin-right:1em">In Deutschland</a>
+<a class="project-link" href="https://www.fridaysforfuture.org">Weltweite Karte</a>
+</div>
+</p>
+
+<h2 style="text-align:center">#AllefürsKlima: Globaler Klimastreik am 20.&nbsp;September</h2>
+<p>
+
+An diesem Tag trifft sich das Klima-Kabinett in Berlin; drei Tage später ist der Klimagipfel der Vereinten Nationen in New York. Dort werden Entscheidungen getroffen, die die Zukunft von allen betreffen. Und weil nach inzwischen einem ganzen Jahr Fridays for Future und mehr als einem halben Jahr freitäglichem Klimastreik in München immer noch viel zu wenig passiert ist, heißt es jetzt: #AllefürsKlima!
+</p>
+<p>
+Kommt alle, <b>auch und besonders ihr, die ihr eigentlich arbeiten müsst!</b> Das geht doch nicht? Doch! Diese Münchner Unternehmen und Akteur*innen machen es schon vor:
+</p>
+
+<div style="text-align:center">
+<a class="project-link" href="http://muenchen-muss-handeln.de/streik">Karte streikender Unternehmen</a>
+</div>
+
+
+
+
+      </section>
+      <div class="border">
+        <div class="quotation">„Hope dies, and action begins.“ <br> — Greta Thunberg</div>
+      </div>
+      <a name="demands"></a>
+      <section id="about">
+        <div class="user-details">
+  <h1> Unsere Forderungen</h1>
+</div>
+
+<div class="demands-box">
+  <div class="demands">
+    <p>
+      <h2>An die Bundes&shy;regierung:</h2>
+      <ul>
+       <li>Nettonull 2035 erreichen</li>
+       <li>Kohleausstieg bis 2030</li>
+       <li> 100% erneuerbare Energieversorgung bis 2035</li>
+      </ul>
+      <h4>Bis Ende 2019:</h4>
+      <ul>
+       <li>Das Ende der Subventionen für fossile Energieträger</li>
+       <li>1/4 der Kohlekraft abschalten</li>
+       <li>Eine Steuer auf alle Treibhausgasemissionen. Laut UBA sind das 180€ pro Tonne CO₂</li>
+      </ul>
+    </p>
+  </div>
+  <div class="demands-right">
+    <p>
+      <h2>An die Stadt München:</h2>
+      </p><p>
+      Um zu zeigen, welche Maßnahmen auf lokaler Ebene nötig sind, um die bundesweiten Forderungen umzusetzen, haben wir Forderungen an die Stadt München gestellt: <br />
+        <ol>
+    <li>Betrieb des HKW Nord 2 bis 2022 beenden und den Betrieb bis dahin auf ein Minimum reduzieren <br>
+    <li>Autofreie Zone innerhalb des mittleren Rings bis spätestens 2025 <br>
+    <li>Austattung aller Neubaten mit Photovoltaik- oder Solarthermieanlagen </ol>
+      <a class="project-link" href="https://fff-muc.de/forderungen-muenchen.pdf">Alle Forderungen als PDF</a>
+    </p>
+  </div>
+</div>
+
+
+      </section>
+      <div class="border">
+        <div class="quotation">„Was heute geschieht, gleicht einem kollektiven Suizidversuch.“ <br> — Prof. Dr. Hans Joachim Schellnhuber, Klimaforscher</div>
+      </div>
+      <a name="support"></a>
+      <section id="projects">
+
+<h1 style="text-align: center"> Unterstützen </h1>
+
+Du willst uns mehr oder anders unterstützen, als nur freitags zu streiken? Wenn Du uns bei der Vorbereitung und Umsetzung der Streiks helfen möchtest, spreche einfach freitags eine*n der Order*innen an oder kontaktiere uns über unsere Social Media Kanäle. Außerdem freuen wir uns über Spenden für Sticker, Plakate, Flyer, GEMA, Wagen- & Boxen-Miete, etc. auf unser Spendenkonto:
+</p>
+
+<div style="text-align: left; padding-top: 1em; font-family:fff-text; width:100%">
+<table style="margin-left:auto; margin-right: auto">
+  <tr>
+    <th> Kontoinhaber: </th>
+    <th> Fridays for Future München </th>
+  </tr>
+  <tr>
+    <th> Spendenkonto: </th>
+    <th> 200 301 0201 </th>
+  </tr>
+  <tr>
+    <th> IBAN: </th>
+    <th> <b>DE30 7002 0500 2003 0102 01</b> </th>
+  </tr>
+  <tr>
+    <th> BIC: </th>
+    <th> BFSWDE33MUE </th>
+  </tr>
+</table>
+</div>
+
+      </section>
+      <div class="border">
+        <div class="quotation"> „I want you to behave like our house is on fire. Because it is.“ <br> — Greta Thunberg </div>
+      </div>
+      <a name="stu4future"></a>
+      <section id="projects">
+        <div class="user-details">
+  <h1> Students for Future </h1>
+</div>
+
+
+<div style="text-align:center; ">
+  <a class="text-icon project-link" style="padding:10px; margin:4px" href="https://t.me/studentsforfuturemuenchen"><i class="icon fa fa-telegram" aria-hidden="true"></i></a>
+  <a class="project-link text-icon" style="padding:10px; margin:4px" href="https://twitter.com/stu4future_muc/"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+  <a class="project-link text-icon" style="padding:10px; margin:4px" href="https://www.facebook.com/studentsforfuturemuenchen/"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+  <a class="project-link text-icon" style="padding:10px; margin:4px" href="https://www.instagram.com/studentsforfuturemuenchen/"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
+</div>
+<p>
+
+Dir sind zu wenig Studis auf den Demos? Du findest, dass auch die Münchner Hochschulen ihren Beitrag gegen die Klimakrise leisten sollten? Du willst, dass auch dort endlich etwas passiert? Dann komm zu Students for Future, dem studentischen Teil unserer Bewegung!
+</p>
+<p>
+Jeden Donnerstag veranstalten wir unser Klimacafé, wo du einfach mal entspannt über das Klima und die Politik labern kannst; falls dir das nicht reicht kannst du auch gerne Mittwochs beim Plenum vorbeikommen und dich bei uns in die Planung mit einbringen. Oder du kommst einfach Freitags mit uns auf die Demo, bastelst mit uns Banner und Flaggen, organisierst Zubringerdemos zu den Großstreiks …
+</p>
+<p>
+Um auf dem Laufenden zu bleiben trete unserem Telegram-Channel bei oder folge uns auf Social Media.
+
+
+</p>
+
+
+
+
+      </section>
+        
+      <footer class="footer">
+    
+<div style="text-align:center; ">
+    <p>
+        Folgt Fridays for Future München auf Social Media und verpasst nie wieder einen Streik:
+    </p>
+    <div class="header-icons">
+        <a aria-label="WhatsApp" target="_blank" href="https://chat.whatsapp.com/E7pHj2J1JAxJweqVllOUyh"><i class="icon fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a aria-label="Telegram" target="_blank" href="https://t.me/joinchat/DEvHuhNGvo9AdcAudNkVGg"><i class="icon fa fa-telegram" aria-hidden="true"></i></a>
+        <a aria-label="Facebook" target="_blank" href="https://facebook.com/fridaysforfuturemuenchen"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+        <a aria-label="Twitter" target="_blank" href="https://twitter.com/fff_muc"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+        <a aria-label="Instagram" target="_blank" href="https://instagram.com/fridaysforfuturemuenchen"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
+        <a aria-label="YouTube" target="_blank" href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng"><i class="icon fa fa-youtube" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <p>
+    <a href="https://fff-muc.de/impressum.html">Impressum</a>
+    |
+    <a href="https://fff-muc.de/kontakt.html">Kontakt</a>
+    </p>
+</footer>
+
+  </body>
