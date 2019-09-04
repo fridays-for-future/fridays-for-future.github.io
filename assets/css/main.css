@@ -1473,8 +1473,11 @@ html
 {float:right}.images-left
 {float:left;width:48%}.images-left img
 {float:left}}.project-link
-{display:inline-block;margin:10px 0;padding:5px;color:#1b7340;background-color:transparent;border:1px solid #1b7340;text-align:center;outline:0;text-decoration:none;cursor:pointer;transition:color .3s ease-out,background-color .3s ease-out,border-color .3s ease-out}.project-link:active,.project-link:hover
+{display:inline-block;margin:10px auto;padding:5px;color:#1b7340;background-color:transparent;border:1px solid #1b7340;text-align:center;outline:0;text-decoration:none;cursor:pointer;transition:color .3s ease-out,background-color .3s ease-out,border-color .3s ease-out; width: fit-content;}.project-link:active,.project-link:hover
 {background-color:#1b7340;border-color:#1b7340;color:#fff;transition:color .3s ease-in,background-color .3s ease-in,border-color .3s ease-in}.footer
 {background:#1b7340;padding:10px 0;margin-top:100px;text-align:center;color:#fff}.footer .love
 {color:red}.footer a
 {text-decoration:none;margin:0;color:#fff}
+a {
+  color: #1b733f;
+}
