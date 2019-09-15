@@ -281,11 +281,11 @@ th {
     transform: skewY(-5deg);
 }
 .border-top{
-    margin-top: -13em;
+    margin-top: -12em;
 }
 @media only screen and (min-width:550px) {
     .border-top {
-        margin-top:-8em;
+        margin-top:-6em;
     }
 }
 
