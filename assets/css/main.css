@@ -151,6 +151,8 @@ th {
     top:0.5em;
     width: 40vw;
     height: 40vw;
+    max-width: 200px;
+    max-height: 200px;
     z-index:100
 }
 .header-links{
