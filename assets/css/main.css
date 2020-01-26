@@ -151,6 +151,8 @@ th {
     top:0.5em;
     width: 40vw;
     height: 40vw;
+    max-width: 200px;
+    max-height: 200px;
     z-index:100
 }
 .header-links{
@@ -234,7 +236,7 @@ th {
 
 @media only screen and (min-width:550px) {
     .demands{
-        
+
         width:48%
     }
     .demands-right {
@@ -305,7 +307,7 @@ th {
 }
 
 .textbox {
-    
+
 }
 
 .language {
@@ -328,6 +330,15 @@ th {
     background-image: url("../img/header.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.subpage .header-logo {
+    position: relative;
+    margin-bottom: 60px;
+}
+.subpage .page {
+    max-width: 80%;
+    margin-left: 10%;
 }
 
 html {
