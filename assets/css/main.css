@@ -126,7 +126,7 @@ th {
     display: flex;
     justify-content: center;
     text-align: center;
-    z-index: 100;
+    z-index: 80;
 }
 
 .down, .header-icons .icon {
@@ -241,6 +241,39 @@ th {
     transform: skewY(-5deg);
 }
 
+#header-sticker {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    transform: rotate(5deg);
+    background-color: #1b7340;
+    color: white;
+    border: 2px solid white;
+    font-family: fff-header;
+    text-align: center;
+    padding: 20px;
+    z-index: 100;
+}
+#header-sticker>* {
+    font-size: 16px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+@media only screen and (min-width: 550px) {
+    #header-sticker {
+        top: calc(30% + 5vw);
+        left: 5%;
+    }
+    #header-sticker>* {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-height: 600px) {
+    #header-sticker {
+        top: calc(15% + 5vw);
+    }
+}
+
 .header-lower {
     z-index: 1;
     text-align: center;
@@ -293,7 +326,7 @@ th {
     padding-right: 10vw;
 }
 
-.demads-box {
+.demands-box {
     position: relative;
     margin-bottom: 0em;
 }
