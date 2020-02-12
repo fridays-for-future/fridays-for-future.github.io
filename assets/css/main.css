@@ -243,7 +243,7 @@ th {
 
 #header-sticker {
     position: absolute;
-    top: 30%;
+    top: calc(40% + 5vw);
     left: 5%;
     transform: rotate(5deg);
     background-color: #1b7340;
@@ -261,7 +261,6 @@ th {
 }
 @media only screen and (min-width: 550px) {
     #header-sticker {
-        top: calc(30% + 5vw);
         left: 5%;
     }
     #header-sticker>* {
