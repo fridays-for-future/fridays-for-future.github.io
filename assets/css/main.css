@@ -173,8 +173,12 @@ th {
     position: absolute;
     left: 0.5em;
     top: 0.5em;
-    width: 40vw;
-    height: 40vw;
+    width: 20vw;
+    height: 20vw;
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 220px;
+    max-height: 220px;
     z-index: 100
 }
 
@@ -192,26 +196,12 @@ th {
 }
 
 @media only screen and (min-width: 550px) {
-    .header-logo {
-        width: 20vw;
-        height: 20vw;
-        top: 1em;
-        left: 1em;
-    }
-
     .header-menu {
         display: none;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    .header-logo {
-        width: 15vw;
-        height: 15vw;
-        top: 2em;
-        left: 2em;
-    }
-
     .header-links {
         display: initial;
     }
