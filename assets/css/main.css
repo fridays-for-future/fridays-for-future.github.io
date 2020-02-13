@@ -300,18 +300,13 @@ th {
     }
 }
 
-@media only screen and (min-width: 550px) {
-    .demands {
-
-        width: 48%
-    }
-
-    .demands-right {
-        position: absolute;
-        right: 0;
-        top: -1.6em;
-        width: 48%
-    }
+div.two-col {
+    column-count: 2;
+    column-width: 260px;
+}
+div.two-col div {
+    break-inside: avoid-column;
+    display: table;
 }
 
 .subgroup {
