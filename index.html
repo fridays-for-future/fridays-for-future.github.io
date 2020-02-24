@@ -86,6 +86,86 @@
     </div>
 </section>
 
+
+
+<section id="13.03" class="projects">
+    <h1> Großstreik </h1>
+    <p> Am 13.&nbsp;März ist bayernweiter Großstreik. Dafür werden wir uns <b>um 12&nbsp;Uhr am Königsplatz</b> treffen. So wollen wir die Kommunalpolitiker*innen, die am 15.&nbsp;März gewählt werden, noch einmal die Fakten der Wissenschaft nahelegen und die Wahl zur Klimawahl machen. In dieser Legislaturperiode entscheidet sich, ob durch politische Entscheidungen auf der Kommunalebene auch zum Einhalten der Pariser Klimaziele beigetragen wird. </p>
+
+    <h2> Flyer, Sticker, Plakate </h2>
+    <p>Damit wir wieder sehr viele Menschen werden, muss unser Großstreik noch stark beworben werden. Wenn du uns dabei helfen willst, kannst du dir gerne Plakate, Flyer und Sticker an den Verteilstationen (sind in der Karte unten eingetragen) abholen. Auch gehen wir jeden Tag zusammen durch München, um noch mehr Material zu verteilen. Wenn du mitkommen willst, trete einfach unserer <a href="https://chat.whatsapp.com/FfxWC6ZGKGfBj6jsaw1WQDb">Whatsappgruppe</a> bei.
+
+<div style="text-align: center">
+        <div id="Verteiler" style="height:60vh; margin-left: auto; margin-right:auto; width:80%"></div>
+    </div>
+    <script>
+        var Verteilerkarte = L.map('Verteiler').setView([48.135, 11.57], 12);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'your.mapbox.access.token'
+        }).addTo(Verteilerkarte);
+        Verteilerkarte.scrollWheelZoom.disable();
+        var Station2 = L.marker([48.1283751, 11.5978309]).addTo(Verteilerkarte);
+            Station2.bindPopup("Alnatura, Weißenburgerstr.&nbsp;20<br>Mo - Sa 8 - 20 Uhr");
+        /*var Station3 = L.marker([48.1597318, 11.5859280]).addTo(Verteilerkarte);
+            Station3.bindPopup("Alnatura, Leopoldstr.&nbsp;64<br>Mo - Sa 8 - 20 Uhr<br>");
+        var Station4 = L.marker([48.1458458, 11.5195283]).addTo(Verteilerkarte);
+            Station4.bindPopup("Alnatura, Friedenheimer Brücke&nbsp;23<br>Mo - Sa 8 - 20 Uhr<br>");
+        var Station5 = L.marker([48.1000673, 11.5279942]).addTo(Verteilerkarte);
+            Station5.bindPopup("Alnatura, Boschetsriederstr.&nbsp;72<br>Mo - Sa 8 - 20 Uhr<br>");*/
+        var Station6 = L.marker([48.1064233, 11.6447650]).addTo(Verteilerkarte);
+            Station6.bindPopup("Alnatura, Albert-Schweitzer-Str.&nbsp;78<br>Mo - Sa 8 - 20 Uhr<br>");
+        /*var Station7 = L.marker([48.0940311, 11.5081933]).addTo(Verteilerkarte);
+            Station7.bindPopup("Alnatura, Kistlerhofstraße&nbsp;243a<br>Mo - Sa 8 - 20 Uhr<br>");
+        var Station8 = L.marker([48.14662, 11.46378]).addTo(Verteilerkarte);
+            Station8.bindPopup("Alnatura, Landsberger Str.&nbsp;480-482<br>Mo - Sa 8 - 20 Uhr<br>");
+        var Station9 = L.marker([48.1231473, 11.6715668]).addTo(Verteilerkarte);
+            Station9.bindPopup("Alnatura, Hafelhofweg&nbsp;2<br>Mo - Sa 7 - 20 Uhr<br>");*/
+        var Station10 = L.marker([48.1357103, 11.5655716]).addTo(Verteilerkarte);
+            Station10.bindPopup("Alnatura, Sonnenstraße&nbsp;23<br>Mo - Sa 8 - 20 Uhr<br>");
+        var Station11 = L.marker([48.1275799, 11.5548448]).addTo(Verteilerkarte);
+            Station11.bindPopup("Alnatura, Lindwurmstr.&nbsp;117<br>Mo - Sa 8 - 20 Uhr<br>");
+        /*var Station12 = L.marker([48.0954712, 11.5629950]).addTo(Verteilerkarte);
+            Station12.bindPopup("Denn's&nbsp;Biomarkt, Grünwalder Str.&nbsp;190<br>Mo - Sa 8 - 20 Uhr<br>");
+        var Station13 = L.marker([48.1432375, 11.5563422]).addTo(Verteilerkarte);
+            Station13.bindPopup("Denn's&nbsp;Biomarkt, Seidlstr.&nbsp;5 / Ecke Marsstraße&nbsp;25<br>Mo - Sa 7 - 20 Uhr<br>");
+        var Station14 = L.marker([48.1103009, 11.5951857]).addTo(Verteilerkarte);
+            Station14.bindPopup("Denn's&nbsp;Biomarkt, Giesinger&nbsp;Bahnhofpl.&nbsp;2<br>Mo - Sa 8 - 20 Uhr<br>");
+        var Station15 = L.marker([48.1393935, 11.5654882]).addTo(Verteilerkarte);
+            Station15.bindPopup("Vitalia Reformhaus, Stachus Passagen<br>Mo - Sa 9 - 20 Uhr");
+        var Station16 = L.marker([48.1286230, 11.5537594]).addTo(Verteilerkarte);
+            Station16.bindPopup("ADFC, Platenstr.&nbsp;4<br>Mo - Sa 11 - 13 Uhr");
+        var Station17 = L.marker([48.1455192, 11.4749637]).addTo(Verteilerkarte);
+            Station17.bindPopup("Ärzte der Welt, Landsberger Str.&nbsp;428");*/
+        var Station18 = L.marker([48.1331694, 11.5734035]).addTo(Verteilerkarte);
+            Station18.bindPopup("Der Stadtkopierer, Blumenstr.&nbsp;11<br>Mo - Fr 8 - 18 Uhr, Sa 9 - 18 Uhr");
+        /*var Station19 = L.marker([48.1392389, 11.5547255]).addTo(Verteilerkarte);
+            Station19.bindPopup("Der Stadtkopierer, Bayerstr.&nbsp;20<br>Mo - Fr 8 - 20 Uhr");
+        var Station20 = L.marker([48.1316740, 11.5988057]).addTo(Verteilerkarte);
+            Station20.bindPopup("Holy Burger Haidhausen, Wörthstr.&nbsp;7<br>11:30 - 22:30 Uhr, <b>ausser: Mo-Do 15:30 - 17:30</b>");*/
+        var Station21 = L.marker([48.1560013, 11.5345578]).addTo(Verteilerkarte);
+            Station21.bindPopup("Ver.de, Frundsbergstraße&nbsp;23<br>");
+        /*var Station22 = L.marker([48.1505927, 11.6014930]).addTo(Verteilerkarte);
+            Station22.bindPopup("REWE, Pienzenauer Str.&nbsp;1<br>Mo - Sa 7 - 20 Uhr");
+        var Station23 = L.marker([48.1592608, 11.6434603]).addTo(Verteilerkarte);
+            Station23.bindPopup("dm, Freischützstr.&nbsp;20<br>Mo - Sa 8 - 20 Uhr");*/
+        var Station24 = L.marker([48.1343790, 11.5613233]).addTo(Verteilerkarte);
+            Station24.bindPopup("Bund Naturschutz, Pettenkoferstr.&nbsp;10a, 2.&nbsp;Stock<br>Mo - Fr 9.00 - 12.30 Uhr, Di & Do zusätzlich: 13.30 - 17 Uhr");
+        /*var Station25 = L.marker([48.1700893, 11.5344443]).addTo(Verteilerkarte);
+            Station25.bindPopup("Einhorn Apotheke, Franz-Marc-Str.&nbsp;6<br>Mo - Sa 8:30 - 13 Uhr, Mo - Fr zusätzlich: 14 - 18:30 Uhr");*/
+            var Station26 = L.marker([48.1487866, 11.5391363]).addTo(Verteilerkarte);
+            Station26.bindPopup("Haus der Jugendarbeit, Rupprechtstr.&nbsp;29<br>geöffnet: Mo - Fr immer,  am Wochenende nur teilweise");
+            var Station27 = L.marker([48.1487866, 11.5391363]).addTo(Verteilerkarte);
+            Station26.bindPopup("Umweltinstitut, Goethestr.&nbsp;20<br>geöffnet: Mo - Do 9: - 12:15 Uhr & 13:15 - 17 Uhr; Fr: 9 - 15 Uhr");
+            var Station26 = L.marker([48.13793, 11.55297]).addTo(Verteilerkarte);
+            Station26.bindPopup("Eine-Welt-Haus, Schwanthalerstr&nbsp;80<br>geöffnet: Mo, Di & Do 8:30 - 16 Uhr; Mi & Fr 8:30 - 12:30 Uhr");
+        
+    </script>
+
+</section>
+
 <section id="participate" class="projects">
     <h1> Mach mit! </h1>
     <p>Als globale Bewegung streiken wir seit einem Jahr jeden Freitag für die Veränderungen in der Politik, die nötig
