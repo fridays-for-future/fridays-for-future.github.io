@@ -242,10 +242,11 @@ th {
 }
 
 #header-sticker {
-    position: absolute;
-    top: calc(40% + 5vw);
+    position: relative;
+    width: 220px;
+    bottom: 400px;
     left: 5%;
-    transform: rotate(5deg);
+    transform: rotate(5deg) skewY(5deg);
     background-color: #1b7340;
     color: white;
     border: 2px solid white;
@@ -256,22 +257,22 @@ th {
 }
 #header-sticker>* {
     font-size: 16px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 @media only screen and (min-width: 550px) {
     #header-sticker {
-        left: 5%;
+        width: 400px;
     }
     #header-sticker>* {
         font-size: 30px;
     }
 }
-@media only screen and (max-height: 600px) {
-    #header-sticker {
-        top: calc(15% + 5vw);
-    }
-}
+/*@media only screen and (max-height: 600px) {*/
+/*    #header-sticker {*/
+/*        top: calc(15% + 5vw);*/
+/*    }*/
+/*}*/
 
 .header-lower {
     z-index: 1;
@@ -359,7 +360,7 @@ div.two-col div {
 .border-header {
     position: static;
     z-index: 10;
-    left: 0px;
+    left: 0;
     background-color: #1b7340;
     font-size: 15pt;
     color: #fff;
