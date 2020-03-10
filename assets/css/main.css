@@ -10,27 +10,32 @@
     src: url(../fonts/fff-jost.ttf);
 }
 
+p {
+    margin: 10px 0;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: "fff-header", sans-serif;
+    font-weight: normal;
+    margin: 15pt 0;
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+}
 
 h1 {
-    text-align: center;
-    font-family: "fff-header";
-    font-weight: normal;
     font-size: 35pt;
-    margin-bottom: 5pt;
-    margin-top: 5pt;
 }
 
 h2 {
-    font-family: "fff-header";
-    font-weight: normal;
     font-size: 25pt;
 }
-section>h2 {
-    text-align: center;
+div.two-col h2 {
+    text-align: left;
 }
 
 h4 {
-    font-family: "fff-header";
+    font-family: "fff-header", sans-serif;
     font-weight: normal;
     font-size: 15pt;
 }
@@ -67,7 +72,6 @@ footer>div {
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: absolute;
-    display: inline-block;
     z-index: 120;
     right: 0;
     display: initial;
@@ -87,7 +91,7 @@ footer>div {
     top: 0;
     background-color: #1b7340;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -187,7 +191,6 @@ th {
     color: #fff;
     text-decoration: none;
     font-size: 15px;
-    margin: 10px;
     display: none;
 }
 
@@ -237,7 +240,7 @@ th {
     margin: 0 auto;
     padding-bottom: 0.5em;
     padding-top: 14vh;
-    font-family: "fff-header";
+    font-family: "fff-header", sans-serif;
     transform: skewY(-5deg);
 }
 
@@ -250,7 +253,7 @@ th {
     background-color: #1b7340;
     color: white;
     border: 2px solid white;
-    font-family: fff-header;
+    font-family: fff-header, sans-serif;
     text-align: center;
     padding: 20px;
     z-index: 100;
@@ -283,7 +286,7 @@ th {
     color: #fff;
     position: absolute;
     margin: 0 auto;
-    font-family: "fff-header";
+    font-family: "fff-header", sans-serif;
 }
 
 .next-strike {
@@ -291,7 +294,7 @@ th {
     display: block;
     line-height: 1;
     color: #fff;
-    font-family: fff-header;
+    font-family: fff-header, sans-serif;
 }
 
 @media only screen and (min-width: 550px) {
@@ -323,7 +326,7 @@ div.two-col div {
 
 .demands-box {
     position: relative;
-    margin-bottom: 0em;
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width: 550px) {
@@ -338,7 +341,7 @@ div.two-col div {
     z-index: 10;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    left: 0px;
+    left: 0;
     padding: 1em;
     background-color: #1b7340;
     font-size: 15pt;
@@ -390,7 +393,7 @@ div.two-col div {
 .background {
     position: static;
     z-index: 10;
-    left: 0vw;
+    left: 0;
     width: 100%;
     height: calc(100vh - 96px);
     background-image: url("../img/header.jpg");
@@ -427,7 +430,7 @@ hr {
 }
 
 code, kbd, pre, samp {
-    font-family: fff-header, fff-header;
+    font-family: fff-header, sans-serif;
     font-size: 1em
 }
 
@@ -4806,7 +4809,7 @@ ol, ul {
     padding-left: 40px
 }
 
-figure, ol, p, ul {
+figure, ol, ul {
     margin: 1em 0
 }
 
@@ -4819,14 +4822,12 @@ sub, sup {
 }
 
 #particles-js {
-    background: #1a222c;
     display: flex;
     vertical-align: bottom;
     width: 100%;
     min-height: 100vh;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed
+    background: #1a222c no-repeat fixed;
 }
 
 #particles-js .particles-js-canvas-el {
@@ -4946,7 +4947,7 @@ sub, sup {
 .user-details {
     text-align: center;
     margin: 5px auto;
-    font-family: fff-header
+    font-family: fff-header sans-serif;
 }
 
 .projects {
