@@ -119,6 +119,14 @@ footer>div {
     background-color: #1ca847;
 }
 
+/* emojis for chrome because chrome is stupid and can't do unicode */
+img.emoji {
+    cursor: normal;
+    height: 1em;
+    margin: 0 .1em 0 .1em;
+    padding-top: 0.2em;
+    width: 1em;
+}
 
 /*for removing bold tables*/
 th {
