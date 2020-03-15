@@ -120,53 +120,9 @@ Lasst uns gemeinsam laut sein und Platz einnehmen. Denn was wir gerade sehen ist
 </p>
 
 <p> Hier sind Beispielbilder:</p>
-<div class="slide-content slide-display-container" style="height:40vh; margin-left: auto; margin-right:auto; width:100%; align:center">
-
-    <img class="slider" src="assets/img/slider/Bild0.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild1.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild2.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild3.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild4.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild5.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild6.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild7.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild8.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild9.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild10.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild11.jpg" alt="Bild">
-    <img class="slider" src="assets/img/slider/Bild12.jpg" alt="Bild">
-
-    <button class="slide-button slide-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="slide-button slide-display-right" onclick="plusDivs(+1)">&#10095;</button>
+<div class="w3-content w3-display-container" style="height:100%; margin-left: auto; margin-right:auto; width:100%">
+    <img src="assets/img/collage_2240.jpg" alt="Bild" height="100%" width="100%" align="center">
 </div>
-<script>
-var imageNow = 1;
-var timer
-automatic();
-showDivs(imageNow);
-
-function plusDivs(n) {
-  showDivs(imageNow += n);
-  clearTimeout(timer);
-  timer = setTimeout(automatic, 3000);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slider");
-  if (n > x.length) {imageNow = 1}
-  if (n < 1) {imageNow = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[imageNow-1].style.display = "block";  
-}
-
-function automatic(){
-    showDivs(imageNow += 1);
-    timer = setTimeout(automatic, 3000);
-}
-</script>
 
     <h2> Flyer, Sticker, Plakate </h2>
     <p>Wir haben noch immer große Mengen Infomaterial, das du dir gerne bei den auf der Karte verzeichneten Stellen
