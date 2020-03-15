@@ -147,11 +147,11 @@ th {
 }
 
 .header-icons .icon {
-    height: 20px;
+    height: 44px;
     padding: 10px;
     border: 2px solid #fff;
     transition: all .7s;
-    width: 20px;
+    width: 44px;
     font-size: 20px;
     margin: 0.2em
 }
@@ -163,8 +163,8 @@ th {
 
 @media only screen and (min-width: 550px) {
     .header-icons .icon {
-        width: 35px;
-        height: 35px;
+        width: 60px;
+        height: 60px;
         font-size: 35px
     }
 }
