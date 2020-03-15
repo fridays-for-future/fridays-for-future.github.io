@@ -5075,14 +5075,14 @@ a {
 
 .mySlides {display:none;}
 
+.slide-content {
+    height:50vh;
+}
+
 .slider {
-    height:100%;
-    position: absolute;
-    top: -9999px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
-    margin: auto;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
 }
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
