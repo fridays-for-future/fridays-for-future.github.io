@@ -33,7 +33,7 @@
             <span></span>
         </button>
         <div class="dropdown-content">
-            <a class="link" href="#13.03" data-scroll>Großstreik</a>
+            <!-- <a class="link" href="#13.03" data-scroll>Großstreik</a> -->
             <a class="link" href="#participate" data-scroll>Mach mit!</a>
             <a class="link" href="#demands" data-scroll>Forderungen</a>
             <!--<a class="link" href="#calendar" data-scroll>Klimakalender</a>
@@ -88,25 +88,12 @@
                 </div>-->
     </div>
 </section>
-
-<section id="13.03" class="projects">
-    <h1> Präsenzstreiks von Fridays for Future bis auf weiteres abgesagt! </h1>
-    <p>
-        Angesichts der aktuellen Lage sind die Freitäglichen Klimastreiks leider bis auf weiteres abgesagt. 
-        Wir arbeiten noch daran, alternativen Protestformen zu entwickeln; weitere Infos folgen bald!
-    </p>
     
-    <h1> Großstreik von Fridays for Future am 13.3. wegen Coronavirus abgesagt! </h1>
+<section id="participate" class="projects">
+    <h1> Mach mit! </h1>
 
-<h2> Klimawahlen</h2>
-
-    <p>Diesen Sonntag sind die Klimawahlen in München – und alle Wahlberechtigten sind aufgerufen, sich daran zu
-        beteiligen und mitzuentscheiden, wie unsere Zukunft aussehen soll. Anders als Großdemonstrationen mit mehreren
-        Tausend Teilnehmer*innen, sind Wahlgänge keine Massenveranstaltungen und deswegen nicht mit einem so erhöhten
-        Risiko verbunden. Das Wahlamt München hat dazu gestern eine eigene Meldung herausgegeben. Bleibt auf dem
-        Laufenden, denn wir sind noch lange nicht fertig!</p>
-    <p>In Solidarität und mit Hoffnung<br/>euer Fridays for Future Team München <br/>What do we want?-climate justice
-    </p>
+<p>Aufgrund der Corona-Pandemie werden vorerst keine weiteren Streiks stattfinden. Wir machen uns aktuell Gedanken über unser weiteres Vorgehen diesbezüglich. Sobald wir Neuigkeiten haben, was unsere Bewegung anbelangt, erfährst du diese hier, auf unseren Social Media Kanälen und in den Messenger Gruppen. <br>
+Danke für dein Verständnis!</p>
 
 <h2> Netzstreik fürs Klima</h2>
 
@@ -174,84 +161,8 @@ function automatic(){
 }
 </script>
 
-    <h2> Flyer, Sticker, Plakate </h2>
-    <p>Wir haben noch immer große Mengen Infomaterial, das du dir gerne bei den auf der Karte verzeichneten Stellen
-        abholen kannst:</p>
 
-    <div style="text-align: center">
-        <div id="Verteiler" style="height:40vh; margin-left: auto; margin-right:auto; width:80%"></div>
-    </div>
-    <script>
-        var Verteilerkarte = L.map('Verteiler').setView([48.135, 11.57], 12);
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 18,
-            id: 'mapbox.streets',
-            accessToken: 'your.mapbox.access.token'
-        }).addTo(Verteilerkarte);
-        Verteilerkarte.scrollWheelZoom.disable();
-        var Station2 = L.marker([48.1283751, 11.5978309]).addTo(Verteilerkarte);
-        Station2.bindPopup("Alnatura, Weißenburgerstr.&nbsp;20<br>Mo - Sa 8 - 20 Uhr");
-        /*var Station3 = L.marker([48.1597318, 11.5859280]).addTo(Verteilerkarte);
-            Station3.bindPopup("Alnatura, Leopoldstr.&nbsp;64<br>Mo - Sa 8 - 20 Uhr<br>");
-        var Station4 = L.marker([48.1458458, 11.5195283]).addTo(Verteilerkarte);
-            Station4.bindPopup("Alnatura, Friedenheimer Brücke&nbsp;23<br>Mo - Sa 8 - 20 Uhr<br>");
-        var Station5 = L.marker([48.1000673, 11.5279942]).addTo(Verteilerkarte);
-            Station5.bindPopup("Alnatura, Boschetsriederstr.&nbsp;72<br>Mo - Sa 8 - 20 Uhr<br>");*/
-        var Station6 = L.marker([48.1064233, 11.6447650]).addTo(Verteilerkarte);
-        Station6.bindPopup("Alnatura, Albert-Schweitzer-Str.&nbsp;78<br>Mo - Sa 8 - 20 Uhr<br>");
-        /*var Station7 = L.marker([48.0940311, 11.5081933]).addTo(Verteilerkarte);
-            Station7.bindPopup("Alnatura, Kistlerhofstraße&nbsp;243a<br>Mo - Sa 8 - 20 Uhr<br>");*/
-        var Station8 = L.marker([48.14662, 11.46378]).addTo(Verteilerkarte);
-        Station8.bindPopup("Alnatura, Landsberger Str.&nbsp;480-482<br>Mo - Sa 8 - 20 Uhr<br>");
-        /*var Station9 = L.marker([48.1231473, 11.6715668]).addTo(Verteilerkarte);
-            Station9.bindPopup("Alnatura, Hafelhofweg&nbsp;2<br>Mo - Sa 7 - 20 Uhr<br>");
-        var Station10 = L.marker([48.1357103, 11.5655716]).addTo(Verteilerkarte);
-        Station10.bindPopup("Alnatura, Sonnenstraße&nbsp;23<br>Mo - Sa 8 - 20 Uhr<br>");*/
-        var Station11 = L.marker([48.1275799, 11.5548448]).addTo(Verteilerkarte);
-        Station11.bindPopup("Alnatura, Lindwurmstr.&nbsp;117<br>Mo - Sa 8 - 20 Uhr<br>");
-        /*var Station12 = L.marker([48.0954712, 11.5629950]).addTo(Verteilerkarte);
-            Station12.bindPopup("Denn's&nbsp;Biomarkt, Grünwalder Str.&nbsp;190<br>Mo - Sa 8 - 20 Uhr<br>");*/
-        var Station13 = L.marker([48.1432375, 11.5563422]).addTo(Verteilerkarte);
-        Station13.bindPopup("Denn's&nbsp;Biomarkt, Seidlstr.&nbsp;5 / Ecke Marsstraße&nbsp;25<br>Mo - Sa 7 - 20 Uhr<br>");/*
-        var Station14 = L.marker([48.1103009, 11.5951857]).addTo(Verteilerkarte);
-            Station14.bindPopup("Denn's&nbsp;Biomarkt, Giesinger&nbsp;Bahnhofpl.&nbsp;2<br>Mo - Sa 8 - 20 Uhr<br>");
-        var Station15 = L.marker([48.1393935, 11.5654882]).addTo(Verteilerkarte);
-            Station15.bindPopup("Vitalia Reformhaus, Stachus Passagen<br>Mo - Sa 9 - 20 Uhr");
-        var Station16 = L.marker([48.1286230, 11.5537594]).addTo(Verteilerkarte);
-            Station16.bindPopup("ADFC, Platenstr.&nbsp;4<br>Mo - Sa 11 - 13 Uhr");
-        var Station17 = L.marker([48.1455192, 11.4749637]).addTo(Verteilerkarte);
-            Station17.bindPopup("Ärzte der Welt, Landsberger Str.&nbsp;428");*/
-        var Station18 = L.marker([48.1331694, 11.5734035]).addTo(Verteilerkarte);
-        Station18.bindPopup("Der Stadtkopierer, Blumenstr.&nbsp;11<br>Mo - Fr 8 - 18 Uhr, Sa 9 - 18 Uhr");
-        var Station19 = L.marker([48.1392389, 11.5547255]).addTo(Verteilerkarte);
-        Station19.bindPopup("Der Stadtkopierer, Bayerstr.&nbsp;20<br>Mo - Fr 8 - 20 Uhr");
-        /*var Station20 = L.marker([48.1316740, 11.5988057]).addTo(Verteilerkarte);
-            Station20.bindPopup("Holy Burger Haidhausen, Wörthstr.&nbsp;7<br>11:30 - 22:30 Uhr, <b>ausser: Mo-Do 15:30 - 17:30</b>");*/
-        var Station21 = L.marker([48.1560013, 11.5345578]).addTo(Verteilerkarte);
-        Station21.bindPopup("Ver.de, Frundsbergstraße&nbsp;23<br>Mo - Mi 10 - 15 Uhr");
-        /*var Station22 = L.marker([48.1505927, 11.6014930]).addTo(Verteilerkarte);
-            Station22.bindPopup("REWE, Pienzenauer Str.&nbsp;1<br>Mo - Sa 7 - 20 Uhr");
-        var Station23 = L.marker([48.1592608, 11.6434603]).addTo(Verteilerkarte);
-            Station23.bindPopup("dm, Freischützstr.&nbsp;20<br>Mo - Sa 8 - 20 Uhr");*/
-        var Station24 = L.marker([48.1343790, 11.5613233]).addTo(Verteilerkarte);
-        Station24.bindPopup("Bund Naturschutz, Pettenkoferstr.&nbsp;10a, 2.&nbsp;Stock<br>Mo - Fr 9.00 - 12.30 Uhr, Di & Do zusätzlich: 13.30 - 17 Uhr");
-        /*var Station25 = L.marker([48.1700893, 11.5344443]).addTo(Verteilerkarte);
-            Station25.bindPopup("Einhorn Apotheke, Franz-Marc-Str.&nbsp;6<br>Mo - Sa 8:30 - 13 Uhr, Mo - Fr zusätzlich: 14 - 18:30 Uhr");*/
-        var Station26 = L.marker([48.1487866, 11.5391363]).addTo(Verteilerkarte);
-        Station26.bindPopup("Haus der Jugendarbeit, Rupprechtstr.&nbsp;29<br>geöffnet: Mo - Fr immer,  am Wochenende nur teilweise");
-        var Station27 = L.marker([48.1367106, 11.5584401]).addTo(Verteilerkarte);
-        Station27.bindPopup("Umweltinstitut, Goethestr.&nbsp;20<br>geöffnet: Mo - Do 9: - 12:15 Uhr & 13:15 - 17 Uhr; Fr: 9 - 15 Uhr");
-        var Station28 = L.marker([48.13793, 11.55297]).addTo(Verteilerkarte);
-        Station28.bindPopup("Eine-Welt-Haus, Schwanthalerstr&nbsp;80<br>geöffnet: Mo, Di & Do 8:30 - 16 Uhr; Mi & Fr 8:30 - 12:30 Uhr");
-
-    </script>
-
-</section>
-
-<section id="participate" class="projects">
-    <h1> Mach mit! </h1>
-    <p>Als globale Bewegung streiken wir seit einem Jahr <strong>jeden Freitag</strong> für die Veränderungen in der
+    <!--<p>Als globale Bewegung streiken wir seit einem Jahr <strong>jeden Freitag</strong> für die Veränderungen in der
         Politik, die nötig sind, um das Pariser Klimaabkommen einzuhalten und die Erderwärmung auf 1,5&nbsp;°C zu
         beschränken.</p>
     <p>In München findet der nächste Streik am <b>Freitag, den 20.&nbsp;März</b> statt; wir treffen uns voraussichtlich <b>um
@@ -272,7 +183,7 @@ function automatic(){
         mymap.scrollWheelZoom.disable();
         var marker = L.marker([48.141973, 11.577438]).addTo(mymap);
         marker.bindPopup("<b>Odeonsplatz</b><br>Freitag, 20. März, 12 Uhr<br>");
-    </script>
+    </script>-->
 
     <h2>Gerade nicht in München?</h2>
     <p>
