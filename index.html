@@ -18,7 +18,10 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
             integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
             crossorigin=""></script>
-            
+    
+    
+    <!-- Livestream stuff -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <!-- Emoji script for chrome -->
     <script src="assets/twemoji.min.js"></script>
 </head>
@@ -92,11 +95,38 @@
 <section id="participate" class="projects">
     <h1> #StreamStreik </h1>
 
-<p>Aufgrund der aktuellen Corona-Pandemie werden vorerst keine weiteren Präsenztreiks stattfinden. Stattdessen gibt es jetzt jeden Freitag um 17 Uhr einen Livestream mit uns und Gäst*innen — und da diese jetzt nicht mehr bei uns in München sein müssen um bei uns zu reden könnt ihr euch auf viele interessante Perspektiven von überall auf der Welt freuen! Zurzeit benutzen wir dazu YouTube, und arbeiten daran den Stream auch gleichzeitig auf anderen Plattformen zu streamen. Auf <a href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng">unserem YouTube-Kanal</a> könnt ihr euch den #StreamStreik natürlich auch nachher noch ansehen:</p>
 
+	    <div class="player" style="text-align:center">
+			<video id="main" style="width:100%"></video>
+		</div>
+
+
+		<script>
+			var video = document.getElementById('main');
+			if(Hls.isSupported()) {
+				var hls = new Hls();
+				hls.loadSource('https://live.infra4future.de/fffmuc/hls/testing.m3u8');
+				hls.attachMedia(video);
+				hls.on(Hls.Events.MANIFEST_PARSED,function() {
+					video.play();
+					video.controls = true;
+				});
+			}
+			else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+				video.src = 'https://live.infra4future.de/fffmuc/hls/testing.m3u8';
+				video.addEventListener('loadedmetadata',function() {
+					video.play();
+				});
+			}
+		</script>
+
+<p>Aufgrund der aktuellen Corona-Pandemie werden vorerst keine weiteren Präsenztreiks stattfinden. Stattdessen gibt es jetzt jeden Freitag um 17 Uhr einen Livestream mit uns und Gäst*innen — und da diese jetzt nicht mehr bei uns in München sein müssen um bei uns zu reden könnt ihr euch auf viele interessante Perspektiven von überall auf der Welt freuen! Zurzeit benutzen wir dazu YouTube, und arbeiten daran den Stream auch gleichzeitig auf anderen Plattformen zu streamen. Hier und auf <a href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng">unserem YouTube-Kanal</a> könnt ihr euch den #StreamStreik natürlich auch nachher noch ansehen.</p>
+
+<!--
 <div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9wcnfaWQejI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+-->
 
 <h2>Gerade nicht in München?</h2>
 <p>
