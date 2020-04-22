@@ -18,12 +18,29 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
             integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
             crossorigin=""></script>
-    
-    
+
+
     <!-- Livestream stuff -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <!-- Emoji script for chrome -->
     <script src="assets/twemoji.min.js"></script>
+    <script defer>
+        var video = document.getElementById('main');
+        if (Hls.isSupported()) {
+            var hls = new Hls();
+            hls.loadSource('https://live.infra4future.de/fffmuc/hls/123.m3u8');
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                video.play();
+                video.controls = true;
+            });
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = 'https://live.infra4future.de/fffmuc/hls/123.m3u8';
+            video.addEventListener('loadedmetadata', function () {
+                video.play();
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -66,9 +83,9 @@
     </div>
 
     <div class="border-top">
-        <div class="next-strike">Nächster #streamstreik am 17. April um 17 Uhr!</div>
+        <div class="next-strike">Globaler Klimastreik am 24.4. geht online!</div>
 
-        <a class="down" href="#participate" data-scroll> 
+        <a class="down" href="#participate" data-scroll>
             <i class="icon fa fa-chevron-down" aria-hidden="true" style="height: 40px"></i>
         </a>
         <div class="header-icons" style="margin-top:3em">
@@ -91,58 +108,71 @@
                 </div>-->
     </div>
 </section>
-    
+
 <section id="participate" class="projects">
-    <h1> #StreamStreik </h1>
 
+    <p>
+        Die Klimakrise ist nicht weniger akut als vor der Pandemie. Der nächste globale Klimastreik von Fridays For
+        Future findet statt &ndash; diesmal leider nicht als Großdemonstrationen auf der Straße, sondern im Netz.
+    </p>
+    <p>
+        Angemessenes Krisenmanagement anhand von wissenschaftlichen Erkenntnissen ist bei jeder Krise wichtig – bei
+        Corona und beim Klima. Deshalb fordert Fridays For Future <strong>#FightEveryCrisis</strong>!
+    </p>
+    <p>Folgende Aktionen sind für den <strong>#NetzstreikfürsKlima</strong> am 24. April geplant:</p>
+    <ol>
+        <li>Ein bundesweiter Livestream</li>
+        <li>Eine Kunstaktion aus Demoschildern in Berlin, für die auch Fridays For Future München Schilder sammelt.</li>
+        <li>
+            Eine <a href="https://fridaysforfuture.de/netzstreikfursklima/">Streikkarte</a>. Hier kannst du dich als
+            Demoteilnehmer*in online in eine Karte eintragen, um deine Präsenz zu zeigen
+            .
+        </li>
+        <li>
+            Ein <a href="https://fridaysforfuture.de/netzstreikfursklima/profilbildgenerator/">Profilbildgenerator</a>.
+            Hier kannst du dein Profilbild mit unserem Profilbildgenerator verändern und dadurch mehr Klimaschutz
+            fordern
+        </li>
+    </ol>
+    <p>Dannach gilt: Fridays For Future München bleibt trotz Covid-19 präsent. Jeden Freitag gibt es einen Streamstreik
+        von Fridays For Future München. Denn die Klimakrise macht keine Pause.</p>
+    <p>Deshalb lasst uns gemeinsam weiter aktiv bleiben!</p>
+    <p><strong>What do we want? – Climate justice!</strong></p>
+    <p>P.S.: Seit heute gibt es die offizielle FridaysforFuture App. Also App runterladen und durchstarten</p>
 
-	    <div class="player" style="text-align:center">
-			<video id="main" style="width:100%"></video>
-		</div>
+<!--    <div class="player" style="text-align:center">-->
+<!--        <video id="main" style="width:100%"></video>-->
+<!--    </div>-->
 
+    <!--
+    <div style="text-align:center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NL1ICUSENcU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    -->
 
-		<script>
-			var video = document.getElementById('main');
-			if(Hls.isSupported()) {
-				var hls = new Hls();
-				hls.loadSource('https://live.infra4future.de/fffmuc/hls/123.m3u8');
-				hls.attachMedia(video);
-				hls.on(Hls.Events.MANIFEST_PARSED,function() {
-					video.play();
-					video.controls = true;
-				});
-			}
-			else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-				video.src = 'https://live.infra4future.de/fffmuc/hls/123.m3u8';
-				video.addEventListener('loadedmetadata',function() {
-					video.play();
-				});
-			}
-		</script>
-<!--
-<div style="text-align:center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NL1ICUSENcU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
--->
+<!--    <p>Aufgrund der aktuellen Corona-Pandemie werden vorerst keine weiteren Präsenztreiks stattfinden. Stattdessen gibt-->
+<!--        es jetzt jeden Freitag um 17 Uhr einen Livestream mit uns und Gäst*innen — und da diese jetzt nicht mehr bei uns-->
+<!--        in München sein müssen um bei uns zu reden könnt ihr euch auf viele interessante Perspektiven von überall auf-->
+<!--        der Welt freuen! Zurzeit benutzen wir dazu YouTube, und arbeiten daran den Stream auch gleichzeitig auf anderen-->
+<!--        Plattformen zu streamen. Hier und auf <a href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng">unserem-->
+<!--            YouTube-Kanal</a> könnt ihr euch den #StreamStreik natürlich auch nachher noch ansehen.</p>-->
 
-<p>Aufgrund der aktuellen Corona-Pandemie werden vorerst keine weiteren Präsenztreiks stattfinden. Stattdessen gibt es jetzt jeden Freitag um 17 Uhr einen Livestream mit uns und Gäst*innen — und da diese jetzt nicht mehr bei uns in München sein müssen um bei uns zu reden könnt ihr euch auf viele interessante Perspektiven von überall auf der Welt freuen! Zurzeit benutzen wir dazu YouTube, und arbeiten daran den Stream auch gleichzeitig auf anderen Plattformen zu streamen. Hier und auf <a href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng">unserem YouTube-Kanal</a> könnt ihr euch den #StreamStreik natürlich auch nachher noch ansehen.</p>
+    <!--
+    <div style="text-align:center">
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9wcnfaWQejI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    -->
 
-<!--
-<div style="text-align:center">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9wcnfaWQejI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
--->
-
-<h2>Gerade nicht in München?</h2>
-<p>
-    Kein Problem! Wir sind eine globale Bewegung, in vielen anderen Städten in Deutschland und weltweit gibt es
-    ebenfalls Fridays for Future-Ortsgruppen. Wenn du also gerade nicht daheim bist, schau einfach hier nach wo
-    überall auch gestreikt wird:
-</p>
-<div style="text-align:center">
-    <a class="project-link" href="https://www.fridaysforfuture.de" style="margin-right:1em">In Deutschland</a>
-    <a class="project-link" href="https://www.fridaysforfuture.org">Weltweite Karte</a>
-</div>
+<!--    <h2>Gerade nicht in München?</h2>-->
+<!--    <p>-->
+<!--        Kein Problem! Wir sind eine globale Bewegung, in vielen anderen Städten in Deutschland und weltweit gibt es-->
+<!--        ebenfalls Fridays for Future-Ortsgruppen. Wenn du also gerade nicht daheim bist, schau einfach hier nach wo-->
+<!--        überall auch gestreikt wird:-->
+<!--    </p>-->
+    <div style="text-align:center">
+        <a class="project-link" href="https://www.fridaysforfuture.de" style="margin-right:1em">In Deutschland</a>
+        <a class="project-link" href="https://www.fridaysforfuture.org">Weltweite Karte</a>
+    </div>
 
 </section>
 
@@ -364,7 +394,7 @@
     var isfirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
     if (!isfirefox) {
         var ul = document.getElementById('13.03');
-        twemoji.parse(ul, {"size":72});
+        twemoji.parse(ul, {"size": 72});
     }
 </script>
 
