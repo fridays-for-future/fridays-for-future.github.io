@@ -421,7 +421,7 @@ div.two-col div {
     left: 0;
     width: 100%;
     height: calc(100vh - 96px);
-    background-image: url("../img/header.jpg");
+    background-image: url("../img/header-statue.jpg");
     background-size: cover;
     background-position: center;
 }
