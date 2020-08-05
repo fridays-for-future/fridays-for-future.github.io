@@ -125,31 +125,50 @@
     </div>
     
     
-    <h2> Klimacamp in München! </h2>
+    <h1> Klimacamp in München! </h1>
+    
+    <p><em>
+    „Wie soll irgendwer Siemens jetzt noch Zugeständnisse abkaufen, wenn sie ihre Versprechen
+    nach den Protesten gegen das Adani-Projekt einfach brechen und weitermachen wie bisher?“</em><br>
+    <div align="right">–Eva Metz, Aktivistin von Fridays for Future München</div>
+    </p>
     <img src="./assets/img/sharepic_camp.jpg" alt="Sharepic Klimacamp" style="width: 80%; margin: auto">
     <p>
-    Angesichts des Börsengangs von Siemens Energy veranstalten wir nach Augsburger Vorbild
-    ein Klimacamp vor der Siemens Hauptzentrale! <br>
-    Siemens Energy will nach dem Adaniprojekt noch einmal die Infrastruktur für ein Kohleprojekt liefern,
-    dieses Mal in Indonesien. Das lassen wir ihnen nicht durchgehen! Konzerne sollten nicht
-    weiter auf Kosten von Mensch und Natur wirtschaften!<br>
+    Angesichts des Börsengangs von Siemens Energy veranstalten wir nach <a href="https://www.facebook.com/events/589956518384464/">Augsburger Vorbild</a>
+    ein Klimacamp vor der Siemens Hauptzentrale!
+    </p><p>
+    Siemens Energy will nach dem Adaniprojekt noch einmal die Infrastruktur für neue Kohlekraftwerke liefern,
+    <a href="https://taz.de/Neue-Kohlekraftwerksbloecke-in-Indonesien/!5699183">dieses Mal</a>
+    <a href="https://background.tagesspiegel.de/energie-klima/siemens-technik-fuer-kohlekraftwerk-in-indonesien">in Indonesien</a>.
+    Das lassen wir ihnen nicht durchgehen! Konzerne sollten nicht
+    weiter auf Kosten von Mensch und Natur wirtschaften!
     Fridays for Future München fordert, dass nicht nur Unternehmen wie Siemens ihre
     selbstgesetzten Klimaziele einhalten, sondern auch, dass alle Staaten dies tun. Es müssen
     Rahmenbedingungen geschaffen werden, die die Einhaltung der Pariser 1,5 Grad Grenze
-    garantieren. <br>    
+    garantieren.
+    </p><p>  
     Beteiligt euch doch gerne am Klimacamp und kommt vorbei, wir sind in der Werner von
-    Siemens Straße und werden wahrscheinlich noch länger hier bleiben ...
+    Siemens Straße und werden wahrscheinlich auch noch länger hier bleiben ...
     </p>
-    <p>
-    „Wie soll irgendwer Siemens jetzt noch Zugeständnisse abkaufen, wenn sie ihre Versprechen
-    nach den Protesten gegen das Adani-Projekt einfach brechen und weitermachen wie bisher?“ -
-    Eva Metz, Aktivistin von Fridays for Future München
-    </p>
-    <p>
-    Hier gibt es noch weitere Informationen zum Kohlekraftwerk in Indonesien:
-    <a href="https://taz.de/Neue-Kohlekraftwerksbloecke-in-Indonesien/!5699183/">Taz&#8209;Artikel</a>, 
-    <a href="https://background.tagesspiegel.de/energie-klima/siemens-technik-fuer-kohlekraftwerk-in-indonesien">Artikel&nbsp;Tagesspiegel</a>
-    </p>
+    
+    
+    <div align="justify">
+      <div id="MapID" style="height:60vh; margin-left: auto; margin-right:auto; width:80%"></div>
+    </div>
+
+    <script>
+      var mymap = L.map('MapID').setView([48.14435,11.57438], 16);
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+    }).addTo(mymap);
+      mymap.scrollWheelZoom.disable();
+      var marker = L.marker([48.14435,11.57438]).addTo(mymap);
+      marker.bindPopup("<b>Klimacamp</b><br>vor der Siemens-Zentrale");
+    </script>
+    
     
     <h2>Gerade nicht in München?</h2>
     <p>
