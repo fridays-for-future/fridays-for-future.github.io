@@ -84,7 +84,6 @@
 @media only screen and (max-width:1000px) {
     .title {
         display: block;
-        margin-left: 400px;
         padding-top: 0em;
         padding-bottom: 1em;
     }
