@@ -96,5 +96,24 @@
     }
 }
 
+.etherpad {
+    position:relative;
+    top: -3em;
+}
+.etherpad-container{
+    overflow:hidden;
+}
+@media only screen and (max-width:1000px) {
+    .etherpad {
+        top:3em;
+        bottom:-3em;
+    }
+    .etherpad-container{
+        position:relative;
+        top:-3em;
+    }
+}
+
+
 
 
