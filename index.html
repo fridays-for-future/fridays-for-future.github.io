@@ -20,27 +20,8 @@
             crossorigin=""></script>
 
 
-    <!-- Livestream stuff -->
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <!-- Emoji script for chrome -->
     <script src="assets/twemoji.min.js"></script>
-    <script defer>
-        var video = document.getElementById('main');
-        if (Hls.isSupported()) {
-            var hls = new Hls();
-            hls.loadSource('https://live.infra4future.de/fffmuc/hls/123.m3u8');
-            hls.attachMedia(video);
-            hls.on(Hls.Events.MANIFEST_PARSED, function () {
-                video.play();
-                video.controls = true;
-            });
-        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = 'https://live.infra4future.de/fffmuc/hls/123.m3u8';
-            video.addEventListener('loadedmetadata', function () {
-                video.play();
-            });
-        }
-    </script>
 </head>
 
 <body>
@@ -120,6 +101,24 @@
     <h1> Freitag ist und bleibt Streiktag! </h1>
     <p> Diesen Freitag, am 28.08., findet unser Streik <strong> um 12 Uhr an unserem Klimacamp</strong> in der Werner-von-Siemens Straße statt. Bitte vergiss deinen Mund-Nasen-Schutz nicht. Im Anschluss an den Streik werden wir das Klimacamp abbrechen; Mithilfe ist gerne willkommen!
     </p>
+    
+    
+    <div align="justify">
+      <div id="MapID" style="height:60vh; margin-left: auto; margin-right:auto; width:80%"></div>
+    </div>
+
+    <script>
+      var mymap = L.map('MapID').setView([48.14435,11.57438], 16);
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+    }).addTo(mymap);
+      mymap.scrollWheelZoom.disable();
+      var marker = L.marker([48.14435,11.57438]).addTo(mymap);
+      marker.bindPopup("<b>Klimacamp</b><br>vor der Siemens-Zentrale");
+    </script>
     
     
     <h2>Gerade nicht in München?</h2>
