@@ -34,8 +34,8 @@
             <span></span>
         </button>
         <div class="dropdown-content">
-            <a class="link" href="#participate" data-scroll>Mach mit!</a>
             <a class="link" href="#global_strike" data-scroll>Internationaler Klimastreik</a>
+            <a class="link" href="#participate" data-scroll>Mach mit!</a>
             <a class="link" href="#demands" data-scroll>Forderungen</a>
             <!--<a class="link" href="#calendar" data-scroll>Klimakalender</a>
             <a class="link" href="#faq" data-scroll>FAQ</a>-->
@@ -50,8 +50,8 @@
         <div class="header">
             <span class="site-title">Fridays for Future München</span>
             <div class="header-links">
-                <a class="link" href="#participate" data-scroll>Mach mit!</a>
                 <a class="link" href="#global_strike" data-scroll>Internationaler Klimastreik</a>
+                <a class="link" href="#participate" data-scroll>Mach mit!</a>
                 <a class="link" href="#demands" data-scroll>Forderungen</a>
                 <!--<a class="link" href="#calendar" data-scroll>Klimakalender</a>
                 <a class="link" href="#faq" data-scroll>FAQ</a>-->
@@ -93,8 +93,82 @@
     </div>
 </section>
 
+
+<section id="global_strike" class="projects">
+	<h1> Internationaler Klimastreik am 25.09.</h1>
+	<p>Vor einem Jahr demonstrierten 60.000 Menschen in München für sofortige, tiefgreifende
+    Klimapolitik. Die Politik rast jedoch weiterhin ungebremst auf die Klimakatastophe zu
+    und gefährdet damit das Leben aller auf dieser Erde. Daher muss unser Kampf für das Klima
+    trotz Corona weitergehen! Deshalb rufen wir
+	<strong>am 25.09.2020</strong> wieder zum internationalen Klimastreik auf. Kommt
+	<strong>um 14 Uhr auf die Theresienwiese!</strong></p>
+	<p>
+	Die Corona- und die Klimakrise sind nicht gegeneinander auszuspielen. Für die
+    Demonstration wird derzeit ein Gesundheitskonzept ausgearbeitet, um die Infektionsgefahr so
+    gering wie möglich zu halten.</p>
+	
+	<div style="text-align:center">
+	    <a class="project-link" href="/assets/hygienekonzept.pdf" style="margin:1em">Hygienekonzept</a>
+        <a class="project-link" href="https://fridaysforfuture.de/save-the-date/" style="margin:1em">deutschlandweite Streikorte</a>
+        <a class="project-link" href="/assets/pm-25-08.pdf" style="margin:1em">Pressemitteilung</a>
+        
+    </div>
+    <h2> Mobilisierung </h2>
+    <p>Du willst uns dabei helfen, den Streik noch bekannter zu machen? Dann komm am besten in
+    unsere <a href="https://chat.whatsapp.com/FfxWC6ZGKGfBj6jsaw1WQD">Whatsapp Infogruppe</a>
+    oder in unsere <a href="https://t.me/joinchat/A_7BARS4YsLPTryq_KlJ9Q">Telegram
+    Austauschgruppe</a>. Dort planen wir gemeinsame Aktionen oder geben dir Tipps, was du
+    tun kannst.</p>
     
-    <!--
+    <p>In der Karte unten sind unsere Verteilstationen eingezeichnet. Dort kannst du dir
+    Plakate und Sticker abholen.</p>
+    
+    <div align="justify">
+      <div id="MapID" style="height:60vh; margin-left: auto; margin-right:auto; width:80%"></div>
+    </div>
+
+    <script>
+      var mobimap = L.map('MapID').setView([48.1394857, 11.5656220], 11);
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+    }).addTo(mobimap);
+      mobimap.scrollWheelZoom.disable();
+      var marker1 = L.marker([48.1283751, 11.5978309]).addTo(mobimap);
+      marker1.bindPopup("Alnatura, Weißenburger Str. 20<br>Mo&nbsp;-&nbsp;Sa, 8&nbsp;-&nbsp;20 Uhr");
+      //var marker2 = L.marker([48.1597318, 11.5859280]).addTo(mobimap);
+      //marker2.bindPopup("Alnatura, Leopoldstraße 64<br>Mo&nbsp;-&nbsp;Sa, 8&nbsp;-&nbsp;20 Uhr");
+      var marker3 = L.marker([48.1458458, 11.5195283]).addTo(mobimap);
+      marker3.bindPopup("Alnatura, Friedenheimer Brücke 23<br>Mo&nbsp;-&nbsp;Sa, 8&nbsp;-&nbsp;20 Uhr");
+      var marker4 = L.marker([48.1064233, 11.6447650]).addTo(mobimap);
+      marker4.bindPopup("Alnatura, Albert-Schweitzer-Straße 78<br>Mo&nbsp;-&nbsp;Sa, 8&nbsp;-&nbsp;20 Uhr");
+      var marker5 = L.marker([48.1700893, 11.5344443]).addTo(mobimap);
+      marker5.bindPopup("Einhornapotheke, Franz-Marc-Straße 6,<br>Mo&nbsp;-&nbsp;Sa, 8:30&nbsp;-&nbsp;13 Uhr, Mo&nbsp;-&nbsp;Fr zusätzlich: 14&nbsp;-&nbsp;18:30 Uhr");
+      var marker6 = L.marker([48.14662, 11.46378]).addTo(mobimap);
+      marker6.bindPopup("Alnatura, Landsberger Str. 480-48bg 2<br>Mo&nbsp;-&nbsp;Sa, 8&nbsp;-&nbsp;20 Uhr");
+      //var marker7 = L.marker([48.1393935, 11.5654882]).addTo(mobimap);
+      //marker7.bindPopup("Vitalia Reformhaus, Stachus Passagen. 20<br>Mo&nbsp;-&nbsp;Sa, 9&nbsp;-&nbsp;20 Uhr");
+      
+    </script>
+    <p>Du kannst auch ganz einfach bei der Mobilisierung teilnehmen, indem du unseren
+    <a href="https://fridaysforfuture.de/keingradweiter/profilbildgenerator/">Profilbildgenerator</a>
+    für deine Social Media Profilbilder verwndest.</p>
+    
+    <h2> Hilfe am Streik </h2>
+    <p> Du willst uns beim Auf-/Abbau helfen oder zu Beispiel als Ordner*in zur Durchführung
+    des Streiks beitragen? Dann trag dich bitte in unser <a href="https://survey.infra4future.de/index.php/783966">Formular für Helfer*innen</a> ein.</p>
+
+
+</section>
+
+<div class="border">
+    <div class="quotation">„Hope dies, and action begins.“ <br> — Greta Thunberg</div>
+</div>   
+
+
+<!--
 <section id="participate" class="projects">
     
     
@@ -141,80 +215,11 @@
 
 </section>
 
-<div class="border">
-    <div class="quotation">„Hope dies, and action begins.“ <br> — Greta Thunberg</div>
-</div>-->
-
-<section id="global_strike" class="projects">
-	<h1> Internationaler Klimastreik am 25.09.</h1>
-	<p>Vor einem Jahr demonstrierten 60.000 Menschen in München für sofortige, tiefgreifende
-    Klimapolitik. Die Politik rast jedoch weiterhin ungebremst auf die Klimakatastophe zu
-    und gefährdet damit das Leben aller auf dieser Erde. Daher muss unser Kampf für das Klima
-    trotz Corona weitergehen! Deshalb rufen wir
-	<strong>am 25.09.2020</strong> wieder zum internationalen Klimastreik auf. Kommt
-	<strong>um 14 Uhr auf die Theresienwiese!</strong></p>
-	<p>
-	Die Corona- und die Klimakrise sind nicht gegeneinander auszuspielen. Für die
-    Demonstration wird derzeit ein Gesundheitskonzept ausgearbeitet, um die Infektionsgefahr so
-    gering wie möglich zu halten.</p>
-	
-	<div style="text-align:center">
-	    <a class="project-link" href="https://fridaysforfuture.de/keingradweiter/profilbildgenerator/?pk_campaign=pbg-wid" style="margin:1em">Profilbildgenerator</a>
-        <a class="project-link" href="https://fridaysforfuture.de/save-the-date/" style="margin:1em">deutschlandweite Streikorte</a>
-        <a class="project-link" href="/assets/pm-25-08.pdf" style="margin:1em">Pressemitteilung</a>
-        
-    </div>
-    <h2> Mobilisierung </h2>
-    <p>Du willst uns dabei helfen, den Streik noch bekannter zu machen? Dann komm am besten in
-    unsere <a href="https://chat.whatsapp.com/FfxWC6ZGKGfBj6jsaw1WQD">Whatsapp Infogruppe</a>
-    oder in unsere <a href="https://t.me/joinchat/A_7BARS4YsLPTryq_KlJ9Q">Telegram
-    Austauschgruppe</a>. Dort planen wir gemeinsame Aktionen oder geben dir Tipps, was du
-    tun kannst.</p>
-    
-    <p>In der Karte unten sind unsere Verteilstationen eingezeichnet. Dort kannst du dir
-    Plakate und Sticker abholen.</p>
-    
-    <div align="justify">
-      <div id="MapID" style="height:60vh; margin-left: auto; margin-right:auto; width:80%"></div>
-    </div>
-
-    <script>
-      var mobimap = L.map('MapID').setView([48.1394857, 11.5656220], 11);
-      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'your.mapbox.access.token'
-    }).addTo(mobimap);
-      mobimap.scrollWheelZoom.disable();
-      var marker1 = L.marker([48.1283751, 11.5978309]).addTo(mobimap);
-      marker1.bindPopup("Alnatura, Weißenburger Str. 20<br>Mo&nbsp;-&nbsp;Sa, 8&nbsp;-&nbsp;20 Uhr");
-      //var marker2 = L.marker([48.1597318, 11.5859280]).addTo(mobimap);
-      //marker2.bindPopup("Alnatura, Leopoldstraße 64<br>Mo&nbsp;-&nbsp;Sa, 8&nbsp;-&nbsp;20 Uhr");
-      var marker3 = L.marker([48.1458458, 11.5195283]).addTo(mobimap);
-      marker3.bindPopup("Alnatura, Friedenheimer Brücke 23<br>Mo&nbsp;-&nbsp;Sa, 8&nbsp;-&nbsp;20 Uhr");
-      var marker4 = L.marker([48.1064233, 11.6447650]).addTo(mobimap);
-      marker4.bindPopup("Alnatura, Albert-Schweitzer-Straße 78<br>Mo&nbsp;-&nbsp;Sa, 8&nbsp;-&nbsp;20 Uhr");
-      var marker5 = L.marker([48.1700893, 11.5344443]).addTo(mobimap);
-      marker5.bindPopup("Einhornapotheke, Franz-Marc-Straße 6,<br>Mo&nbsp;-&nbsp;Sa, 8:30&nbsp;-&nbsp;13 Uhr, Mo&nbsp;-&nbsp;Fr zusätzlich: 14&nbsp;-&nbsp;18:30 Uhr");
-      var marker6 = L.marker([48.14662, 11.46378]).addTo(mobimap);
-      marker6.bindPopup("Alnatura, Landsberger Str. 480-482<br>Mo&nbsp;-&nbsp;Sa, 8&nbsp;-&nbsp;20 Uhr");
-      //var marker7 = L.marker([48.1393935, 11.5654882]).addTo(mobimap);
-      //marker7.bindPopup("Vitalia Reformhaus, Stachus Passagen. 20<br>Mo&nbsp;-&nbsp;Sa, 9&nbsp;-&nbsp;20 Uhr");
-      
-    </script>
-    
-    <h2> Hilfe am Streik </h2>
-    <p> Du willst uns beim Auf-/Abbau helfen oder zu Beispiel als Ordner*in zur Durchführung
-    des Streiks beitragen? Dann trag dich bitte in unser <a href="https://survey.infra4future.de/index.php/783966">Formular für Helfer*innen</a> ein.</p>
-    
-    
-</section>
 
 <div class="border">
     <div class="quotation">„Unser Planet brennt, aber Deutschland bestellt die Feuerwehr für das Jahr 2038.“ <br> - Franz Alt</div>
 </div>
-
+-->
 
 <section id="demands" class="projects">
     <h1> Unsere Forderungen</h1>
