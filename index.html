@@ -136,11 +136,11 @@ Freitag ist, dass ihr viele for Future Gruppen in München kennenlernen könnt! 
     </div>
     <script>
       var mymap = L.map('MapID2').setView([48.15069,11.58089], 17);
-      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA', {
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'your.mapbox.access.token'
+    id: 'mapbox/streets-v11',
+    accessToken: 'pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA'
     }).addTo(mymap);
       mymap.scrollWheelZoom.disable();
       var marker = L.marker([48.15069,11.58089]).addTo(mymap);
