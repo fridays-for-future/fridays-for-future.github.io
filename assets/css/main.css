@@ -176,6 +176,12 @@ th {
     }
 }
 
+@media only screen and (min-width: 1000px) {
+    .spacer {
+      height: 10vh;
+    }
+}
+
 .text-icon {
     position: relative;
     display:inline-block;
@@ -4887,10 +4893,6 @@ sub, sup {
     .header .site-title {
         margin: 0;
         font-size: 40pt;
-    }
-
-    .spacer {
-      height: 10vh;
     }
 }
 
