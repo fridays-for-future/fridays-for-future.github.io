@@ -434,6 +434,19 @@ div.two-col div {
     }
 }
 
+.iframe {
+    width: 560px;
+    height: 315px;
+}
+
+@media only screen and (max-width: 700px) {
+    .iframe{
+        width: 100%;
+        height: calc((100vw - 12px) * 0.5625/1.25);
+    }
+}
+
+
 html {
     overflow-x: hidden;
 }
