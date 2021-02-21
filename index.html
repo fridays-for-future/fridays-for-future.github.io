@@ -1,68 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="utf-8">
-    <title>Fridays for Future München</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="Fridays for Future München">
+  <meta charset="utf-8">
+  <title>Fridays for Future München</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Fridays for Future München">
 
-    <link rel="icon" href="./assets/img/fff_icon.png">
-    <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="icon" href="./assets/img/fff_icon.png">
+  <link rel="stylesheet" href="./assets/css/main.css">
 
-    <!-- Leaflet for OSM -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-          crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-            crossorigin=""></script>
+  <!-- Leaflet for OSM (currently unused) -->
+  <!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+          integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+          crossorigin=""></script>-->
 
-
-    <!-- Emoji script for chrome -->
-    <script src="assets/twemoji.min.js"></script>
+  <!-- Emoji script for chrome -->
+  <script src="assets/twemoji.min.js"></script>
 </head>
-
 <body>
-<section id="header">
-
+  <section id="header">
     <div class="dropdown">
-        <div class="dropbtn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="dropdown-content">
-            <a class="link" href="#participate" data-scroll>Mach mit!</a>
-            <a class="link" href="#global_strike" data-scroll>Globaler Klimastreik</a>
-            <a class="link" href="#demands" data-scroll>Forderungen</a>
-            <!--<a class="link" href="#calendar" data-scroll>Klimakalender</a>
-            <a class="link" href="#faq" data-scroll>FAQ</a>-->
-            <a class="link" href="#support" data-scroll>Unterstützen</a>
-            <span style="white-space:nowrap"><a class="link" href="#groups"
-                                                data-scroll>Andere Gruppen</a></span>
-        </div>
+      <div class="dropbtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- menu for mobile devices / small screens -->
+      <div class="dropdown-content">
+        <a class="link" href="#participate" data-scroll>Mach mit!</a>
+        <a class="link" href="#global_strike" data-scroll>Globaler Klimastreik</a>
+        <a class="link" href="#demands" data-scroll>Forderungen</a>
+        <a class="link" href="#support" data-scroll>Unterstützen</a>
+        <span style="white-space:nowrap"><a class="link" href="#groups" data-scroll>Andere Gruppen</a></span>
+      </div>
     </div>
-
+    <!-- main background image and non-mobile header-->
     <div class="background" title="Bild einer Aktion am 11.12.2020 vor der Bavaria-Statue: ein Banner mit der Aufschrift #FightFor1Point5, auf das Bilder eines Feuers projiziert werden.">
-        <img src="./assets/img/fff_muc_logo.png" class="header-logo" alt="Logo von Fridays for Future München">
-        <div class="header">
-            <span class="site-title">Fridays for Future München</span>
-            <div class="header-links">
-                <a class="link" href="#participate" data-scroll>Mach mit!</a>
-                <a class="link" href="#global_strike" data-scroll>Globaler Klimastreik</a>
-                <a class="link" href="#demands" data-scroll>Forderungen</a>
-                <!--<a class="link" href="#calendar" data-scroll>Klimakalender</a>
-                <a class="link" href="#faq" data-scroll>FAQ</a>-->
-                <a class="link" href="#support" data-scroll>Unterstützen</a>
-                <span style="white-space:nowrap"><a class="link" href="#groups" data-scroll>Andere Gruppen</a></span>
-
-            </div>
-            <!--<a class="language" href="" data-scroll>English</a>-->
+      <img src="./assets/img/fff_muc_logo.png" class="header-logo" alt="Logo von Fridays for Future München">
+      <div class="header">
+        <span class="site-title">Fridays for Future München</span>
+        <div class="header-links">
+          <a class="link" href="#participate" data-scroll>Mach mit!</a>
+          <a class="link" href="#global_strike" data-scroll>Globaler Klimastreik</a>
+          <a class="link" href="#demands" data-scroll>Forderungen</a>
+          <a class="link" href="#support" data-scroll>Unterstützen</a>
+          <span style="white-space:nowrap"><a class="link" href="#groups" data-scroll>Andere Gruppen</a></span>
         </div>
+      </div>
     </div>
-
+    <!-- border between background image and text sections -->
     <div class="border-top">
         <div class="next-strike"> Globaler Klimastreik am 19.03. </div>
 
@@ -85,83 +76,75 @@
             <a aria-label="Mail" target="_blank" href="mailto:Muenchen@FridaysForFuture.is"><i
                     class="icon fa fa-envelope" aria-hidden="true"></i></a>
         </div>
-        <!--
-                <div id="header-sticker">
-                    <h2>Nächster Großstreik am 25.09. 2020</h2>
-                </div>
-		-->
     </div>
-</section>
-
-<section  id="participate" class="projects">
-    
+  </section>
+  <!-- first text section (current news, events, announcements, etc.) -->
+  <section  id="participate" class="projects">
     <h1> Aktion gegen fossiles Gas </h1>
-        <img src="assets/img/spd_lng.jpg" style="width: 80%; margin: auto" alt="Bild von zwei Aktivisti vor der SPD-Zentrale in München, die ein Banner mit der Aufschrift 'Mit Gas geben war nicht LNG gemeint!' halten.">
-        <p>
-        Die SPD macht sich immer noch noch stark für neue Erdgas-Infrastruktur. Ihr Engagement
-        für die russische Erdgas-Pipeline Nord Stream 2 ist nur ein Beispiel. Letzten Dienstag
-        wurde ein geheimer Brief vom August 2020 veröffentlicht, in dem Olaf Scholz der
-        amerikanischen Regierung anbietet, amerikanische Fracking-Gasimporte mit dem Bau von
-        LNG(Flüssiggas)-Terminals in Norddeutschland mit 1 Mrd. Euro an Steuergeldern zu
-        fördern. Im Gegenzug erhoffte er sich dabei von den USA den Stopp der Sanktionen gegen
-        Nord Stream 2. Scholz wollte sich also bei den USA freikaufen, um mit Nord Stream 2
-        weiterhin klimaschädliche Erdgasimporte sicherzustellen!
-        </p><p>
-        Gleichzeitig möchte sich die SPD vor der Bundestagswahl thematisch klimagerechter
-        aufstellen. Klimaschutz ist dabei eines ihrer neuen Schlüsselthemen. <br>
-        Das passt für uns nicht zusammen! Aber solange Erdgas politisch weiterhin als
-        Übergangslösung bei der Energiewende dargestellt wird, wird sich daran auch nichts
-        ändern.
-        </p><p>
-        Die Wissenschaft sagt uns jedoch: Erdgas ist extrem klimaschädlich und für eine schnelle
-        Energiewende nicht notwendig. Nord Stream 2 und neue LNG-Terminals sind nicht
-        gerechtfertigt! Deshalb haben wir vor der Münchner SPD-Zentrale eine Corona-konforme
-        Aktion durchgeführt.
-        </p><p>
-        Wir fordern also:<br>
-        Erdgas darf keine Übergangslösung mehr sein!<br>
-        Keine dreckigen Fracking-Geschäfte mit den USA mit unsern Steuergeldern! 
-        </p>
-        
-        
-
+    <img src="assets/img/spd_lng.jpg" style="width: 80%; margin: auto"
+        alt="Bild von zwei Aktivisti vor der SPD-Zentrale in München,
+             die ein Banner mit der Aufschrift 'Mit Gas geben war nicht
+             LNG gemeint!' halten.">
+    <p>
+      Die SPD macht sich immer noch noch stark für neue Erdgas-Infrastruktur. Ihr Engagement
+      für die russische Erdgas-Pipeline Nord Stream 2 ist nur ein Beispiel. Letzten Dienstag
+      wurde ein geheimer Brief vom August 2020 veröffentlicht, in dem Olaf Scholz der
+      amerikanischen Regierung anbietet, amerikanische Fracking-Gasimporte mit dem Bau von
+      LNG(Flüssiggas)-Terminals in Norddeutschland mit 1 Mrd. Euro an Steuergeldern zu
+      fördern. Im Gegenzug erhoffte er sich dabei von den USA den Stopp der Sanktionen gegen
+      Nord Stream 2. Scholz wollte sich also bei den USA freikaufen, um mit Nord Stream 2
+      weiterhin klimaschädliche Erdgasimporte sicherzustellen!
+    </p>
+    <p>
+      Gleichzeitig möchte sich die SPD vor der Bundestagswahl thematisch klimagerechter
+      aufstellen. Klimaschutz ist dabei eines ihrer neuen Schlüsselthemen. <br>
+      Das passt für uns nicht zusammen! Aber solange Erdgas politisch weiterhin als
+      Übergangslösung bei der Energiewende dargestellt wird, wird sich daran auch nichts
+      ändern.
+    </p>
+    <p>
+      Die Wissenschaft sagt uns jedoch: Erdgas ist extrem klimaschädlich und für eine schnelle
+      Energiewende nicht notwendig. Nord Stream 2 und neue LNG-Terminals sind nicht
+      gerechtfertigt! Deshalb haben wir vor der Münchner SPD-Zentrale eine Corona-konforme
+      Aktion durchgeführt.
+    </p>
+    <p>
+      Wir fordern also:<br>
+      Erdgas darf keine Übergangslösung mehr sein!<br>
+      Keine dreckigen Fracking-Geschäfte mit den USA mit unsern Steuergeldern! 
+    </p>
     <h1> #Fight<wbr>For<wbr>1Point5 </h1>
     <p> Das Pariser Klimaabkommen ist nicht verhandelbar! </p>
     <div style="text-align:center;border:2em;">
-    <iframe class="iframe" sandbox="allow-same-origin allow-scripts allow-popups" src="https://hacc.media/videos/embed/33c54217-e1cd-446c-a99f-08f453b64628" frameborder="0" allowfullscreen></iframe>
+      <iframe class="iframe" sandbox="allow-same-origin allow-scripts allow-popups"
+              src="https://hacc.media/videos/embed/33c54217-e1cd-446c-a99f-08f453b64628"
+              frameborder="0" allowfullscreen></iframe>
     </div>
     <p>  
-        Um das, pünktlich zum 5. Geburtstag des Abkommens, einmal mehr klarzumachen, haben
-        wir am 11.12 ein riesiges, mit Flammen beleuchtetes Banner auf der Theresienwiese
-        aufgebaut. Davor gab es ein Flammenmeer aus Kerzen, an dem sich auch Passant*innen
-        beteiligten. Untermalt wurde das ganze vom Sound eines Waldbrandes. </p>
-
-
-
-  <h1> Bürger*innen Rat </h1>
+      Um das, pünktlich zum 5. Geburtstag des Abkommens, einmal mehr klarzumachen, haben
+      wir am 11.12 ein riesiges, mit Flammen beleuchtetes Banner auf der Theresienwiese
+      aufgebaut. Davor gab es ein Flammenmeer aus Kerzen, an dem sich auch Passant*innen
+      beteiligten. Untermalt wurde das ganze vom Sound eines Waldbrandes.
+    </p>
+    <h1> Bürger*innen Rat </h1>
     <p>
       Für mehr direkte Demokratie wollen wir Bürger*innen-Räte bekannter machen.
-      Deshalb veranstalten wir zusammen mit den Scientists for Future regelmäßige Webkonferenzen um ein Gefühl für das Verfahren zu vermitteln. Komm vorbei und probiere es mit uns zusammen aus!
+      Deshalb veranstalten wir zusammen mit den Scientists for Future regelmäßige Webkonferenzen
+      um ein Gefühl für das Verfahren zu vermitteln. Komm vorbei und probiere es mit uns zusammen
+      aus!
     </p>
-
     <div style="text-align:center">
       <a class="project-link" href="./planungszelle.html" style="margin:1em">Weitere Infos</a>
     </div>
-
-    
-    
     <h1> Wegen Covid aktuell keine regelmäßigen Streiks </h1>
-    <p>Aufgrund der aktuellen Coronasituation und den bundesweiten Maßnahmen verzichten wir vorerst leider auf wöchentliche Präsenzstreiks <br>
-    <b>ABER:</b> Wir werden weiterhin vereinzelte coronakonforme Aktionen durchführen und halten euch hier auf dem Laufenden, denn noch immer gilt: Ob Corona oder Klima, Wissenschaft hilft prima!</p>
-
-    <!--
-    <div style="text-align:center">
-        <a class="project-link" href="https://t.me/joinchat/Oe6zchQg4XIHaXWWwNZhpw" style="margin:1em">Telegram Gruppe</a>
-        <a class="project-link" href="https://chat.whatsapp.com/EYPgKm7WFPLIsdy8hgMDZC" style="margin:1em">WhatsApp Gruppe</a>
-    </div>
-    </p>-->
-    
-    
+    <p>
+      Aufgrund der aktuellen Coronasituation und den bundesweiten Maßnahmen verzichten wir
+      vorerst leider auf wöchentliche Präsenzstreiks <br>
+      <b>ABER:</b> Wir werden weiterhin vereinzelte coronakonforme Aktionen durchführen und
+      halten euch hier auf dem Laufenden, denn noch immer gilt: Ob Corona oder Klima,
+      Wissenschaft hilft prima!
+    </p>
+    <!-- map for next strikes, currently unused -->
 <!--
     <div align="justify">
       <div id="MapID2" style="height:60vh; margin-left: auto; margin-right:auto; width:80%"></div>
@@ -189,264 +172,274 @@
         <a class="project-link" href="https://www.fridaysforfuture.de" style="margin:1em">Deutschlandweite Aktionen</a>
         <a class="project-link" href="https://www.fridaysforfuture.org" style="margin:1em">Weltweite Aktionen</a>
     </div>
-
 -->
-</section>
+  </section>
 
+  <div class="border">
+      <div class="quotation">„Hope dies, and action begins.“ <br> — Greta Thunberg</div>
+  </div>
 
-<div class="border">
-    <div class="quotation">„Hope dies, and action begins.“ <br> — Greta Thunberg</div>
-</div>
-
-<section id="global_strike" class="projects">
+  <section id="global_strike" class="projects">
     <h1> Globaler Klimastreik am 19.03. </h1>
     <p>
-        Am 19.&nbsp;März findet der nächste globale Aktionstag unter dem
-        hashtag&nbsp;#NoMoreEmptyPromises statt, denn die Klimakrise wird noch immer nicht
-        behandelt wie eine essenzielle Krise!
-    </p><p>
-        Wie die Aktion aussehen wird, können wir jetzt noch nicht sagen, aber sie wird der
-        Situation mit Corona angepasst sein! Wir sind schon fleißig am planen; wenn du uns dabei
-        und in der Organisation unterstützen willst, kommt zu unserem nächsten Plenum, das wir
-        immer in unseren <a href="https://t.me/joinchat/RTmZHCNChNu7Cy1F">Telegram</a>- und
-        <a href="https://chat.whatsapp.com/B5A4GtE117l20kVaFM8Vd0">Whatsapp</a>gruppen
-        ankündigen.
-    </p><p>
-        <b>Kommt am 19.03. und erneuert das Zeichen für Klimagerechtigkeit!</b>
+      Am 19.&nbsp;März findet der nächste globale Aktionstag unter dem
+      hashtag&nbsp;#NoMoreEmptyPromises statt, denn die Klimakrise wird noch immer nicht
+      behandelt wie eine essenzielle Krise!
     </p>
-    
+    <p>
+      Wie die Aktion aussehen wird, können wir jetzt noch nicht sagen, aber sie wird der
+      Situation mit Corona angepasst sein! Wir sind schon fleißig am planen; wenn du uns dabei
+      und in der Organisation unterstützen willst, kommt zu unserem nächsten Plenum, das wir
+      immer in unseren <a href="https://t.me/joinchat/RTmZHCNChNu7Cy1F">Telegram</a>- und
+      <a href="https://chat.whatsapp.com/B5A4GtE117l20kVaFM8Vd0">Whatsapp</a>gruppen
+      ankündigen.
+    </p>
+    <p>
+      <b>Kommt am 19.03. und erneuert das Zeichen für Klimagerechtigkeit!</b>
+    </p>
     <div style="text-align:center">
-      <a class="project-link" href="https://fridaysforfuture.org/march19/#pfp" style="margin:1em" target="_blank">Zum Profilbindgenerator</a>
+      <a class="project-link" href="https://fridaysforfuture.org/march19/#pfp"
+         style="margin:1em" target="_blank">Zum Profilbindgenerator</a>
     </div>
+  </section>
 
+  <div class="border">
+      <div class="quotation">„Unser Planet brennt, aber Deutschland bestellt die Feuerwehr für das Jahr 2038.“ <br> - Franz Alt</div>
+  </div>
 
-</section>
-
-
-<div class="border">
-    <div class="quotation">„Unser Planet brennt, aber Deutschland bestellt die Feuerwehr für das Jahr 2038.“ <br> - Franz Alt</div>
-</div>
-
-<section id="demands" class="projects">
+  <!-- demands section -->
+  <section id="demands" class="projects">
     <h1> Unsere Forderungen</h1>
-
     <div class="two-col">
-        <div>
-            <h2>An die Bundes&shy;regierung:</h2>
-            <ul>
-                <li>Nettonull 2035 erreichen</li>
-                <li>Kohleausstieg bis 2030</li>
-                <li> 100% erneuerbare Energieversorgung bis 2035</li>
-            </ul>
-            <h4>Bis Ende 2019:</h4>
-            <ul>
-                <li>Das Ende der Subventionen für fossile Energieträger</li>
-                <li>1/4 der Kohlekraft abschalten</li>
-                <li>Eine Steuer auf alle Treibhausgasemissionen. Laut UBA sind das 180€ pro Tonne CO₂</li>
-            </ul>
-        </div>
-        <div>
-            <h2>An die Stadt München:</h2>
-            <p>
-                Um zu zeigen, welche Maßnahmen auf lokaler Ebene nötig sind, um die bundesweiten Forderungen umzusetzen,
-                haben wir Forderungen an die Stadt München gestellt: </p>
-            <ul>
-                <li>Betrieb des HKW Nord 2 bis 2022 beenden und bis dahin auf ein Minimum reduzieren <br>
-                <li>Autofreie Zone innerhalb des Mittleren Rings bis spätestens 2025 <br>
-                <li>Austattung aller Neubauten mit Photovoltaik- oder Solarthermieanlagen
-            </ul>
-            <p><a class="project-link" href="forderungen-muenchen.pdf">Alle Forderungen als PDF</a></p>
-        </div>
+      <div>
+        <h2>An die Bundes&shy;regierung:</h2>
+        <ul>
+          <li>Nettonull 2035 erreichen</li>
+          <li>Kohleausstieg bis 2030</li>
+          <li> 100% erneuerbare Energieversorgung bis 2035</li>
+        </ul>
+        <h4>Bis Ende 2019:</h4>
+        <ul>
+          <li>Das Ende der Subventionen für fossile Energieträger</li>
+          <li>1/4 der Kohlekraft abschalten</li>
+          <li>Eine Steuer auf alle Treibhausgasemissionen. Laut UBA sind das 180€ pro Tonne CO₂</li>
+        </ul>
+      </div>
+      <div>
+        <h2>An die Stadt München:</h2>
+        <p>
+          Um zu zeigen, welche Maßnahmen auf lokaler Ebene nötig sind, um die bundesweiten
+          Forderungen umzusetzen, haben wir Forderungen an die Stadt München gestellt:
+        </p>
+        <ul>
+          <li>Betrieb des HKW Nord 2 bis 2022 beenden und bis dahin auf ein Minimum reduzieren <br>
+          <li>Autofreie Zone innerhalb des Mittleren Rings bis spätestens 2025 <br>
+          <li>Austattung aller Neubauten mit Photovoltaik- oder Solarthermieanlagen
+        </ul>
+        <p>
+          <a class="project-link" href="forderungen-muenchen.pdf">Alle Forderungen als PDF</a>
+        </p>
+      </div>
     </div>
 
     <h2>Offener Brief an die Staats&shy;kanz&shy;lei</h2>
-
-    <p>In unserem offenen Brief an die Staatskanzlei blicken wir auf die Klimapolitik - oder eher die mangelnde
-        Klimapolitik - der letzten Dekade zurück. Wir appellieren an die Regierung, in diesem neuen Jahrzehnt eine Wende
-        ihrer Politik zu betreiben. Wir fordern, endlich Maßnahmen zu ergreifen um das beschlossene Pariser Abkommen
-        auch zu erfüllen.
-        Denn nur so können wir unseren Planeten retten und eine lebenswerte Zukunft sichern!
+    <p>
+      In unserem offenen Brief an die Staatskanzlei blicken wir auf die Klimapolitik - oder
+      eher die mangelnde Klimapolitik - der letzten Dekade zurück. Wir appellieren an die
+      Regierung, in diesem neuen Jahrzehnt eine Wende ihrer Politik zu betreiben. Wir fordern,
+      endlich Maßnahmen zu ergreifen um das beschlossene Pariser Abkommen auch zu erfüllen.
+      Denn nur so können wir unseren Planeten retten und eine lebenswerte Zukunft sichern!
     </p>
     <div style="text-align:center">
         <a class="project-link" href="assets/Wunschliste.pdf">Offener Brief</a>
     </div>
-</section>
+  </section>
 
-<div class="border">
-    <div class="quotation">„Was heute geschieht, gleicht einem kollektiven Suizidversuch.“ <br> — Prof. Dr. Hans Joachim
-        Schellnhuber, Klimaforscher
+  <div class="border">
+    <div class="quotation">
+      „Was heute geschieht, gleicht einem kollektiven Suizidversuch.“ <br>
+       — Prof. Dr. Hans Joachim Schellnhuber, Klimaforscher
     </div>
-</div>
+  </div>
 
-<section id="support" class="projects">
+  <!-- call for support -->
+  <section id="support" class="projects">
     <h1> Unterstützen </h1>
     <p>
-        Du willst uns mehr oder anders unterstützen, als freitags zu streiken? Wenn Du uns bei der Vorbereitung und
-        Umsetzung der Streiks helfen möchtest, spreche einfach freitags eine*n der Order*innen an oder kontaktiere uns
-        über unsere Social Media Kanäle. Außerdem freuen wir uns über Spenden für Sticker, Plakate, Flyer, GEMA, Wagen-
-        & Boxen-Miete, etc. auf unser Spendenkonto:
+      Du willst uns mehr oder anders unterstützen, als freitags zu streiken? Wenn Du uns bei
+      der Vorbereitung und Umsetzung der Streiks helfen möchtest, spreche einfach freitags
+      eine*n der Order*innen an oder kontaktiere uns über unsere Social Media Kanäle. Außerdem
+      freuen wir uns über Spenden für Sticker, Plakate, Flyer, GEMA, Wagen- & Boxen-Miete, etc.
+      auf unser Spendenkonto:
     </p>
     <div style="text-align: center; padding-top: 1em; width:100%;display:flex">
-        <table style="margin-left:auto; margin-right: auto;text-align:left" align=center>
-            <tr>
-                <th align=right> Kontoinhaber:</th>
-                <th align=left> Fridays for Future München</th>
-            </tr>
-            <tr>
-                <th align=right> Spendenkonto:</th>
-                <th align=left> 200 301 0201</th>
-            </tr>
-            <tr>
-                <th align=right> IBAN:</th>
-                <th align=left><b>DE30 7002 0500 2003 0102 01</b></th>
-            </tr>
-            <tr>
-                <th align=right> BIC:</th>
-                <th align=left> BFSWDE33MUE</th>
-            </tr>
-        </table>
+      <table style="margin-left:auto; margin-right: auto;text-align:left" align=center>
+        <tr>
+          <th align=right> Kontoinhaber:</th>
+          <th align=left> Fridays for Future München</th>
+        </tr>
+        <tr>
+          <th align=right> Spendenkonto:</th>
+          <th align=left> 200 301 0201</th>
+        </tr>
+        <tr>
+          <th align=right> IBAN:</th>
+          <th align=left><b>DE30 7002 0500 2003 0102 01</b></th>
+        </tr>
+        <tr>
+          <th align=right> BIC:</th>
+          <th align=left> BFSWDE33MUE</th>
+        </tr>
+      </table>
     </div>
     
+    <!-- call for cooperations -->
     <h1> Koope&shy;ra&shy;ti&shy;onen </h1>
     <p>
-    Egal ob Presseanfrage oder Forschungsvorhaben - du kannst uns gerne einfach per
-    <a href="mailto:Muenchen@FridaysForFuture.is">Mail</a> anfragen. Wir stehen außerdem auch
-    als Teilnehmer*innen auf Podiumsdiskussionen, für Fachgespräche, Workshops oder Vorträge
-    zur Verfügung.
+      Egal ob Presseanfrage oder Forschungsvorhaben - du kannst uns gerne einfach per
+      <a href="mailto:Muenchen@FridaysForFuture.is">Mail</a> anfragen. Wir stehen außerdem auch
+      als Teilnehmer*innen auf Podiumsdiskussionen, für Fachgespräche, Workshops oder Vorträge
+      zur Verfügung.
+    </p>
+  </section>
+
+  <div class="border">
+      <div class="quotation"> „I want you to behave like our house is on fire. Because it is.“ <br> — Greta Thunberg</div>
+  </div>
+
+  <!-- related groups section -->
+  <section class="projects" id="groups">
+    <h1 id="students-for-future">Students for Future</h1>
+    <p>
+      Dir sind zu wenig Studis auf den Demos? Du findest, dass auch die Münchner Hochschulen
+      ihren Beitrag gegen die Klimakrise leisten sollten? Du willst, dass auch dort endlich
+      etwas passiert? Dann komm zu Students for Future, dem studentischen Teil unserer Bewegung!
+    </p>
+    <p>
+      Jeden Donnerstag veranstalten wir unser Klimacafé, wo du einfach mal entspannt über das
+      Klima und die Politik labern kannst; falls dir das nicht reicht kannst du auch gerne
+      Mittwochs beim Plenum vorbeikommen und dich bei uns in die Planung mit einbringen. Oder
+      du kommst einfach Freitags mit uns auf die Demo, bastelst mit uns Banner und Flaggen,
+      organisierst Zubringerdemos zu den Großstreiks …
+    </p>
+    <p>
+      Um auf dem Laufenden zu bleiben trete unserem Telegram-Channel bei oder folge uns auf
+      Social Media.
+    </p>
+    <div style="text-align:center">
+      <a class="button" href="http://studentsforfuture-muc.de">Webseite</a>
+      <a class="button" href="https://t.me/studentsforfuturemuenchen">Telegram</a>
+    </div>
+    <p>
+      <a id="scientists" href=""></a>
     </p>
     
-</section>
-
-<div class="border">
-    <div class="quotation"> „I want you to behave like our house is on fire. Because it is.“ <br> — Greta Thunberg</div>
-</div>
-
-<section class="projects">
-    <p><a id="groups" href=""></a></p>
-
-    <h1 id="students-for-future">Students for Future</h1>
-
-    <p>Dir sind zu wenig Studis auf den Demos? Du findest, dass auch die Münchner Hochschulen ihren Beitrag gegen die
-        Klimakrise leisten sollten? Du willst, dass auch dort endlich etwas passiert? Dann komm zu Students for Future,
-        dem studentischen Teil unserer Bewegung!</p>
-
-    <p>Jeden Donnerstag veranstalten wir unser Klimacafé, wo du einfach mal entspannt über das Klima und die Politik
-        labern kannst; falls dir das nicht reicht kannst du auch gerne Mittwochs beim Plenum vorbeikommen und dich bei
-        uns in die Planung mit einbringen. Oder du kommst einfach Freitags mit uns auf die Demo, bastelst mit uns Banner
-        und Flaggen, organisierst Zubringerdemos zu den Großstreiks …</p>
-
-    <p>Um auf dem Laufenden zu bleiben trete unserem Telegram-Channel bei oder folge uns auf Social Media.</p>
-
-    <div style="text-align:center">
-        <a class="button" href="http://studentsforfuture-muc.de">Webseite</a>
-
-        <a class="button" href="https://t.me/studentsforfuturemuenchen">Telegram</a>
-
-    </div>
-
-    <p><a id="scientists" href=""></a></p>
-
     <h1 id="scientists-for-future">Scientists for Future</h1>
-
-    <p>Scientists for Future ist ein überinstitutioneller, überparteilicher und interdisziplinärer Zusammenschluss von
-        Wissenschaftler*innen, die sich für eine nachhaltige Zukunft engagieren.</p>
-
-    <p>Die Initiative versteht sich als Stimme der Wissenschaft, die zu sachlichen politischen Diskussionen beiträgt und
-        als Brückenbauerin Dialoge fördert und Einsichten ermöglicht. Hierzu führt sie Fähigkeiten, Wissen und
-        Erfahrungen von Wissenschaftler*innen aus verschiedensten Disziplinen zusammen.</p>
-
+    <p>
+      Scientists for Future ist ein überinstitutioneller, überparteilicher und interdisziplinärer
+      Zusammenschluss von Wissenschaftler*innen, die sich für eine nachhaltige Zukunft engagieren.
+    </p>
+    <p>
+      Die Initiative versteht sich als Stimme der Wissenschaft, die zu sachlichen politischen
+      Diskussionen beiträgt und als Brückenbauerin Dialoge fördert und Einsichten ermöglicht.
+      Hierzu führt sie Fähigkeiten, Wissen und Erfahrungen von Wissenschaftler*innen aus
+      verschiedensten Disziplinen zusammen.
+    </p>
     <div style="text-align:center">
-        <!-- <a class="button" href="http://s4f-muenchen.de">Webseite der Münchner Gruppe</a> -->
-        <a class="button" href="https://www.scientists4future.org/">Webseite</a>
-
+      <!-- <a class="button" href="http://s4f-muenchen.de">Webseite der Münchner Gruppe</a> -->
+      <a class="button" href="https://www.scientists4future.org/">Webseite</a>
     </div>
-
-    <p><a id="parents" href=""></a></p>
-
+    
+    
     <h1 id="parents-for-future">Parents for Future</h1>
-
-    <p>Wir sind die Münchener Parents for Future Gruppe, die in Solidarität zur Fridays for Future Bewegung steht.</p>
+    <p>
+      Wir sind die Münchener Parents for Future Gruppe, die in Solidarität zur Fridays for Future
+      Bewegung steht.
+    </p>
     <ul>
-        <li>Wir sind solidarisch mit den Kindern und Jugendlichen von FFF und deren Zielen.</li>
-        <li>Unser Einsatz dient einer lebenswerten Zukunft, die das Wohlergehen der Menschheit, der Erde und ihrer
-            natürlichen Kreisläufe zum Ziel hat.
-        </li>
-        <li>Wir sind unabhängig von Parteien, Institutionen, Unternehmen, Organisationen &amp; Verbänden, gleichzeitig
-            aber offen für Kooperationen mit Menschen,die sich vorbehaltlos und ehrlich für den Klima- und
-            Umweltschutz einsetzen.
-        </li>
-        <li>Wir unterstützen effektive, gemeinsame Aktionen zum Thema Klimaschutz.</li>
-        <li>Unser Ziel ist es, die verändernden Kräfte vor Ort zu stärken, sofern sie mit unseren Zielen
-            übereinstimmen (Prinzip der Graswurzelbewegung).
-        </li>
-        <li>Unsere Kommunikation und unser Handeln basiert auf einem respektvollen, wertschätzenden Umgang miteinander
-            und ist frei von Gewalt und Diskriminierung in jeglicher Form auf inhaltlicher, sprachlicher und
-            ausführender Ebene.
-        </li>
+      <li>
+        Wir sind solidarisch mit den Kindern und Jugendlichen von FFF und deren Zielen.
+      </li>
+      <li>
+        Unser Einsatz dient einer lebenswerten Zukunft, die das Wohlergehen der Menschheit,
+        der Erde und ihrer natürlichen Kreisläufe zum Ziel hat.
+      </li>
+      <li>
+        Wir sind unabhängig von Parteien, Institutionen, Unternehmen, Organisationen &amp;
+        Verbänden, gleichzeitig aber offen für Kooperationen mit Menschen,die sich vorbehaltlos
+        und ehrlich für den Klima- und Umweltschutz einsetzen.
+      </li>
+      <li>Wir unterstützen effektive, gemeinsame Aktionen zum Thema Klimaschutz.</li>
+      <li>
+        Unser Ziel ist es, die verändernden Kräfte vor Ort zu stärken, sofern sie mit unseren
+        Zielen übereinstimmen (Prinzip der Graswurzelbewegung).
+      </li>
+      <li>
+        Unsere Kommunikation und unser Handeln basiert auf einem respektvollen, wertschätzenden
+        Umgang miteinander und ist frei von Gewalt und Diskriminierung in jeglicher Form auf
+        inhaltlicher, sprachlicher und ausführender Ebene.
+      </li>
     </ul>
-
     <div style="text-align:center">
-        <a class="button" href="https://parentsforfuture.de/de/muenchen">Webseite der Münchner Gruppe</a>
-
+      <a class="button" href="https://parentsforfuture.de/de/muenchen">Webseite der Münchner Gruppe</a>
     </div>
-
-    <p><a id="churches" href=""></a></p>
 
     <h1 id="churches-for-future">Churches for Future</h1>
-
-    <p>Wir als Kirchen und kirchliche Organisationen zollen den Protestierenden großen Respekt und unterstützen die
-        Anliegen der jungen Generation. Wir bitten daher die Mitglieder unserer Kirchen und kirchlichen Organisationen
-        ihr Engagement für Klimagerechtigkeit sowohl im persönlichen als auch im kirchlichen und gesellschaftlichen
-        Leben deutlich zu verstärken.</p>
-
-    <p>Initiiert wurde der Aufruf von dem ökumenischen Netzwerk Klimagerechtigkeit. Über 60 Kirchen, kirchliche
-        Arbeitsbereiche und Organisationen im Ökumenischen Netzwerk Klimagerechtigkeit rufen bereits dazu auf, sich mit
-        der Bewegung „Fridays for Future“ zu solidarisieren, um anzuerkennen, dass die Schülerinnen und Schüler für eine
-        wichtige Sache auf die Straße gehen. Gemeinden sind aufgerufen, für die jungen Menschen zu beten und vor Ort den
-        Kontakt zu suchen, um herauszufinden, wie Kirche sie im Einzelnen konkret unterstützen kann.</p>
-
-    <p>Mehr Informationen gibt es auf der Webseite des Ökumenischen Netzwerk Klimagerechtigkeit.</p>
-
-    <div style="text-align:center">
-        <a class="button" href="https://fff-muc.de/forderungen-churches-for-future.pdf">Alle Forderungen als PDF</a>
-
-    </div>
-</section>
-<footer class="footer">
-    <div>
-        <p>
-            Folgt Fridays for Future München auf Social Media und verpasst nie wieder einen Streik:
-        </p>
-        <div class="header-icons">
-            <a aria-label="WhatsApp" target="_blank" href="https://chat.whatsapp.com/B5A4GtE117l20kVaFM8Vd0"><i
-                    class="icon fa fa-whatsapp" aria-hidden="true"></i></a>
-            <a aria-label="Telegram" target="_blank" href="https://t.me/joinchat/RTmZHCNChNu7Cy1F"><i
-                    class="icon fa fa-telegram" aria-hidden="true"></i></a>
-            <a aria-label="Facebook" target="_blank" href="https://facebook.com/fridaysforfuturemuenchen"><i
-                    class="icon fa fa-facebook" aria-hidden="true"></i></a>
-            <a aria-label="Twitter" target="_blank" href="https://twitter.com/fff_muc"><i class="icon fa fa-twitter"
-                                                                                          aria-hidden="true"></i></a>
-            <a aria-label="Instagram" target="_blank" href="https://instagram.com/fridaysforfuturemuenchen"><i
-                    class="icon fa fa-instagram" aria-hidden="true"></i></a>
-            <a aria-label="YouTube" target="_blank" href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng"><i
-                    class="icon fa fa-youtube" aria-hidden="true"></i></a>
-            <a aria-label="Mail" target="_blank" href="mailto:Muenchen@FridaysForFuture.is"><i
-                    class="icon fa fa-envelope" aria-hidden="true"></i></a>
-        </div>
-    </div>
-    <p><a href="./impressum.html">Impressum</a> | <a href="./kontakt.html">Kontakt</a>
+    <p>
+      Wir als Kirchen und kirchliche Organisationen zollen den Protestierenden großen Respekt
+      und unterstützen die Anliegen der jungen Generation. Wir bitten daher die Mitglieder unserer
+      Kirchen und kirchlichen Organisationen ihr Engagement für Klimagerechtigkeit sowohl im
+      persönlichen als auch im kirchlichen und gesellschaftlichen Leben deutlich zu verstärken.
     </p>
-</footer>
+    <p>
+      Initiiert wurde der Aufruf von dem ökumenischen Netzwerk Klimagerechtigkeit. Über 60 Kirchen,
+      kirchliche Arbeitsbereiche und Organisationen im Ökumenischen Netzwerk Klimagerechtigkeit rufen
+      bereits dazu auf, sich mit der Bewegung „Fridays for Future“ zu solidarisieren, um anzuerkennen,
+      dass die Schülerinnen und Schüler für eine wichtige Sache auf die Straße gehen. Gemeinden sind
+      aufgerufen, für die jungen Menschen zu beten und vor Ort den Kontakt zu suchen, um herauszufinden,
+      wie Kirche sie im Einzelnen konkret unterstützen kann.
+    </p>
+    <p>Mehr Informationen gibt es auf der Webseite des Ökumenischen Netzwerk Klimagerechtigkeit.</p>
+    <div style="text-align:center">
+      <a class="button" href="https://fff-muc.de/forderungen-churches-for-future.pdf">Alle Forderungen als PDF</a>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div>
+      <p>
+        Folgt Fridays for Future München auf Social Media und verpasst nie wieder einen Streik:
+      </p>
+      <div class="header-icons">
+        <a aria-label="WhatsApp" target="_blank" href="https://chat.whatsapp.com/B5A4GtE117l20kVaFM8Vd0"><i
+                class="icon fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a aria-label="Telegram" target="_blank" href="https://t.me/joinchat/RTmZHCNChNu7Cy1F"><i
+                class="icon fa fa-telegram" aria-hidden="true"></i></a>
+        <a aria-label="Facebook" target="_blank" href="https://facebook.com/fridaysforfuturemuenchen"><i
+                class="icon fa fa-facebook" aria-hidden="true"></i></a>
+        <a aria-label="Twitter" target="_blank" href="https://twitter.com/fff_muc"><i class="icon fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a>
+        <a aria-label="Instagram" target="_blank" href="https://instagram.com/fridaysforfuturemuenchen"><i
+                class="icon fa fa-instagram" aria-hidden="true"></i></a>
+        <a aria-label="YouTube" target="_blank" href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng"><i
+                class="icon fa fa-youtube" aria-hidden="true"></i></a>
+        <a aria-label="Mail" target="_blank" href="mailto:Muenchen@FridaysForFuture.is"><i
+                class="icon fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <p>
+      <a href="./impressum.html">Impressum</a> | <a href="./kontakt.html">Kontakt</a>
+    </p>
+  </footer>
 
-
-<script>
+  <!-- helper script for chrome to display emojis properly -->
+  <script>
     var isfirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
     if (!isfirefox) {
         var ul = document.getElementById('13.03');
         twemoji.parse(ul, {"size": 72});
     }
-</script>
-
+  </script>
 </body>
 
 
