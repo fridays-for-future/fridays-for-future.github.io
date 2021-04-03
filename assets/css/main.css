@@ -430,7 +430,7 @@ div.two-col div {
     left: 0;
     width: 100%;
     height: calc(100vh - 96px);
-    background-image: url("../img/background_12-11.jpg");
+    background-image: url("../img/background_03-19.jpeg");
     background-size: cover;
     background-position: center;
 }
@@ -444,14 +444,14 @@ div.two-col div {
 }
 
 .iframe {
-    width: 560px;
-    height: 315px;
+    width: 768px;
+    height: 432px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 960px) {
     .iframe{
         width: 100%;
-        height: calc((100vw - 12px) * 0.5625/1.25);
+        height: calc((100vw - 12px) * 0.5625 * 0.8);
     }
 }
 
