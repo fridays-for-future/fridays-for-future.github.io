@@ -157,6 +157,42 @@
         <a class="project-link" href="https://fridaysforfuture.de/allefuersklima/#streiks" style="margin:1em" target="_blank">Deutschlandweite Aktionen</a>
         <a class="project-link" href="https://fridaysforfuture.de/allefuersklima/profilbildgenerator/" style="margin:1em" target="_blank">Profilbildgenerator</a>
     </div>
+    
+    <h2> Plakate, Sticker & Co. </h2>
+    <p>Damit der Streik wieder groß wird, muss er noch beworben werden. Wenn du uns dabei helfen
+      willst, kannst du Material in den Verteilstationen abholen oder unserer
+      <a href="https://chat.whatsapp.com/FfxWC6ZGKGfBj6jsaw1WQD" target="_blank">Whatsapp-</a>
+      oder <a href="https://t.me/joinchat/rKGu7Uwac8xjNTFi" target="_blank">Telegramgruppe</a>
+      beitreten.</p>
+    
+    <div align="justify">
+         <div id="Verteiler" style="height:60vh; margin-left: auto; margin-right:auto; width:80%"></div>
+         </div>
+    <script>
+        var Verteilerkarte = L.map('Verteiler').setView([48.13377,11.54104], 12);
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA', {
+         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+         maxZoom: 18,
+         id: 'mapbox/streets-v11',
+         accessToken: 'pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA'
+         }).addTo(Verteilerkarte);
+        Verteilerkarte.scrollWheelZoom.disable();
+        var Station1 = L.marker([48.1283751, 11.5978309]).addTo(Verteilerkarte);
+            Station1.bindPopup("Alnatura, Weißenburgerstr.&nbsp;20<br>Mo - Sa 8 - 20 Uhr");
+        var Station2 = L.marker([48.1597318, 11.5859280]).addTo(Verteilerkarte);
+            Station2.bindPopup("Alnatura, Leopoldstr.&nbsp;64<br>Mo - Sa 8 - 20 Uhr<br>");
+        var Station3 = L.marker([48.1000673, 11.5279942]).addTo(Verteilerkarte);
+            Station3.bindPopup("Alnatura, Boschetsriederstr.&nbsp;72<br>Mo - Sa 8 - 20 Uhr<br>");
+        var Station4 = L.marker([48.1103009, 11.5951857]).addTo(Verteilerkarte);
+            Station4.bindPopup("Denn's&nbsp;Biomarkt, Giesinger&nbsp;Bahnhofpl.&nbsp;2<br>Mo - Sa 8 - 20 Uhr<br>");
+        var Station5 = L.marker([48.1487866, 11.5391363]).addTo(Verteilerkarte);
+            Station5.bindPopup("Haus der Jugendarbeit, Rupprechtstr.&nbsp;29<br>Mo - Fr 9 - 17 Uhr");
+        var Station6 = L.marker([48.14662, 11.46378]).addTo(Verteilerkarte);
+            Station6.bindPopup("Alnatura, Landsberger Str.&nbsp;480-482<br>Mo - Sa 8 - 20 Uhr<br>");
+        var Station7 = L.marker([48.1364867, 11.5722621]).addTo(Verteilerkarte);
+            Station7.bindPopup("Titus Skateshop, Färbergraben&nbsp;20<br>Mo - Sa 11 - 19 Uhr");
+        
+    </script>
   
   </section>
 
