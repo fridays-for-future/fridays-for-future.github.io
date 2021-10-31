@@ -55,7 +55,7 @@
     </div>
     <!-- border between background image and text sections -->
     <div class="border-top">
-      <header class="next-strike">Nächster Streik: 29. Oktober, Max-Weber-Platz, 14&nbsp;Uhr</header>
+      <header class="next-strike">Nächster Streik: 05. November, Europaplatz, 14&nbsp;Uhr</header>
 
       <a class="down" href="#participate" data-scroll>
         <i class="icon fa fa-chevron-down" aria-hidden="true" style="height: 40px"></i>
@@ -86,14 +86,14 @@
       <p>Als globale Bewegung streiken wir seit über zwei Jahren jeden Freitag für die
           Veränderungen in der Politik, die nötig sind, um das Pariser Klimaabkommen einzuhalten und
           die Erderwärmung auf 1,5&nbsp;°C zu beschränken.</p>
-      <p>In München findet der nächste Streik am <b>Freitag, den 29.&nbsp;Oktober</b> statt;
-          wir treffen uns <b>um 14&nbsp;Uhr am Max-Weber-Platz</b>.</p>
+      <p>In München findet der nächste Streik am <b>Freitag, den 05.&nbsp;November</b> statt;
+          wir treffen uns <b>um 14&nbsp;Uhr am Europaplatz</b>.</p>
 
       <div align="justify">
           <div id="MapID2" style="height:60vh; margin-left: auto; margin-right:auto; width:80%"></div>
       </div>
       <script>
-       let pos = [48.13566, 11.59790];
+       let pos = [48.14108, 11.59826];
        var mymap = L.map('MapID2').setView(pos, 16);
        L.tileLayer('https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.openstreetmap.fr/">Openstreetmap.fr</a>',
@@ -104,7 +104,7 @@
        }).addTo(mymap);
        mymap.scrollWheelZoom.disable();
        var marker = L.marker(pos).addTo(mymap);
-       marker.bindPopup("Max-Weber-Platz, 14 Uhr");
+       marker.bindPopup("Europaplatz, 14 Uhr");
       </script>
 
       <div style="text-align:center">
