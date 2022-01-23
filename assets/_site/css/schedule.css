@@ -1,0 +1,103 @@
+
+.background{
+    background-image: url("../img/camp.jpg");
+}
+
+.programme h1 {
+    font-size: 35pt;
+    margin-bottom: 1vh;
+    text-align: center;
+}
+
+.programme h2,
+.programme h3 {
+    background: white;
+    padding: 3px 5px;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    text-align: center;
+}
+
+.programme h2,
+.programme h3 {
+    background: #1b7340;
+    color: #fff;
+    font-family: fff-header;
+    font-weight: normal;
+}
+
+.programme div {
+    margin-bottom: 5px;
+}
+
+.programme a,
+.programme a:visited {
+    color: #1b733f;
+    text-decoration: none;
+}
+
+.programme a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+
+
+.time {
+    color: #000;
+    font-style: bold;
+    margin-left: 5px;
+}
+
+.institution, .time {
+    text-align: center;
+    margin-top: 5px;
+}
+.title {
+    font-weight: bold;
+}
+
+.versammlung {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+
+
+
+
+
+
+.alternate {
+    background-color: #dcefe4;
+}
+
+@media only screen and (min-width:1000px) {
+    .gridline {
+      display: grid;
+      grid-template-columns: 7.5em auto 14em;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .title {
+        display: block;
+        padding-top: 0em;
+        padding-bottom: 1em;
+    }
+    .time {
+        float: left;
+        width: 7em;
+    }
+    .location{
+        text-align: center;
+    }
+}
+
+#climatelibrary-root li {
+    margin: 0 0 0.5em 0;
+}
+
+
