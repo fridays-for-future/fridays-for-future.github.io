@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="./assets/css/main.css">
 
   <!-- Leaflet for OSM -->
-  <!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin=""/>
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
           integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-          crossorigin=""></script>-->
+          crossorigin=""></script>
 
   <!-- Emoji script for chrome -->
   <script src="assets/twemoji.min.js"></script>
@@ -55,7 +55,7 @@
     </div>
     <!-- border between background image and text sections -->
     <div class="border-top">
-      <header class="next-strike">Nächster Klimastreik: 04.&nbsp;Februar, Marienplatz, 14&nbsp;Uhr</header>
+      <header class="next-strike">Nächster Klimastreik: Heute, Bob-van-Benthem-Platz 13:30&nbsp;Uhr</header>
 
       <a class="down" href="#participate" data-scroll>
         <i class="icon fa fa-chevron-down" aria-hidden="true" style="height: 40px"></i>
@@ -82,14 +82,27 @@
 
 
   <section  id="participate" class="projects">
-            
-      <!--<div align="justify">
+
+      
+      <h1> Mach Mit! </h1>
+      
+      <p> Heute will die EU-Kommission ihren Vorschlag zur Taxonomie veröffentlichen. Dabei sollen Atomkraft und fossiles Gas als nachhaltig eingestuft werden. So werden veraltete Technologien, die unsere Zukunft gefährden, mit Mitteln gefördert, die eigentlich für klima- und umweltfreundliche Energiegewinnung gedacht sind.</p>
+
+      <p>Noch kann das EU-Parlament ein Veto gegen diese Entscheidung einlegen und Mitgliedsländer können sich der geplanten Klage von Österreich und Luxemburg anschließen.</p>
+
+      <p>Deshalb demonstrieren wir morgen gemeinsam mit anderen Klimaschutzinitiativen vor der Vertretung der Kommission am Bob-van-Benthem-Platz.</p>
+      
+      <div style="text-align:center">
+          <a class="project-link" href="./assets/documents/2022/pm_22-02-02.pdf" target="_blank" style="margin:1em">Pressemitteilung</a>
+      </div>
+      
+      <div align="justify">
           <div id="MapID2" style="height:62vh; margin-left: auto; margin-right:auto; width:80%; border-bottom: white 2vh solid;">
           </div>
       </div>
       
       <script>
-       let pos = [48.2104, 11.61918];
+       let pos = [48.13059, 11.58099];
        var mymap = L.map('MapID2').setView(pos, 17);
        L.tileLayer('https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.openstreetmap.fr/">Openstreetmap.fr</a>',
@@ -100,8 +113,8 @@
        }).addTo(mymap);
        mymap.scrollWheelZoom.disable();
        var marker = L.marker(pos).addTo(mymap);
-       marker.bindPopup("Eingang Showpalast, 08 Uhr");
-      </script>-->
+       marker.bindPopup("Bob-van-Benthem-Platz, 13:30 Uhr");
+      </script>
       
       <p>Als globale Bewegung streiken wir seit über drei Jahren freitags für die
         Einhaltung des Pariser Klimaabkommens und effizienten Klimaschutz.</p>
@@ -114,7 +127,7 @@
           <a class="project-link" href="./assets/documents/spruchliste.pdf" style="margin:1em">Spruchliste</a>
       </div>
       
-      <img src="assets/img/participate_21-09-24.jpg" style="width: 80%; margin: auto" alt="Bild einer kleinen Menschengruppe mit Lautsprecherwagen auf dem Großstreik am 24.09.2021">
+      <!--<img src="assets/img/participate_21-09-24.jpg" style="width: 80%; margin: auto" alt="Bild einer kleinen Menschengruppe mit Lautsprecherwagen auf dem Großstreik am 24.09.2021">-->
 
       <h2>Gerade nicht in München?</h2>
       <p>Kein Problem! Wir sind eine globale Bewegung, in vielen anderen Städten in Deutschland
