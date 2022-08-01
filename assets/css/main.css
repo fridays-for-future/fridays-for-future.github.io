@@ -80,7 +80,7 @@ footer>div {
     display: initial;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1220px) {
     .dropdown {
         display: none;
     }
@@ -239,7 +239,7 @@ th {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1220px) {
     .header-links {
         display: initial;
     }
@@ -4906,7 +4906,7 @@ sub, sup {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1120px) {
     .header .site-title {
         margin: 0;
         font-size: 40pt;
