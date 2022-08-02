@@ -51,6 +51,17 @@ footer>div {
 }
 
 
+/* Style Profile-Picture-Generatur */
+
+.profile-picture-generator {
+    display: flex;
+    justify-content: center;
+}
+
+/*.pbg-container {
+   
+}*/
+
 /* Style The Dropdown Button */
 .dropbtn {
     padding: 1em;

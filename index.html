@@ -89,6 +89,45 @@
 
       
     <h1> Mach Mit! </h1>
+    <div class="profile-picture-generator">
+      <div class="pbg-container"></div>
+    </div>
+    
+    <script type="text/javascript"
+    src="/assets/js/profile-picture-generator.js"
+    integrity="sha384-26g7geqCMjr1i6cid56u5QUkDmm4Fs3hd+6zUGwkcfdrbSQ6pluSCQq85jga55Eb"
+    crossorigin="anonymous"></script>
+
+
+    <script type="application/javascript">
+      (function () {
+        window.ProfilePictureGenerator({
+          container: document.querySelector('.pbg-container'),
+          initialLanguage: 'de',
+          languages: {
+            de: {
+              name: 'German',
+              uploadButtonTitle: "Eigenes Profilbild generieren",
+              downloadButtonTitle: "Profilbild herunterladen",
+              imageAltText: "Generiertes Fridays for Future Profilbild",
+              fileName: "ProfilePicture.png",
+              templateUrl: "/assets/img/profile-picture-generator/profile-picture-template.png",
+              imagePreview: "/assets/img/profile-picture-generator/profile-picture-preview.png",
+              privacyNote: "Die ausgewählte Datei wird an keinen Server versendet. Die gesamte Bildgenerierung findet im Browser statt.",
+              privacyLinkText: "Datenschutzerklärung",
+              privacyLink: "/datenschutz.html"
+            },
+            // en: {
+            //   name: 'English',
+            //   templateUrl: "https://fridaysforfuture.de/src/templates/en/template.png",
+            //   imagePreview: "https://fridaysforfuture.de/src/templates/en/preview.png",
+            // }
+          }
+        });
+      })();
+    </script> 
+  
+
     
     <p>Als globale Bewegung streiken wir seit über drei Jahren freitags für die
       Einhaltung des Pariser Klimaabkommens und effizienten Klimaschutz.</p>
