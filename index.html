@@ -32,8 +32,9 @@
       </div>
       <!-- menu for mobile devices / small screens -->
       <div class="dropdown-content">
-        <a class="link" href="#participate" data-scroll>Mach mit!</a>
         <a class="link" href="#global_strike" data-scroll>Globaler Klimastreik</a>
+        <a class="link" href="#profilbildgenerator" data-scroll>Profilbildgenerator</a>
+        <a class="link" href="#participate" data-scroll>Mach mit!</a>
         <a class="link" href="#demands" data-scroll>Forderungen</a>
         <a class="link" href="#support" data-scroll>Unterstützen</a>
         <span style="white-space:nowrap"><a class="link" href="#groups" data-scroll>Andere Gruppen</a></span>
@@ -46,8 +47,9 @@
       <nav class="header">
         <span class="site-title">Fridays for Future München</span>
         <div class="header-links">
-          <a class="link" href="#participate" data-scroll>Mach mit!</a>
           <a class="link" href="#global_strike" data-scroll>Globaler Klimastreik</a>
+          <a class="link" href="#profilbildgenerator" data-scroll>Profilbildgenerator</a>
+          <a class="link" href="#participate" data-scroll>Mach mit!</a>
           <a class="link" href="#demands" data-scroll>Forderungen</a>
           <a class="link" href="#support" data-scroll>Unterstützen</a>
           <!--<span style="white-space:nowrap"><a class="link" href="#groups" data-scroll>Andere Gruppen</a></span>-->
@@ -84,13 +86,90 @@
   </header>
   <!-- first text section (current news, events, announcements, etc.) -->
 
+  <section id="global_strike" class="projects">
+    <h1> Globaler Klimastreik </h1>
+    <p><b>Am 23.09.2022 findet der nächste globale Klimastreik von Fridays for Future statt.
+      </b></p>
+    <p>Die Klimakrise ist da: 134 Fluttote letztes Jahr im Ahrtal, 25 000 Hektar verbranntes Land
+      in Spanien. Doch was wir heute sehen ist nur ein kleiner Vorgeschmack der drohenden
+      Katastrophe.<br>
+      Es ist Zeit zu handeln und die Notbremse zu ziehen, aber was tut die Bundesregierung? Sie
+      beginnt neue Gasprojekte und beschließt Klimasofortprogramme, mit denen sie nicht mal ihre
+      eigenen Ziele einhalten kann. Damit ignoriert sie weiterhin diese existenzielle Bedrohung
+      und setzt unser aller Leben aufs Spiel.<br>
+      <b>Wir kämpfen weiter für Klimagerechtigkeit: Am 23.09.22 um 12 Uhr am Königsplatz</b></p>
+      
+    <h2> Mithelfen </h2>
+    <p>Um den Streik durchführen zu können, benötigen wir wieder viele Helfende. Wenn du uns
+      unterstützen willst, kannst du dich gerne <a href="https://newsletter.fffutu.re/subscription/bJTMipghdF">hier</a> eintragen.
+      Vielen Dank!</p>
+    
+      <p>Wenn du weiter informiert werden willst, kannst du dich auch bei unserem Newsletter
+        <a href="https://newsletter.fffutu.re/subscription/mFPEmBXBXo?locale=en-US">anmelden</a>.
+        Damit bekommst du regelmäßig Informationen, wie du uns noch unterstützen kannst.</p>
+      <div style="text-align:center">
+        <a class="project-link" href="./assets/documents/2022-09-23_global_strike/pm_22-09-23_ankuendigung.pdf" style="margin:1em">Pressemitteilung</a>
+      </div>
+      
+      
+    
+    </section>
+    
+    <div class="border">
+      <div class="quotation">„When climate change is running faster than we are, everything must be done to defeat climate change.“<br> — António Guterres</div>
+    </div>
+    
+    <section id="profilbildgenerator" class="projects">
+      <h1>Profilbildgenerator</h1>
+      <div class="profile-picture-generator">
+        <div class="pbg-container"></div>
+      </div>
+      
+      <script type="text/javascript"
+      src="/assets/js/profile-picture-generator.js"
+      integrity="sha384-26g7geqCMjr1i6cid56u5QUkDmm4Fs3hd+6zUGwkcfdrbSQ6pluSCQq85jga55Eb"
+      crossorigin="anonymous"></script>
 
+
+      <script type="application/javascript">
+        (function () {
+          window.ProfilePictureGenerator({
+            container: document.querySelector('.pbg-container'),
+            initialLanguage: 'de',
+            languages: {
+              de: {
+                name: 'German',
+                uploadButtonTitle: "Eigenes Profilbild generieren",
+                downloadButtonTitle: "Profilbild herunterladen",
+                imageAltText: "Generiertes Fridays for Future Profilbild",
+                fileName: "ProfilePicture.png",
+                templateUrl: "/assets/img/profile-picture-generator/profile-picture-template.png",
+                imagePreview: "/assets/img/profile-picture-generator/profile-picture-preview.png",
+                privacyNote: "Die ausgewählte Datei wird an keinen Server versendet. Die gesamte Bildgenerierung findet im Browser statt.",
+                privacyLinkText: "Datenschutzerklärung",
+                privacyLink: "/datenschutz.html"
+              },
+              // en: {
+              //   name: 'English',
+              //   templateUrl: "https://fridaysforfuture.de/src/templates/en/template.png",
+              //   imagePreview: "https://fridaysforfuture.de/src/templates/en/preview.png",
+              // }
+            }
+          });
+        })();
+      </script>  
+    </section>
+
+  <div class="border">
+      <div class="quotation">„Change is coming, whether you like it or not“ <br> — Greta Thunberg</div>
+  </div>
+  
   <section  id="participate" class="projects">
 
       
     <h1> Mach Mit! </h1>
     
-  
+    
 
     
     <p>Als globale Bewegung streiken wir seit über drei Jahren freitags für die
@@ -139,83 +218,9 @@
 
   </section>
 
-  <div class="border">
-      <div class="quotation">„Change is coming, whether you like it or not“ <br> — Greta Thunberg</div>
-  </div>
   
-  
-  <section id="global_strike" class="projects">
-    <h1> Globaler Klimastreik </h1>
-    <p><b>Am 23.09.2022 findet der nächste globale Klimastreik von Fridays for Future statt.
-      </b></p>
-    <p>Die Klimakrise ist da: 134 Fluttote letztes Jahr im Ahrtal, 25 000 Hektar verbranntes Land
-      in Spanien. Doch was wir heute sehen ist nur ein kleiner Vorgeschmack der drohenden
-      Katastrophe.<br>
-      Es ist Zeit zu handeln und die Notbremse zu ziehen, aber was tut die Bundesregierung? Sie
-      beginnt neue Gasprojekte und beschließt Klimasofortprogramme, mit denen sie nicht mal ihre
-      eigenen Ziele einhalten kann. Damit ignoriert sie weiterhin diese existenzielle Bedrohung
-      und setzt unser aller Leben aufs Spiel.<br>
-      <b>Wir kämpfen weiter für Klimagerechtigkeit: Am 23.09.22 um 12 Uhr am Königsplatz</b></p>
-      
-    <h2> Mithelfen </h2>
-    <p>Um den Streik durchführen zu können, benötigen wir wieder viele Helfende. Wenn du uns
-      unterstützen willst, kannst du dich gerne <a href="https://newsletter.fffutu.re/subscription/bJTMipghdF">hier</a> eintragen.
-      Vielen Dank!</p>
+
     
-      <p>Wenn du weiter informiert werden willst, kannst du dich auch bei unserem Newsletter
-        <a href="https://newsletter.fffutu.re/subscription/mFPEmBXBXo?locale=en-US">anmelden</a>.
-        Damit bekommst du regelmäßig Informationen, wie du uns noch unterstützen kannst.</p>
-      <div style="text-align:center">
-        <a class="project-link" href="./assets/documents/2022-09-23_global_strike/pm_22-09-23_ankuendigung.pdf" style="margin:1em">Pressemitteilung</a>
-      </div>
-      
-      
-    
-    </section>
-
-    <div class="border">
-      <div class="quotation">„When climate change is running faster than we are, everything must be done to defeat climate change.“<br> — António Guterres</div>
-    </div>
-    <section id="profilbildgenerator" class="projects">
-      <h1>Profilbildgenerator</h1>
-      <div class="profile-picture-generator">
-        <div class="pbg-container"></div>
-      </div>
-      
-      <script type="text/javascript"
-      src="/assets/js/profile-picture-generator.js"
-      integrity="sha384-26g7geqCMjr1i6cid56u5QUkDmm4Fs3hd+6zUGwkcfdrbSQ6pluSCQq85jga55Eb"
-      crossorigin="anonymous"></script>
-
-
-      <script type="application/javascript">
-        (function () {
-          window.ProfilePictureGenerator({
-            container: document.querySelector('.pbg-container'),
-            initialLanguage: 'de',
-            languages: {
-              de: {
-                name: 'German',
-                uploadButtonTitle: "Eigenes Profilbild generieren",
-                downloadButtonTitle: "Profilbild herunterladen",
-                imageAltText: "Generiertes Fridays for Future Profilbild",
-                fileName: "ProfilePicture.png",
-                templateUrl: "/assets/img/profile-picture-generator/profile-picture-template.png",
-                imagePreview: "/assets/img/profile-picture-generator/profile-picture-preview.png",
-                privacyNote: "Die ausgewählte Datei wird an keinen Server versendet. Die gesamte Bildgenerierung findet im Browser statt.",
-                privacyLinkText: "Datenschutzerklärung",
-                privacyLink: "/datenschutz.html"
-              },
-              // en: {
-              //   name: 'English',
-              //   templateUrl: "https://fridaysforfuture.de/src/templates/en/template.png",
-              //   imagePreview: "https://fridaysforfuture.de/src/templates/en/preview.png",
-              // }
-            }
-          });
-        })();
-      </script>  
-    </section>
       
     
   
