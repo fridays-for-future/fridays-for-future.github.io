@@ -225,8 +225,8 @@ th {
     top: 0.5em;
     width: 20vw;
     height: 20vw;
-    min-width: 120px;
-    min-height: 120px;
+    min-width: 100px;
+    min-height: 100px;
     max-width: 220px;
     max-height: 220px;
     z-index: 100
@@ -271,7 +271,7 @@ th {
 
 @media only screen and (min-width: 1000px) {
     .link {
-        font-size: 15pt
+        font-size: 1.5vw
     }
 }
 
