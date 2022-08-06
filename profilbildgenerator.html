@@ -41,7 +41,7 @@
           (function () {
             window.ProfilePictureGenerator({
               container: document.querySelector('.pbg-container'),
-              initialLanguage: 'bonn',
+              initialLanguage: 'germany',
               languages: {
                 germany: {
                   name: 'Deutschland',
@@ -87,7 +87,13 @@
               }
             });
           })();
-        </script>  
+        </script>
+        <script type="application/javascript">
+            // change selection via url query
+            let pbg_location = 'germany';
+
+            document.getElementsByClassName('fff-profile-picture-generator--language-select special-link')[0].value= pbg_location;
+        </script> 
       </section>
 
 </body>
