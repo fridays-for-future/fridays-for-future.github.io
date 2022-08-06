@@ -1,0 +1,17 @@
+html {
+    background-color: rgb(27, 115, 64);
+    background-image: url("https://fridaysforfuture.de/erde_hell.svg");
+    background-origin: padding-box;
+    background-position-x: 120%;
+    background-position-y: 20%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+h1 {
+    color: white;
+}
+
+.fff-profile-picture-generator--privacy-note {
+    color: white;
+}

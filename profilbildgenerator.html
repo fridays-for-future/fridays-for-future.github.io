@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Fridays for Future München</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Fridays for Future München">
+
+  <link rel="icon" href="./assets/img/fff_icon.png">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/profilbildgenerator.css">
+  
+
+  <!-- Leaflet for OSM -->
+  <!--<link rel="stylesheet" href="./assets/osm/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+  <script src="./assets/osm/leaflet.js"
+          integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+          crossorigin=""></script>-->
+
+  <!-- Emoji script for chrome -->
+  <script src="assets/twemoji.min.js"></script>
+</head>
+<body>
+    <section id="profilbildgenerator" class="projects">
+        <h1>Profilbildgenerator</h1>
+        <div class="profile-picture-generator">
+          <div class="pbg-container"></div>
+        </div>
+        
+        <script type="text/javascript"
+        src="/assets/js/profile-picture-generator.js"
+        integrity="sha384-26g7geqCMjr1i6cid56u5QUkDmm4Fs3hd+6zUGwkcfdrbSQ6pluSCQq85jga55Eb"
+        crossorigin="anonymous"></script>
+  
+  
+        <script type="application/javascript">
+          (function () {
+            window.ProfilePictureGenerator({
+              container: document.querySelector('.pbg-container'),
+              initialLanguage: 'de',
+              languages: {
+                de: {
+                  name: 'Deutschland',
+                  uploadButtonTitle: "Eigenes Profilbild generieren",
+                  downloadButtonTitle: "Profilbild herunterladen",
+                  imageAltText: "Generiertes Fridays for Future Profilbild",
+                  fileName: "ProfilePicture.png",
+                  templateUrl: "/assets/img/profile-picture-generator/general_version/template-germany.png",
+                  imagePreview: "/assets/img/profile-picture-generator/general_version/preview-germany.png",
+                  privacyNote: "Die ausgewählte Datei wird an keinen Server versendet. Die gesamte Bildgenerierung findet im Browser statt.",
+                  privacyLinkText: "Datenschutzerklärung",
+                  privacyLink: "/datenschutz.html"
+                },
+                munich: {
+                  name: 'München',
+                  uploadButtonTitle: "Eigenes Profilbild generieren",
+                  downloadButtonTitle: "Profilbild herunterladen",
+                  imageAltText: "Generiertes Fridays for Future Profilbild",
+                  fileName: "ProfilePicture.png",
+                  templateUrl: "/assets/img/profile-picture-generator/general_version/template-munich.png",
+                  imagePreview: "/assets/img/profile-picture-generator/general_version/preview-munich.png",
+                  privacyNote: "Die ausgewählte Datei wird an keinen Server versendet. Die gesamte Bildgenerierung findet im Browser statt.",
+                  privacyLinkText: "Datenschutzerklärung",
+                  privacyLink: "/datenschutz.html"
+                },
+                bonn: {
+                  name: 'Bonn',
+                  uploadButtonTitle: "Eigenes Profilbild generieren",
+                  downloadButtonTitle: "Profilbild herunterladen",
+                  imageAltText: "Generiertes Fridays for Future Profilbild",
+                  fileName: "ProfilePicture.png",
+                  templateUrl: "/assets/img/profile-picture-generator/general_version/template-bonn.png",
+                  imagePreview: "/assets/img/profile-picture-generator/general_version/preview-bonn.png",
+                  privacyNote: "Die ausgewählte Datei wird an keinen Server versendet. Die gesamte Bildgenerierung findet im Browser statt.",
+                  privacyLinkText: "Datenschutzerklärung",
+                  privacyLink: "/datenschutz.html"
+                },
+                // en: {
+                //   name: 'English',
+                //   templateUrl: "https://fridaysforfuture.de/src/templates/en/template.png",
+                //   imagePreview: "https://fridaysforfuture.de/src/templates/en/preview.png",
+                // }
+              }
+            });
+          })();
+        </script>  
+      </section>
+
+</body>
+
+<footer class="footer">
+    <div>
+      <p>
+        Folgt Fridays for Future München auf Social Media und verpasst nie wieder einen Streik:
+      </p>
+      <div class="header-icons">
+          <a aria-label="WhatsApp" target="_blank" href="https://chat.whatsapp.com/Djeyf3JspYbJUJZBpN6Ap5"><i
+                         class="icon fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a aria-label="Telegram" target="_blank" href="https://t.me/fff_muc_info"><i
+                class="icon fa fa-telegram" aria-hidden="true"></i></a>
+        <a aria-label="Facebook" target="_blank" href="https://facebook.com/fridaysforfuturemuenchen"><i
+                class="icon fa fa-facebook" aria-hidden="true"></i></a>
+        <a aria-label="Twitter" target="_blank" href="https://twitter.com/fff_muc"><i class="icon fa fa-twitter"
+                                                                                      aria-hidden="true"></i></a>
+        <a aria-label="Instagram" target="_blank" href="https://instagram.com/fridaysforfuturemuenchen"><i
+                class="icon fa fa-instagram" aria-hidden="true"></i></a>
+        <a aria-label="YouTube" target="_blank" href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng"><i
+                class="icon fa fa-youtube" aria-hidden="true"></i></a>
+        <a aria-label="Mail" target="_blank" href="mailto:Muenchen@FridaysForFuture.is"><i
+                class="icon fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <p>
+      <a href="./presse.html">Presse</a> | <a href="./kontakt.html">Kontakt</a> | <a href="./impressum.html">Impressum</a> | <a href="./datenschutz.html">Datenschutz</a>
+    </p>
+  </footer>
