@@ -10,7 +10,12 @@ html {
 
 h1 {
     color: white;
+    
+}
+@media (orientation: portrait) {
+  h1 {
     font-size: 9vw;
+  }  
 }
 
 .fff-profile-picture-generator--privacy-note {
