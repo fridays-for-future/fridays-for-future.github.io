@@ -66,7 +66,7 @@ div.two-col h2 {
 h3 {
     font-family: "jost", sans-serif;
     font-weight: bold;
-    font-size: 15pt;
+    font-size: 14pt;
 }
 
 
@@ -419,7 +419,8 @@ div.two-col div {
     left: 0;
     padding: 1em;
     background-color: #1b7340;
-    font-size: 15pt;
+    font-size: 17pt;
+    font-weight: 500;
     color: #fff;
     text-align: center;
     transform: skewY(-5deg);
@@ -448,7 +449,6 @@ div.two-col div {
 .quotation {
     text-align: right;
     display: inline-block;
-    //font-weight: 500;
 }
 
 .textbox {
@@ -509,7 +509,7 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
@@ -4893,7 +4893,7 @@ summary {
 
 body {
     padding: 0;
-    font-size: 100%;
+    font-size: 115%;
     line-height: 1.5;
     color: #555;
     font-family: 'jost', sans-serif
