@@ -81,6 +81,8 @@ footer>div {
 .profile-picture-generator {
     display: flex;
     justify-content: center;
+    /*font-family: jost, sans-serif !important;
+    font-size: 115% !important;*/
 }
 
 /*.pbg-container {
