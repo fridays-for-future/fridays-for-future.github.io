@@ -1,14 +1,39 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 @font-face {
-    font-family: fff-text;
-    src: url(../fonts/textfont_fff.ttf);
+    font-family: jost;
+    src: url(../fonts/jost-400.ttf);
 }
 
 @font-face {
+    font-family: jost;
+    src: url(../fonts/jost-400-italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: jost;
+    src: url(../fonts/jost-600.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: jost;
+    src: url(../fonts/jost-600-italic.ttf);
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: jost;
+    src: url(../fonts/jost-500.ttf);
+    font-weight: 500;
+}
+
+/*@font-face {
     font-family: fff-header;
     src: url(../fonts/fff-jost.ttf);
-}
+}*/
 
 html {
     scroll-behavior: smooth;
@@ -20,8 +45,8 @@ p {
 
 h1, h2 {
     text-align: center;
-    font-family: "fff-header", sans-serif;
-    font-weight: normal;
+    font-family: "jost", sans-serif;
+    font-weight: bold;
     margin: 15pt 0;
     margin-block-start: 15px;
     margin-block-end: 15px;
@@ -39,9 +64,9 @@ div.two-col h2 {
 }
 
 h3 {
-    font-family: "fff-header", sans-serif;
-    font-weight: normal;
-    font-size: 15pt;
+    font-family: "jost", sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
 }
 
 
@@ -56,6 +81,8 @@ footer>div {
 .profile-picture-generator {
     display: flex;
     justify-content: center;
+    /*font-family: jost, sans-serif !important;
+    font-size: 115% !important;*/
 }
 
 /*.pbg-container {
@@ -286,7 +313,8 @@ th {
     margin: 0 auto;
     padding-bottom: 0.5em;
     padding-top: 14vh;
-    font-family: "fff-header", sans-serif;
+    font-family: "jost", sans-serif;
+    font-weight: bold;
     transform: skewY(-5deg);
 }
 
@@ -299,7 +327,8 @@ th {
     background-color: #1b7340;
     color: white;
     border: 2px solid white;
-    font-family: fff-header, sans-serif;
+    font-family: jost, sans-serif;
+    font-weight: bold;
     text-align: center;
     padding: 20px;
     z-index: 100;
@@ -332,7 +361,8 @@ th {
     color: #fff;
     position: absolute;
     margin: 0 auto;
-    font-family: "fff-header", sans-serif;
+    font-family: "jost", sans-serif;
+    font-weight: bold;
 }
 
 .next-strike {
@@ -340,7 +370,8 @@ th {
     display: block;
     line-height: 1;
     color: #fff;
-    font-family: fff-header, sans-serif;
+    font-family: jost, sans-serif;
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 550px) {
@@ -390,7 +421,8 @@ div.two-col div {
     left: 0;
     padding: 1em;
     background-color: #1b7340;
-    font-size: 15pt;
+    font-size: 17pt;
+    font-weight: 500;
     color: #fff;
     text-align: center;
     transform: skewY(-5deg);
@@ -479,7 +511,7 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
@@ -497,7 +529,8 @@ hr {
 }
 
 code, kbd, pre, samp {
-    font-family: fff-header, sans-serif;
+    font-family: jost, sans-serif;
+    font-weight: bold;
     font-size: 1em
 }
 
@@ -4862,10 +4895,10 @@ summary {
 
 body {
     padding: 0;
-    font-size: 100%;
+    font-size: 115%;
     line-height: 1.5;
     color: #555;
-    font-family: 'fff-text', sans-serif
+    font-family: 'jost', sans-serif
 }
 
 article, aside, figcaption, figure, footer, header, nav, section {
@@ -5027,7 +5060,8 @@ sub, sup {
 .user-details {
     text-align: center;
     margin: 5px auto;
-    font-family: fff-header sans-serif;
+    font-family: jost sans-serif;
+    font-weight: bold;
 }
 
 .projects {
@@ -5153,8 +5187,8 @@ details {
 details > summary {
     cursor: pointer;
     /*text-align: center;*/
-    font-family: "fff-header", sans-serif;
-    font-weight: normal;
+    font-family: "jost", sans-serif;
+    font-weight: bold;
     font-size: 15pt;
     margin-left: -20px;
 }
