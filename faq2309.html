@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fridays for Future München</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Fridays for Future München">
+
+    <link rel="icon" href="./assets/img/fff_icon.png">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!--<link rel="stylesheet" href="./assets/css/schedule.css">-->
+
+
+    <!-- Leaflet for OSM -->
+  <link rel="stylesheet" href="./assets/osm/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+  <script src="./assets/osm/leaflet.js"
+          integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+          crossorigin=""></script>
+
+
+    <!-- Emoji script for chrome -->
+    <script src="assets/twemoji.min.js"></script>
+    <script defer data-domain="fff-muc.de" src="https://tracking.fff-muc.de/js/plausible.js"></script>
+</head>
+
+<body>
+<section id="header">
+    <div>
+        <a href="index.html">
+          <img src="./assets/img/fff_muc_logo.png" class="header-logo" alt="Fridays for Future München">
+        </a>
+        <div class="header">
+          <span class="site-title">FAQ Großstreik</span>
+        </div>
+    </div>
+    <div style="height: 30vh"></div>
+</section>
+
+
+<section id=introduction" class="projects">
+    <p>Wahrscheinlich hast du es schon mitbekommen: Unser Großstreik am 23.09. wird nicht wie
+      ursprünglich auf dem Königsplatz selbst, sondern direkt daneben auf der Brienner Straße
+      (westlich davon) stattfinden. Damit diese geringfügige Änderung der Versammlungsfläche nicht
+      zu Verwirrungen führt, findet ihr auf dieser Seite die Antworten auf einige naheliegende
+      Fragen.</p>
+    <p>Das wichtigste zuerst: Wenn ihr wie ursprünglich geplant einfach zum Königsplatz anreist,
+      werdet ihr vor Ort auf die Brienner Straße umgeleitet. Ihr müsst euch also keine Sorgen
+      machen, die Demo nicht zu finden.</p>
+</section>
+
+<section id="faq" class="projects">
+
+    <details id="location">
+      <summary>Wo genau ist die Versammlungsfläche?</summary>
+      <p>Unsere Versammlungsfläche umfasst die Brienner Straße zwischen Stiglmaierplatz und
+        Königsplatz. Sie befindet sich also direkt westlich vom Königsplatz.</p>
+    </details>
+    
+     <details id="travel">
+      <summary>Wie kann ich am besten anreisen?</summary>
+      <ul>
+        <li>Per ÖPNV: Sowohl über den Königsplatz (U2) als auch den Stiglmaierplatz
+          (U1/U7, Tram)</li>
+        <li>Zu Fuß (z.B. auch vom Hauptbahnhof aus)</li>
+        <li>Mit dem Fahrrad</li>
+      </ul>
+    </details>
+    
+    <details id="mobilisation">
+      <summary>Was mache ich jetzt mit Plakaten etc. auf denen &bdquo;Königsplatz&ldquo;
+        steht?</summary>
+      <p>Das ganze Königsplatz-Mobimaterial kann weiter verwendet werden. Wie gesagt werden
+        Menschen vor Ort vom Königsplatz auf die Versammlungsfläche daneben in der Brienner Straße
+        umgeleitet. Deswegen ist es gar kein Problem, wenn weiterhin zum Königsplatz mobilisiert
+        wird.</p>
+    </details>
+    
+    <details id="reason">
+      <summary>Wieso kann die Demo nicht wie geplant auf dem Königsplatz selber
+        stattfinden?</summary>
+      <p>Vor ein paar Wochen waren für die European Championships auf dem Königsplatz mehrere
+        Stadien aufgebaut. Dadurch ist leider der Boden ziemlich kaputt gegangen. Der muss daher
+        jetzt wiederhergestellt werden. Deswegen dürfen auf dem Platz aktuell keine
+        Veranstaltungen stattfinden.</p>
+    </details>
+    
+    <details id="reason_time">
+      <summary>Wieso erfahren wir die Ortsänderung erst jetzt?</summary>
+      <p>Es war lange unklar wie kaputt der Boden am Königsplatz wirklich ist und ob unsere Demo
+        nicht doch dort stattfinden kann. Deswegen hat das finale Festlegen der Versammlungsfläche
+        sich stark verzögert. Da wir trotz dieser unsicheren Situation natürlich nicht unsere
+        Mobilisierung unterbrechen wollten, haben wir uns dazu entschieden, in dieser Zeit
+        weiterhin den Königsplatz als Demo-Ort zu kommunizieren.</p>
+    </details>
+    
+    <details id="route">
+      <summary>Gibt es auch wieder einen Demonstrationszug?</summary>
+      <p>Ja, es wird wieder einen Demozug geben. Dieser startet und endet an unserer
+        Versammlungsfläche auf der Brienner Straße. Infos zur Route folgen noch.</p>
+    </details>
+    
+    <details id="blocks">
+      <summary>Was hat es mit den Demo-Blöcken auf sich?</summary>
+      <ul>
+        <li>Es wird auf der Demo verschiedene Blöcke geben, um die Diversität unserer Bewegung
+          abzubilden und verschiedene thematische Schwerpunkte zu setzen.</li>
+        <li>Ihr könnt einfach in dem Block mitlaufen, wo ihr euch am wohlsten fühlt.</li>
+        <li>Es gibt natürlich auch die Möglichkeit, irgendwo dazwischen oder ganz hinten im
+          Offenen Block mitzulaufen, wenn euch keiner der Blöcke zusagt.</li>
+      </ul>
+
+      <div align="justify">
+        <div id="block_mapID" style="height:35vh; margin-left: auto; margin-right:auto; width:80%; border-bottom: white 2vh solid;" block_map.invalidateSize();>
+        </div>
+      </div>
+      
+      <script>
+       var block_map = L.map('block_mapID').setView([48.14702, 11.56116], 17);
+       L.tileLayer('https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+           attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.openstreetmap.fr/">Openstreetmap.fr</a>',
+
+           maxZoom: 20,
+           id: 'mapbox/streets-v11',
+           accessToken: 'pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA'
+        }).addTo(block_map);
+        block_map.scrollWheelZoom.disable();
+        var pupil = L.marker([48.14635, 11.56329]).addTo(block_map);
+            pupil.bindPopup("Schüler*innen");
+        var mff = L.marker([48.14657, 11.56256]).addTo(block_map);
+            mff.bindPopup("Munich for Future, NGOs");
+        var migration = L.marker([48.14668, 11.56216]).addTo(block_map);
+            migration.bindPopup("Migration / Klimagerechtigkeit");
+        var nuclear = L.marker([48.1468, 11.56175]).addTo(block_map);
+            nuclear.bindPopup("Anti-Atom");
+        var anticapitalism = L.marker([48.14696, 11.56122]).addTo(block_map);
+            anticapitalism.bindPopup("Antikapitalistische Organistionen");
+        var queer = L.marker([48.14708, 11.5608]).addTo(block_map);
+            queer.bindPopup("queerfeministisch");
+        var students = L.marker([48.14715, 11.56052]).addTo(block_map);
+            students.bindPopup("Students for Future");
+        var rave = L.marker([48.14715, 11.56052]).addTo(block_map);
+            rave.bindPopup("Rave");
+        var party = L.marker([48.14733, 11.55987]).addTo(block_map);
+            party.bindPopup("Parteien");
+        var end = L.marker([48.14743, 11.55949]).addTo(block_map);
+            end.bindPopup("offenes Ende / Ruhig");
+        
+        const resizeObserver = new ResizeObserver(() => {
+          block_map.invalidateSize();
+        });
+        resizeObserver.observe(block_mapID);
+      </script>
+      
+      
+    </details>
+    
+</section>
+
+<footer class="footer">
+    <div>
+        <p>
+            Folgt Fridays for Future München auf Social Media und verpasst nie wieder einen Streik:
+        </p>
+        <div class="header-icons">
+            <a aria-label="WhatsApp" target="_blank" href="https://chat.whatsapp.com/B5A4GtE117l20kVaFM8Vd0"><i
+                    class="icon fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a aria-label="Telegram" target="_blank" href="https://t.me/joinchat/DEvHuhNGvo9AdcAudNkVGg"><i
+                    class="icon fa fa-telegram" aria-hidden="true"></i></a>
+            <a aria-label="Facebook" target="_blank" href="https://facebook.com/fridaysforfuturemuenchen"><i
+                    class="icon fa fa-facebook" aria-hidden="true"></i></a>
+            <a aria-label="Twitter" target="_blank" href="https://twitter.com/fff_muc"><i class="icon fa fa-twitter"
+                                                                                          aria-hidden="true"></i></a>
+            <a aria-label="Instagram" target="_blank" href="https://instagram.com/fridaysforfuturemuenchen"><i
+                    class="icon fa fa-instagram" aria-hidden="true"></i></a>
+            <a aria-label="YouTube" target="_blank" href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng"><i
+                    class="icon fa fa-youtube" aria-hidden="true"></i></a>
+            <a aria-label="Mail" target="_blank" href="mailto:Muenchen@FridaysForFuture.is"><i
+                    class="icon fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <p><a href="index.html">Hauptseite</a> | <a href="./presse.html">Presse</a> | <a href="./kontakt.html">Kontakt</a> | <a href="./impressum.html">Impressum</a> | <a href="./datenschutz.html">Datenschutz</a>
+    </p>
+</footer>
+
+<script>
+    var isfirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+    if (!isfirefox) {
+        var ul = document.getElementById('13.03');
+        twemoji.parse(ul, {"size": 72});
+    }
+</script>
+
+
+</body>
