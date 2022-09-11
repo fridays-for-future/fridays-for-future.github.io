@@ -4942,12 +4942,18 @@ sub, sup {
     color: #fff;
 }
 
+.site-heading {
+    font-size: 45pt;
+    color: #1da64a
+}
+
 @media only screen and (min-width: 890px) {
     .header .site-title {
         margin: 0;
         font-size: 30pt;
         display: block
     }
+    
     .site-heading {
         display: none;
     }
