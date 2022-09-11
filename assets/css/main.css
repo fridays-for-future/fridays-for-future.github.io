@@ -4948,6 +4948,9 @@ sub, sup {
         font-size: 30pt;
         display: block
     }
+    .site-heading {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1120px) {

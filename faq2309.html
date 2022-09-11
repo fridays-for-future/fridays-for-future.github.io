@@ -34,19 +34,21 @@
           <img src="./assets/img/fff_muc_logo.png" class="header-logo" alt="Fridays for Future München">
         </a>
         <div class="header">
-          <span class="site-title">FAQ Großstreik</span>
+          <span class="site-title">FAQ Klimastreik 23.09.</span>
         </div>
     </div>
-    <div style="height: 30vh"></div>
+    <div style="height: 22vw; max-height: 240px">
+    </div>
+    <h1 class="site-heading"> FAQ Klimastreik 23.09. </h1>
 </section>
 
 
 <section id=introduction" class="projects">
     <p>Wahrscheinlich hast du es schon mitbekommen: Unser Großstreik am 23.09. wird nicht wie
-      ursprünglich auf dem Königsplatz selbst, sondern direkt daneben auf der Brienner Straße
-      (westlich davon) stattfinden. Damit diese geringfügige Änderung der Versammlungsfläche nicht
-      zu Verwirrungen führt, findet ihr auf dieser Seite die Antworten auf einige naheliegende
-      Fragen.</p>
+      ursprünglich geplant auf dem Königsplatz selbst, sondern direkt daneben auf der Brienner
+      Straße (westlich davon) stattfinden. Damit diese geringfügige Änderung der
+      Versammlungsfläche nicht zu Verwirrungen führt, findet ihr auf dieser Seite die Antworten
+      auf einige Fragen rund um die Ortsänderung.</p>
     <p>Das wichtigste zuerst: Wenn ihr wie ursprünglich geplant einfach zum Königsplatz anreist,
       werdet ihr vor Ort auf die Brienner Straße umgeleitet. Ihr müsst euch also keine Sorgen
       machen, die Demo nicht zu finden.</p>
@@ -90,11 +92,12 @@
     
     <details id="reason_time">
       <summary>Wieso erfahren wir die Ortsänderung erst jetzt?</summary>
-      <p>Es war lange unklar wie kaputt der Boden am Königsplatz wirklich ist und ob unsere Demo
-        nicht doch dort stattfinden kann. Deswegen hat das finale Festlegen der Versammlungsfläche
-        sich stark verzögert. Da wir trotz dieser unsicheren Situation natürlich nicht unsere
-        Mobilisierung unterbrechen wollten, haben wir uns dazu entschieden, in dieser Zeit
-        weiterhin den Königsplatz als Demo-Ort zu kommunizieren.</p>
+      <p>Auch wir wurden erst sehr spät über die Problematik informiert. Dann war lange unklar,
+        wie kaputt der Boden am Königsplatz wirklich ist und ob unsere Demo nicht doch dort
+        stattfinden kann. Deswegen hat das finale Festlegen der Versammlungsfläche sich stark
+        verzögert. Da wir trotz dieser unsicheren Situation natürlich nicht unsere Mobilisierung
+        unterbrechen wollten, haben wir uns dazu entschieden, in dieser Zeit weiterhin den
+        Königsplatz als Demo-Ort zu kommunizieren.</p>
     </details>
     
     <details id="route">
@@ -129,25 +132,23 @@
         }).addTo(block_map);
         block_map.scrollWheelZoom.disable();
         var pupil = L.marker([48.14635, 11.56329]).addTo(block_map);
-            pupil.bindPopup("Schüler*innen");
+            pupil.bindPopup("Schüler*innen- / Jugend-Block");
         var mff = L.marker([48.14657, 11.56256]).addTo(block_map);
-            mff.bindPopup("Munich for Future, NGOs");
+            mff.bindPopup("Munich for Future");
         var migration = L.marker([48.14668, 11.56216]).addTo(block_map);
-            migration.bindPopup("Migration / Klimagerechtigkeit");
+            migration.bindPopup("Klimagerechtigkeit / Migration");
         var nuclear = L.marker([48.1468, 11.56175]).addTo(block_map);
-            nuclear.bindPopup("Anti-Atom");
+            nuclear.bindPopup("Anti-Atom-Block");
         var anticapitalism = L.marker([48.14696, 11.56122]).addTo(block_map);
-            anticapitalism.bindPopup("Antikapitalistische Organistionen");
+            anticapitalism.bindPopup("Antikapitalistischer Block");
         var queer = L.marker([48.14708, 11.5608]).addTo(block_map);
-            queer.bindPopup("queerfeministisch");
+            queer.bindPopup("Queer-feministischer Block");
         var students = L.marker([48.14715, 11.56052]).addTo(block_map);
-            students.bindPopup("Students for Future");
+            students.bindPopup("Student*innen-Block");
         var rave = L.marker([48.14715, 11.56052]).addTo(block_map);
-            rave.bindPopup("Rave");
-        var party = L.marker([48.14733, 11.55987]).addTo(block_map);
-            party.bindPopup("Parteien");
-        var end = L.marker([48.14743, 11.55949]).addTo(block_map);
-            end.bindPopup("offenes Ende / Ruhig");
+            rave.bindPopup("Rave-Block");
+        var end = L.marker([48.14732, 11.55989]).addTo(block_map);
+            end.bindPopup("Offenes Ende / Ruhiger Block");
         
         const resizeObserver = new ResizeObserver(() => {
           block_map.invalidateSize();
