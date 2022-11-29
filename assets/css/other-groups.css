@@ -43,11 +43,10 @@ label {
 /* Default State */
 
 .logo div {
-    height: 0px;
-    width: 20vw;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.8s linear, height 0.5s linear, width 0.1s linear;
+    height: 100%;
+    width: 45vw;
+    visibility: visible;
+    opacity: 1;
  }
 
  .logo img {
@@ -55,10 +54,3 @@ label {
     height: 20vw;
     width: 100%;
  }
- /* Toggled State */
-input[type=checkbox]:checked ~ div {
-    height: 100%;
-    width: 45vw;
-    visibility: visible;
-    opacity: 1;
-}
