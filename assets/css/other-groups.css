@@ -1,0 +1,56 @@
+.gruppen {
+    margin: 30px;
+}
+
+.gruppen h2 {
+    font-size: 50px;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logos img {
+    height: 10vw;
+    width: 100%;
+    padding: 10px;
+}
+
+.titel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.gruppen input[type=checkbox] {
+   position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+label { 
+    -webkit-appearance: push-button;
+    -moz-appearance: button; 
+    margin: 60px 0 10px 0;
+    cursor: pointer;
+    height: 20vw;
+    display: flex;
+}
+
+/* Default State */
+
+.logo div {
+    height: 100%;
+    width: 45vw;
+    visibility: visible;
+    opacity: 1;
+ }
+
+ .logo img {
+    display: flex;
+    height: 20vw;
+    width: 100%;
+ }
