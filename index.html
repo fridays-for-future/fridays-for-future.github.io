@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="./assets/css/main.css">
 
   <!-- Leaflet for OSM -->
-  <!--<link rel="stylesheet" href="./assets/osm/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin=""/>
-  <script src="./assets/osm/leaflet.js"
-          integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-          crossorigin=""></script>-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
 
   <!-- Emoji script for chrome -->
   <script src="assets/twemoji.min.js"></script>
@@ -100,25 +100,7 @@
 
       
     
-    <!--<div align="justify">
-      <div id="MapID2" style="height:62vh; margin-left: auto; margin-right:auto; width:80%; border-bottom: white 2vh solid;">
-      </div>
-    </div>
-      
-    <script>
-       let pos = [48.14189, 11.5774];
-       var mymap = L.map('MapID2').setView(pos, 16);
-       L.tileLayer('https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-           attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.openstreetmap.fr/">Openstreetmap.fr</a>',
-
-           maxZoom: 20,
-           id: 'mapbox/streets-v11',
-           accessToken: 'pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA'
-       }).addTo(mymap);
-       mymap.scrollWheelZoom.disable();
-       var marker = L.marker(pos).addTo(mymap);
-       marker.bindPopup("Odeonsplatz, 14:00 Uhr");
-    </script>-->
+    
     
       
       
@@ -126,9 +108,50 @@
     <div style="text-align:center">
       <a class="project-link" href="./assets/documents/spruchliste.pdf" style="margin:1em">Spruchliste</a>
       </div>
+
+
+      <h1>Abholstationen</h1>
+      <p>Hilf mit, den 3.3. groß zu machen und hol dir Mobimaterial bei einer unserer Abholstationen:</p>
+      <br>
+      <div align="justify">
+        <div id="map" style="height:62vh; margin-left: auto; margin-right:auto; width:80%; border-bottom: white 2vh solid; margin-top:30px; margin-bottom: 40px;">
+        </div>
+      </div>
+        
+      <script>
+         
+         let pos = [48.1365276,11.5700666]
+         var mymap = L.map('map').setView(pos, 12);
+         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          }).addTo(mymap);
+         mymap.scrollWheelZoom.disable();
+         let vollcorner1_pos = [48.1287494,11.5928198];
+         var vollcorner1 = L.marker(vollcorner1_pos).addTo(mymap);
+         vollcorner1.bindPopup('Vollcorner<br>Weißenburger Str. 5<br>Mo-Sa: 8-20 Uhr');
+         let vollcorner2_pos = [48.1490021,11.5728313];
+         var vollcorner2 = L.marker(vollcorner2_pos).addTo(mymap);
+         vollcorner2.bindPopup('Vollcorner<br>Türkenstraße 27<br>Mo-Sa: 8-20 Uhr');
+         let vollcorner3_pos = [48.137447,11.5446531];
+         var vollcorner3 = L.marker(vollcorner3_pos).addTo(mymap);
+         vollcorner3.bindPopup('Vollcorner<br>Schwanthalerstraße 111<br>Mo-Sa: 8-20 Uhr');
+         let vollcorner4_pos = [48.1342554,11.5950622];
+         var vollcorner4 = L.marker(vollcorner4_pos).addTo(mymap);
+         vollcorner4.bindPopup('Vollcorner<br>Innere Wiener Straße 52<br>Mo-Sa: 9-20 Uhr');
+         let vollcorner5_pos = [48.1126948,11.5472863];
+         var vollcorner5 = L.marker(vollcorner5_pos).addTo(mymap);
+         vollcorner5.bindPopup('Vollcorner<br>Resi-Huber-Platz 1<br>Mo-Sa: 8-20 Uhr');
+
+         let titus_pos = [48.1365276,11.5700666];
+         var titus = L.marker(titus_pos).addTo(mymap);
+         titus.bindPopup('Titus Skater Shop<br>Färbergraben 20<br>Mo-Sa: 11-19 Uhr');
+         
+      </script>
       
       <!--<img src="assets/img/participate_21-09-24.jpg" style="width: 80%; margin: auto" alt="Bild einer kleinen Menschengruppe mit Lautsprecherwagen auf dem Großstreik am 24.09.2021">-->
-      
+      <br>
+      <br>
       <h2> Gerade nicht in München? </h2>
       <p>Kein Problem! Wir sind eine globale Bewegung, in vielen anderen Städten in Deutschland
         und weltweit gibt es ebenfalls Fridays for Future-Ortsgruppen. Wenn du also gerade nicht
