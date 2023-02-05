@@ -33,6 +33,7 @@
       </div>
       <!-- menu for mobile devices / small screens -->
       <div class="dropdown-content">
+        <a class="link" href="#grossstreik" data-scroll>Großstreik!</a>
         <a class="link" href="#participate" data-scroll>Mach mit!</a>
         <a class="link" href="#demands" data-scroll>Forderungen</a>
         <a class="link" href="#support" data-scroll>Unterstützen</a>
@@ -47,6 +48,7 @@
       <nav class="header">
         <span class="site-title">Fridays for Future München</span>
         <div class="header-links">
+          <a class="link" href="#grossstreik" data-scroll>Großstreik!</a>
           <a class="link" href="#participate" data-scroll>Mach mit!</a>
           <a class="link" href="#demands" data-scroll>Forderungen</a>
           <a class="link" href="#support" data-scroll>Unterstützen</a>
@@ -84,35 +86,14 @@
 
 
 
-  <section id="participate" class="projects">
 
 
-    <h1> Mach Mit! </h1>
-
-
-    <p>Als globale Bewegung streiken wir seit vier Jahren freitags für die
-      Einhaltung des Pariser Klimaabkommens und effizienten Klimaschutz.</p>
-    <p>In München finden unsere Demos normalerweise immer am <b>ersten Freitag des Monats um 14
-        Uhr am Marienplatz</b> statt.</p>
-    <!--Der Ort für den Klimastreik am 06.01. steh leider noch nicht fest.</p>
-    <p>Unser nächster Streik findet <b>am 03.02. um 14&nbsp;Uhr am Odeonsplatz statt</b>.
-      Normalerweise finden unsere Demos in München immer am <b>ersten Freitag des Monats um 14 Uhr
-      am Marienplatz</b> statt.</p>-->
-
-
-
-
-
-
-
-
-    <div style="text-align:center">
-      <a class="project-link" href="./assets/documents/spruchliste.pdf" style="margin:1em">Spruchliste</a>
-    </div>
+  <section id="grossstreik" class="projects">
+    <h1>Großsstreik</h1>
   </section>
   <section id="abholstationen" class="projects">
-    <h1>Abholstationen</h1>
-    <p>Hilf mit, den 3.3. groß zu machen und hol dir Mobimaterial bei einer unserer Abholstationen:</p>
+    <h2>Abholstationen</h2>
+    <p>Hilf mit, die Demo am 3.3. groß zu machen und hol dir Mobimaterial bei einer unserer Abholstationen:</p>
     <div align="justify">
       <div id="map"
         style="height:62vh; margin-left: auto; margin-right:auto; width:80%; border-bottom: white 2vh solid; margin-top:30px; margin-bottom: 40px;">
@@ -149,21 +130,110 @@
       titus.bindPopup('Titus Skater Shop<br>Färbergraben 20<br>Mo-Sa: 11-19 Uhr');
 
     </script>
-    </section>
-    <section id="helfitool" class="projects"></section>
-    <h1>Helfitool</h1>
-
-    <p style="margin: 10px 25% 0 25%;">Du magst uns bei der Demo selbst unterstützen? Melde dich dafür hier bei unserem Helfitool an, du bekommst dann
-      im Vorfeld zum Großstreik Infos, wo, wann und wie du uns untertützen kannst.</p><br>
-    <div style="text-align:center">
-      <a class="project-link" href="https://limesurvey.fff-muc.de/index.php?r=survey/index&sid=919725"
-        style="margin:1em">Helfitool</a>
+  </section>
+  <div class="two-col">
+    <div class="helfitool">
+      <section id="helfitool" class="projects">
+        <div style="height: 10vw"></div>
+        <h1>Helfer*innentool</h1>
+        <p>Du magst uns bei der Demo selbst unterstützen? Melde dich dafür hier bei
+          unserem Helfer*innentool an, du bekommst dann
+          im Vorfeld zum Großstreik Infos, wo, wann und wie du uns untertützen kannst.</p><br>
+        <div style="text-align:center">
+          <a class="project-link" href="https://limesurvey.fff-muc.de/index.php?r=survey/index&sid=919725"
+            style="margin:1em">Helfer*innentool</a>
+        </div>
+      </section>
     </div>
-    <!--<img src="assets/img/participate_21-09-24.jpg" style="width: 80%; margin: auto" alt="Bild einer kleinen Menschengruppe mit Lautsprecherwagen auf dem Großstreik am 24.09.2021">-->
-    <br>
-    <br>
+    <div class="profilbildgenerator">
+      <section id="profilbildgenerator" class="projects">
+        <h1>Profilbildgenerator</h1>
+        <div class="profile-picture-generator">
+          <div class="pbg-container"></div>
+        </div>
+
+        <script type="text/javascript" src="/assets/js/profile-picture-generator.js" crossorigin="anonymous"></script>
+
+
+        <script type="application/javascript">
+          (function () {
+            window.ProfilePictureGenerator({
+              container: document.querySelector('.pbg-container'),
+              initialLanguage: 'munich',
+              languages: {
+
+                munich: {
+                  name: 'München',
+                  uploadButtonTitle: "Eigenes Profilbild generieren",
+                  downloadButtonTitle: "Profilbild herunterladen",
+                  imageAltText: "Generiertes Fridays for Future Profilbild",
+                  fileName: "ProfilePicture.png",
+                  templateUrl: "/assets/img/profile-picture-generator/2023-03-03-template.png",
+                  imagePreview: "/assets/img/profile-picture-generator/2023-03-03-preview.png",
+                  privacyNote: "Die ausgewählte Datei wird an keinen Server versendet. Die gesamte Bildgenerierung findet im Browser statt.",
+                  privacyLinkText: "Datenschutzerklärung",
+                  privacyLink: "/datenschutz.html"
+                }
+                // en: {
+                //   name: 'English',
+                //   templateUrl: "https://fridaysforfuture.de/src/templates/en/template.png",
+                //   imagePreview: "https://fridaysforfuture.de/src/templates/en/preview.png",
+                // }
+              }
+            });
+          })();
+        </script>
+        <script type="application/javascript">
+          // change selection via url query
+          let pbg_location = 'germany';
+
+          document.getElementsByClassName('fff-profile-picture-generator--language-select special-link')[0].value = pbg_location;
+        </script>
+      </section>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <!--<img src="assets/img/participate_21-09-24.jpg" style="width: 80%; margin: auto" alt="Bild einer kleinen Menschengruppe mit Lautsprecherwagen auf dem Großstreik am 24.09.2021">-->
+  <div class="border">
+    <div class="quotation">
+      „I want you to behave like our house is on fire. Because it is.“ <br> — Greta Thunberg
+    </div>
+  </div>
+
+
+
+  <section id="participate" class="projects">
+
+
+    <h1> Mach Mit! </h1>
+
+
+    <p>Als globale Bewegung streiken wir seit vier Jahren freitags für die
+      Einhaltung des Pariser Klimaabkommens und effizienten Klimaschutz.</p>
+    <p>In München finden unsere Demos normalerweise immer am <b>ersten Freitag des Monats um 14
+        Uhr am Marienplatz</b> statt.</p>
+    <!--Der Ort für den Klimastreik am 06.01. steh leider noch nicht fest.</p>
+      <p>Unser nächster Streik findet <b>am 03.02. um 14&nbsp;Uhr am Odeonsplatz statt</b>.
+        Normalerweise finden unsere Demos in München immer am <b>ersten Freitag des Monats um 14 Uhr
+        am Marienplatz</b> statt.</p>-->
+
+
+
+
+
+
+
+
+    <div style="text-align:center">
+      <a class="project-link" href="./assets/documents/spruchliste.pdf" style="margin:1em">Spruchliste</a>
+    </div>
+
     <h2> Gerade nicht in München? </h2>
-    <p style="margin: 10px 25% 0 25%;">Kein Problem! Wir sind eine globale Bewegung, in vielen anderen Städten in Deutschland
+    <p style="margin: 10px 25% 0 25%;">Kein Problem! Wir sind eine globale Bewegung, in vielen anderen Städten in
+      Deutschland
       und weltweit gibt es ebenfalls Fridays for Future-Ortsgruppen. Wenn du also gerade nicht
       daheim bist, schau einfach hier nach wo überall auch gestreikt wird:</p>
     <div style="text-align:center">
@@ -171,6 +241,7 @@
       <a class="project-link" href="https://fridaysforfuture.org/action-map/map/" style="margin:1em">Weltweite
         Aktionen</a>
     </div>
+  </section>
 
 
 
@@ -181,109 +252,109 @@
 
 
 
-    <div class="border">
-      <div class="quotation">„Hope dies, and action begins.“ <br> — Greta Thunberg</div>
-    </div>
+  <div class="border">
+    <div class="quotation">„Hope dies, and action begins.“ <br> — Greta Thunberg</div>
+  </div>
 
 
 
 
-    <!-- demands section -->
-    <section id="demands" class="projects">
-      <h1> Unsere Forderungen</h1>
-      <div class="two-col">
-        <div>
-          <h2>An die Bundes&shy;regierung:</h2>
-          <ul>
-            <li>Nettonull 2035 erreichen</li>
-            <li>Kohleausstieg bis 2030</li>
-            <li>100% erneuerbare Energieversorgung bis 2035</li>
-          </ul>
-          <h4>Bereits 2019 bis Ende des Jahres gefordert, jedoch immer noch nicht umgesetzt:</h4>
-          <ul>
-            <li>Das Ende der Subventionen für fossile Energieträger</li>
-            <li>1/4 der Kohlekraft abschalten</li>
-            <li>Eine Steuer auf alle Treibhausgasemissionen. Laut UBA sind das 180€ pro Tonne CO₂</li>
-          </ul>
-        </div>
-        <div>
-          <h2>An die Stadt München:</h2>
-          <p>
-            Um zu zeigen, welche Maßnahmen auf lokaler Ebene nötig sind, um die bundesweiten
-            Forderungen umzusetzen, haben wir Forderungen an die Stadt München gestellt:
-          </p>
-          <ul>
-            <li>Betrieb des HKW Nord 2 bis 2022 beenden und bis dahin auf ein Minimum reduzieren </li>
-            <li>Autofreie Zone innerhalb des Mittleren Rings bis spätestens 2025 </li>
-            <li>Austattung aller Neubauten mit Photovoltaik- oder Solarthermieanlagen </li>
-          </ul>
-          <p style="text-align:center">
-            <a class="project-link" href="assets/documents/2019/forderungen_muenchen.pdf">Alle Forderungen als PDF</a>
-          </p>
-        </div>
+  <!-- demands section -->
+  <section id="demands" class="projects">
+    <h1> Unsere Forderungen</h1>
+    <div class="two-col">
+      <div>
+        <h2>An die Bundes&shy;regierung:</h2>
+        <ul>
+          <li>Nettonull 2035 erreichen</li>
+          <li>Kohleausstieg bis 2030</li>
+          <li>100% erneuerbare Energieversorgung bis 2035</li>
+        </ul>
+        <h4>Bereits 2019 bis Ende des Jahres gefordert, jedoch immer noch nicht umgesetzt:</h4>
+        <ul>
+          <li>Das Ende der Subventionen für fossile Energieträger</li>
+          <li>1/4 der Kohlekraft abschalten</li>
+          <li>Eine Steuer auf alle Treibhausgasemissionen. Laut UBA sind das 180€ pro Tonne CO₂</li>
+        </ul>
       </div>
-
-      <h2> Zum Landes&shy;entwicklungs&shy;programm Bayern </h2>
-      <p>Mit dem Landesentwicklungsprogramm legt die bayerische Staatsregierung fest, wofür Flächen
-        in Bayern genutzt werden dürfen. Hier unsere gemeinsame Stellungnahme mit GermanZero zum
-        aktuellen Vorschlag:</p>
-
-      <div style="text-align:center">
-        <a class="project-link" href="./assets/documents/2022/22-03-31_lep.pdf" style="margin:1em">Unsere
-          Stellungnahme</a>
-      </div>
-
-      <h2> Zur Transformation der Automobilindustrie </h2>
-      <p>In einem gemeinsamen Seminar mit Teilnehmenden der Jungsozialist*innen München und der IG
-        Metall Jugend München haben wir ein Positionspapier zur Transformation der
-        Automobilindustrie erarbeitet.</p>
-      <div style="text-align:center">
-        <a class="project-link" href="./assets/documents/2022/22-09-13_positionspapier_automobilindustrie.pdf"
-          style="margin:1em">zum Positionspapier</a>
-      </div>
-
-    </section>
-
-    <div class="border">
-      <div class="quotation">
-        „Was heute geschieht, gleicht einem kollektiven Suizidversuch.“ <br>
-        — Prof. Dr. Hans Joachim Schellnhuber, Klimaforscher
+      <div>
+        <h2>An die Stadt München:</h2>
+        <p>
+          Um zu zeigen, welche Maßnahmen auf lokaler Ebene nötig sind, um die bundesweiten
+          Forderungen umzusetzen, haben wir Forderungen an die Stadt München gestellt:
+        </p>
+        <ul>
+          <li>Betrieb des HKW Nord 2 bis 2022 beenden und bis dahin auf ein Minimum reduzieren </li>
+          <li>Autofreie Zone innerhalb des Mittleren Rings bis spätestens 2025 </li>
+          <li>Austattung aller Neubauten mit Photovoltaik- oder Solarthermieanlagen </li>
+        </ul>
+        <p style="text-align:center">
+          <a class="project-link" href="assets/documents/2019/forderungen_muenchen.pdf">Alle Forderungen als PDF</a>
+        </p>
       </div>
     </div>
 
-    <!-- call for support -->
-    <section id="support" class="projects">
-      <h1> Unterstützen </h1>
-      <p>
-        Du willst uns mehr oder anders unterstützen, als freitags zu streiken? Wenn du
-        uns bei der Vorbereitung und Umsetzung der Streiks helfen möchtest, spreche
-        einfach freitags eine*n der Order*innen an oder kontaktiere uns über unsere Social
-        Media Kanäle. Außerdem freuen wir uns über Überweisungen für Sticker, Plakate,
-        Flyer, GEMA, Wagen- & Boxen-Miete, etc. über das Formular:
-      </p>
+    <h2> Zum Landes&shy;entwicklungs&shy;programm Bayern </h2>
+    <p>Mit dem Landesentwicklungsprogramm legt die bayerische Staatsregierung fest, wofür Flächen
+      in Bayern genutzt werden dürfen. Hier unsere gemeinsame Stellungnahme mit GermanZero zum
+      aktuellen Vorschlag:</p>
 
-      <!-- twingle -->
-      <script type="text/javascript">
-        (function () {
-          var u = "https://spenden.twingle.de/embed/fridays-for-future-munchen/fff-munchenfff-munchen/tw620686687c998/widget";
-          var id = '_' + Math.random().toString(36).substr(2, 9);
-          var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-          document.write('<div id="twingle-public-embed-' + id + '"></div>');
-          g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + '/' + id; s.parentNode.insertBefore(g, s);
-        })();
-      </script>
-      <!-- twingle -->
+    <div style="text-align:center">
+      <a class="project-link" href="./assets/documents/2022/22-03-31_lep.pdf" style="margin:1em">Unsere
+        Stellungnahme</a>
+    </div>
 
-      <!-- call for cooperations -->
-      <h1> Koope&shy;ra&shy;ti&shy;onen </h1>
-      <p>
-        Egal ob Presseanfrage oder Forschungsvorhaben - du kannst uns gerne einfach per
-        <a href="mailto:Muenchen@FridaysForFuture.is">Mail</a> anfragen. Wir stehen außerdem auch
-        als Teilnehmer*innen auf Podiumsdiskussionen, für Fachgespräche, Workshops oder Vorträge
-        zur Verfügung.
-      </p>
-    </section>
-    <!-- other groups moved to seperate page
+    <h2> Zur Transformation der Automobilindustrie </h2>
+    <p>In einem gemeinsamen Seminar mit Teilnehmenden der Jungsozialist*innen München und der IG
+      Metall Jugend München haben wir ein Positionspapier zur Transformation der
+      Automobilindustrie erarbeitet.</p>
+    <div style="text-align:center">
+      <a class="project-link" href="./assets/documents/2022/22-09-13_positionspapier_automobilindustrie.pdf"
+        style="margin:1em">zum Positionspapier</a>
+    </div>
+
+  </section>
+
+  <div class="border">
+    <div class="quotation">
+      „Was heute geschieht, gleicht einem kollektiven Suizidversuch.“ <br>
+      — Prof. Dr. Hans Joachim Schellnhuber, Klimaforscher
+    </div>
+  </div>
+
+  <!-- call for support -->
+  <section id="support" class="projects">
+    <h1> Unterstützen </h1>
+    <p>
+      Du willst uns mehr oder anders unterstützen, als freitags zu streiken? Wenn du
+      uns bei der Vorbereitung und Umsetzung der Streiks helfen möchtest, spreche
+      einfach freitags eine*n der Order*innen an oder kontaktiere uns über unsere Social
+      Media Kanäle. Außerdem freuen wir uns über Überweisungen für Sticker, Plakate,
+      Flyer, GEMA, Wagen- & Boxen-Miete, etc. über das Formular:
+    </p>
+
+    <!-- twingle -->
+    <script type="text/javascript">
+      (function () {
+        var u = "https://spenden.twingle.de/embed/fridays-for-future-munchen/fff-munchenfff-munchen/tw620686687c998/widget";
+        var id = '_' + Math.random().toString(36).substr(2, 9);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        document.write('<div id="twingle-public-embed-' + id + '"></div>');
+        g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + '/' + id; s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- twingle -->
+
+    <!-- call for cooperations -->
+    <h1> Koope&shy;ra&shy;ti&shy;onen </h1>
+    <p>
+      Egal ob Presseanfrage oder Forschungsvorhaben - du kannst uns gerne einfach per
+      <a href="mailto:Muenchen@FridaysForFuture.is">Mail</a> anfragen. Wir stehen außerdem auch
+      als Teilnehmer*innen auf Podiumsdiskussionen, für Fachgespräche, Workshops oder Vorträge
+      zur Verfügung.
+    </p>
+  </section>
+  <!-- other groups moved to seperate page
   <div class="border">
       <div class="quotation"> „I want you to behave like our house is on fire. Because it is.“ <br> — Greta Thunberg</div>
   </div>
@@ -386,40 +457,40 @@
     </div>
   </section>-->
 
-    <footer class="footer">
-      <div>
-        <p>
-          Folgt Fridays for Future München auf Social Media und verpasst nie wieder einen Streik:
-        </p>
-        <div class="header-icons">
-          <a aria-label="WhatsApp" target="_blank" href="https://chat.whatsapp.com/Djeyf3JspYbJUJZBpN6Ap5"><i
-              class="icon fa fa-whatsapp" aria-hidden="true"></i></a>
-          <a aria-label="Telegram" target="_blank" href="https://t.me/fff_muc_info"><i class="icon fa fa-telegram"
-              aria-hidden="true"></i></a>
-          <a aria-label="Facebook" target="_blank" href="https://facebook.com/fridaysforfuturemuenchen"><i
-              class="icon fa fa-facebook" aria-hidden="true"></i></a>
-          <a aria-label="Twitter" target="_blank" href="https://twitter.com/fff_muc"><i class="icon fa fa-twitter"
-              aria-hidden="true"></i></a>
-          <a aria-label="Instagram" target="_blank" href="https://instagram.com/fridaysforfuturemuenchen"><i
-              class="icon fa fa-instagram" aria-hidden="true"></i></a>
-          <a aria-label="YouTube" target="_blank" href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng"><i
-              class="icon fa fa-youtube" aria-hidden="true"></i></a>
-          <a aria-label="Mail" target="_blank" href="mailto:Muenchen@FridaysForFuture.is"><i class="icon fa fa-envelope"
-              aria-hidden="true"></i></a>
-        </div>
-      </div>
+  <footer class="footer">
+    <div>
       <p>
-        <a href="./presse.html">Presse</a> | <a href="./kontakt.html">Kontakt</a> | <a
-          href="./impressum.html">Impressum</a> | <a href="./datenschutz.html">Datenschutz</a>
+        Folgt Fridays for Future München auf Social Media und verpasst nie wieder einen Streik:
       </p>
-    </footer>
+      <div class="header-icons">
+        <a aria-label="WhatsApp" target="_blank" href="https://chat.whatsapp.com/Djeyf3JspYbJUJZBpN6Ap5"><i
+            class="icon fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a aria-label="Telegram" target="_blank" href="https://t.me/fff_muc_info"><i class="icon fa fa-telegram"
+            aria-hidden="true"></i></a>
+        <a aria-label="Facebook" target="_blank" href="https://facebook.com/fridaysforfuturemuenchen"><i
+            class="icon fa fa-facebook" aria-hidden="true"></i></a>
+        <a aria-label="Twitter" target="_blank" href="https://twitter.com/fff_muc"><i class="icon fa fa-twitter"
+            aria-hidden="true"></i></a>
+        <a aria-label="Instagram" target="_blank" href="https://instagram.com/fridaysforfuturemuenchen"><i
+            class="icon fa fa-instagram" aria-hidden="true"></i></a>
+        <a aria-label="YouTube" target="_blank" href="https://www.youtube.com/channel/UCVfMwipzxB2GUqRuJpxr7Ng"><i
+            class="icon fa fa-youtube" aria-hidden="true"></i></a>
+        <a aria-label="Mail" target="_blank" href="mailto:Muenchen@FridaysForFuture.is"><i class="icon fa fa-envelope"
+            aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <p>
+      <a href="./presse.html">Presse</a> | <a href="./kontakt.html">Kontakt</a> | <a
+        href="./impressum.html">Impressum</a> | <a href="./datenschutz.html">Datenschutz</a>
+    </p>
+  </footer>
 
-    <!-- helper script for chrome to display emojis properly -->
-    <script>
-      var isfirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
-      if (!isfirefox) {
-        var ul = document.getElementById('13.03');
-        twemoji.parse(ul, { "size": 72 });
-      }
-    </script>
+  <!-- helper script for chrome to display emojis properly -->
+  <script>
+    var isfirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+    if (!isfirefox) {
+      var ul = document.getElementById('13.03');
+      twemoji.parse(ul, { "size": 72 });
+    }
+  </script>
 </body>

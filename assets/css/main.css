@@ -381,14 +381,7 @@ th {
     }
 }
 
-div.two-col {
-    column-count: 2;
-    column-width: 260px;
-}
-div.two-col div {
-    break-inside: avoid-column;
-    display: table;
-}
+
 
 .subgroup {
     float: left;
@@ -5221,3 +5214,23 @@ details.with-bg:not([open]) > summary {
     margin: 0 -15px;
 }
 
+div.two-col {
+    column-count: 2;
+    column-width: 0.4vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+div.two-col section{
+    break-inside: avoid-column;
+    display: table;
+}
+div.two-col h2 {
+    text-align: center;
+}
+
+.profilbildgenerator {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
