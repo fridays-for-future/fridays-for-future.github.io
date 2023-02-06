@@ -5216,7 +5216,7 @@ details.with-bg:not([open]) > summary {
 
 div.two-col {
     column-count: 2;
-    column-width: 0.4vw;
+    column-width: 260px;
     margin-left: 10vw;
     margin-right: 10vw;
 }
