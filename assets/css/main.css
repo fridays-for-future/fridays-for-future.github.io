@@ -59,9 +59,6 @@ h1 {
 h2 {
     font-size: 25pt;
 }
-div.two-col h2 {
-    text-align: left;
-}
 
 h3 {
     font-family: "jost", sans-serif;
@@ -5217,15 +5214,11 @@ details.with-bg:not([open]) > summary {
 div.two-col {
     column-count: 2;
     column-width: 260px;
-    margin-left: 10vw;
-    margin-right: 10vw;
 }
-div.two-col section{
+div.two-col div{
     break-inside: avoid-column;
     display: table;
-}
-div.two-col h2 {
-    text-align: center;
+    margin: auto;
 }
 
 .profilbildgenerator {
