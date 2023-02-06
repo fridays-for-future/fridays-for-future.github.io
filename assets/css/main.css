@@ -95,8 +95,8 @@ footer>div {
     padding-top: 0.8em;
     background-color: #1b7340;
     color: white;
-    width: 6em;
-    height: 6em;
+    width: 96px;
+    height: 96px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -142,7 +142,7 @@ th {
 .dropdown-content {
     display: none;
     position: absolute;
-    right: 6em;
+    right: 96px;
     top: 0;
     background-color: #1b7340;
     min-width: 160px;
