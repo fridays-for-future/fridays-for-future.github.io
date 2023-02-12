@@ -5220,3 +5220,18 @@ div.two-col div{
     display: table;
     margin: auto;
 }
+
+.mobiplakate {
+    display: flex;
+    align-items: center;
+}
+.plakat  img {
+    height: 30vw;
+}
+.plakat {
+    margin: 5vw;
+    text-align: center;
+}
+.a0 {
+    margin-left: 2.5vw;
+}
