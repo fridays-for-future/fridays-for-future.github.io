@@ -13,10 +13,8 @@
   <link rel="stylesheet" href="./assets/css/main.css">
 
   <!-- Leaflet for OSM -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <!--<link rel="stylesheet" href="./assets/osm/leaflet.css"
+  <script src="./assets/osm/leaflet.js" crossorigin=""></script>-->
 
   <!-- Emoji script for chrome -->
   <script src="assets/twemoji.min.js"></script>
@@ -33,7 +31,6 @@
       </div>
       <!-- menu for mobile devices / small screens -->
       <div class="dropdown-content">
-        <a class="link" href="#global_strike" data-scroll>Großstreik!</a>
         <a class="link" href="#participate" data-scroll>Mach mit!</a>
         <a class="link" href="#demands" data-scroll>Forderungen</a>
         <a class="link" href="#support" data-scroll>Unterstützen</a>
@@ -48,7 +45,6 @@
       <nav class="header">
         <span class="site-title">Fridays for Future München</span>
         <div class="header-links">
-          <a class="link" href="#global_strike" data-scroll>Großstreik!</a>
           <a class="link" href="#participate" data-scroll>Mach mit!</a>
           <a class="link" href="#demands" data-scroll>Forderungen</a>
           <a class="link" href="#support" data-scroll>Unterstützen</a>
@@ -59,9 +55,9 @@
     </div>
     <!-- border between background image and text sections -->
     <div class="border-top">
-      <header class="next-strike">Globaler Klimastreik: 03.&nbsp;März, 12&nbsp;Uhr, Odeonsplatz</header>
+      <header class="next-strike">Danke für 32.000 Menschen in München am Globalen Klimastreik</header>
 
-      <a class="down" href="#global_strike" data-scroll>
+      <a class="down" href="#participate" data-scroll>
         <i class="icon fa fa-chevron-down" aria-hidden="true" style="height: 40px"></i>
       </a>
       <nav class="header-icons" style="margin-top:3em">
@@ -87,148 +83,15 @@
 
 
 
-
-  <section id="global_strike" class="projects">
-    <h1>Globaler Klimastreik</h1>
-    
-     <div style="text-align:center">
-          <a class="project-link" href="https://cloud.infra4future.de/s/7KgENxrTk5Ad4z8"
-            style="margin:1em">Übersetzte Reden / Translated Speeches</a>
-        </div>
-    
-
-    <h2>Ab&shy;hol&shy;sta&shy;tio&shy;nen</h2>
-    <p>Hilf mit, die Demo am 3.3. groß zu machen und hol dir Mobimaterial bei einer unserer Abholstationen:</p>
-    <div align="justify">
-      <div id="map"
-        style="height:62vh; margin-left: auto; margin-right:auto; width:80%; border-bottom: white 2vh solid; margin-top:30px; margin-bottom: 40px;">
-      </div>
-    </div>
-
-    <script>
-
-      let pos = [48.1365276, 11.5700666]
-      var mymap = L.map('map').setView(pos, 12);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      }).addTo(mymap);
-      mymap.scrollWheelZoom.disable();
-      let vollcorner1_pos = [48.1287494, 11.5928198];
-      var vollcorner1 = L.marker(vollcorner1_pos).addTo(mymap);
-      vollcorner1.bindPopup('Vollcorner<br>Weißenburger Str. 5<br>Mo-Sa: 8-20 Uhr');
-      let vollcorner2_pos = [48.1490021, 11.5728313];
-      var vollcorner2 = L.marker(vollcorner2_pos).addTo(mymap);
-      vollcorner2.bindPopup('Vollcorner<br>Türkenstraße 27<br>Mo-Sa: 8-20 Uhr');
-      let vollcorner3_pos = [48.137447, 11.5446531];
-      var vollcorner3 = L.marker(vollcorner3_pos).addTo(mymap);
-      vollcorner3.bindPopup('Vollcorner<br>Schwanthalerstraße 111<br>Mo-Sa: 8-20 Uhr');
-      let vollcorner4_pos = [48.1342554, 11.5950622];
-      var vollcorner4 = L.marker(vollcorner4_pos).addTo(mymap);
-      vollcorner4.bindPopup('Vollcorner<br>Innere Wiener Straße 52<br>Mo-Sa: 9-20 Uhr');
-      let vollcorner5_pos = [48.1126948, 11.5472863];
-      var vollcorner5 = L.marker(vollcorner5_pos).addTo(mymap);
-      vollcorner5.bindPopup('Vollcorner<br>Resi-Huber-Platz 1<br>Mo-Sa: 8-20 Uhr');
-
-      let titus_pos = [48.1365276, 11.5700666];
-      var titus = L.marker(titus_pos).addTo(mymap);
-      titus.bindPopup('Titus Skater Shop<br>Färbergraben 20<br>Mo-Sa: 11-19 Uhr');
-
-    </script>
-    <br>
-    <div class="Plakat">
-      <h2>Mo&shy;bi Pla&shy;ka&shy;te</h2>
-      <p>Falls du einen Drucker parat hast, kannst du auch einfach unser Plakat selbst ausdrucken und aufhängen.</p>
-      <div class="mobiplakate">
-        <div class="plakat a0">
-          <img src="/assets/documents/2023-03-03_global_strike/Plakat_A0_optimized.png" alt="A0-Plakat" loading="lazy"/>
-          <br>
-          <a href="/assets/documents/2023-03-03_global_strike/Plakat_A0.pdf" download>Download-Link A0</a>
-        </div>
-        <div class="plakat a4">
-          <img src="/assets/documents/2023-03-03_global_strike/Plakat_A4_optimized.png" alt="A4-Plakat" loading="lazy"/>
-          <br>
-          <a href="/assets/documents/2023-03-03_global_strike/Plakat_A4.pdf" download>Download-Link A4</a>
-        </div>
-      </div>
-    </div>
-    
-  <div class="two-col">
-    <div id="helfitool">
-        <h2>Hel&shy;fer&shy;*in&shy;nen&shy;tool</h2>
-        <p>Du magst uns bei der Demo selbst unterstützen? Melde dich dafür hier bei
-          unserem Helfer*innentool an, du bekommst dann
-          im Vorfeld zum Großstreik Infos, wo, wann und wie du uns unterstützen kannst.</p><br>
-        <div style="text-align:center">
-          <a class="project-link" href="https://limesurvey.fff-muc.de/index.php?r=survey/index&sid=919725"
-            style="margin:1em">Helfer*innentool</a>
-        </div>
-
-    </div>
-    <div id="profilbildgenerator">
-        <h2>Pro&shy;fil&shy;bild&shy;ge&shy;ne&shy;ra&shy;tor</h2>
-        <div class="profile-picture-generator">
-          <div class="pbg-container"></div>
-        </div>
-
-        <script type="text/javascript" src="/assets/js/profile-picture-generator.js" crossorigin="anonymous"></script>
-
-
-        <script type="application/javascript">
-          (function () {
-            window.ProfilePictureGenerator({
-              container: document.querySelector('.pbg-container'),
-              initialLanguage: 'munich',
-              languages: {
-
-                munich: {
-                  name: 'München',
-                  uploadButtonTitle: "Eigenes Profilbild generieren",
-                  downloadButtonTitle: "Profilbild herunterladen",
-                  imageAltText: "Generiertes Fridays for Future Profilbild",
-                  fileName: "ProfilePicture.png",
-                  templateUrl: "/assets/img/profile-picture-generator/2023-03-03-template.png",
-                  imagePreview: "/assets/img/profile-picture-generator/2023-03-03-preview.png",
-                  privacyNote: "Die ausgewählte Datei wird an keinen Server versendet. Die gesamte Bildgenerierung findet im Browser statt.",
-                  privacyLinkText: "Datenschutzerklärung",
-                  privacyLink: "/datenschutz.html"
-                }
-                // en: {
-                //   name: 'English',
-                //   templateUrl: "https://fridaysforfuture.de/src/templates/en/template.png",
-                //   imagePreview: "https://fridaysforfuture.de/src/templates/en/preview.png",
-                // }
-              }
-            });
-          })();
-        </script>
-        <script type="application/javascript">
-          // change selection via url query
-          let pbg_location = 'germany';
-
-          document.getElementsByClassName('fff-profile-picture-generator--language-select special-link')[0].value = pbg_location;
-        </script>
-    </div>
-  </div>
-
-  </div>
-  </div>
-  </section>
-
-  <!--<img src="assets/img/participate_21-09-24.jpg" style="width: 80%; margin: auto" alt="Bild einer kleinen Menschengruppe mit Lautsprecherwagen auf dem Großstreik am 24.09.2021">-->
-  <div class="border">
+  <!--<div class="border">
     <div class="quotation">
       „I want you to behave like our house is on fire. Because it is.“ <br> — Greta Thunberg
     </div>
-  </div>
-
-
-
+  </div>-->
+  
   <section id="participate" class="projects">
 
-
     <h1> Mach Mit! </h1>
-
 
     <p>Als globale Bewegung streiken wir seit vier Jahren freitags für die
       Einhaltung des Pariser Klimaabkommens und effizienten Klimaschutz.</p>
@@ -362,7 +225,6 @@
         g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + '/' + id; s.parentNode.insertBefore(g, s);
       })();
     </script>
-    <!-- twingle -->
 
     <!-- call for cooperations -->
     <h1> Koope&shy;ra&shy;ti&shy;onen </h1>
