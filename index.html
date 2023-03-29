@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="./assets/css/main.css">
 
   <!-- Leaflet for OSM -->
-  <!--<link rel="stylesheet" href="./assets/osm/leaflet.css"
-  <script src="./assets/osm/leaflet.js" crossorigin=""></script>-->
+  <link rel="stylesheet" href="./assets/osm/leaflet.css">
+  <script src="./assets/osm/leaflet.js" crossorigin=""></script>
 
   <!-- Emoji script for chrome -->
   <script src="assets/twemoji.min.js"></script>
@@ -55,7 +55,7 @@
     </div>
     <!-- border between background image and text sections -->
     <div class="border-top">
-      <header class="next-strike">Nächster Klimastreik: 14.04., 14&nbsp;Uhr</header>
+      <header class="next-strike">Nächster Klimastreik: 14.&nbsp;April, 14&nbsp;Uhr, Max-Joseph-Platz</header>
 
       <a class="down" href="#participate" data-scroll>
         <i class="icon fa fa-chevron-down" aria-hidden="true" style="height: 40px"></i>
@@ -99,7 +99,26 @@
         Uhr am Marienplatz</b> statt.</p>-->
       <p>Normalerweise finden unsere Demos in München immer am ersten Freitag des Monats um 14
         Uhr am Marienplatz statt. Wegen des Karfreitags findet der nächste Streik erst <b>am
-        14.04. um 14 Uhr</b> statt. Der Ort wird demnächst hier bekannt gegeben.</p>
+        14.04. um 14 Uhr am Max-Joseph-Platz</b> statt.</p>
+        
+      <div align="justify">
+        <div id="MapID2" style="height:62vh; margin-left: auto; margin-right:auto; width:80%; border-bottom: white 2vh solid;">
+        </div>
+      </div>
+      
+      <script>
+       let pos = [48.13984, 11.57801];
+       var mymap = L.map('MapID2').setView(pos, 16);
+       L.tileLayer('https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+           attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.openstreetmap.fr/">Openstreetmap.fr</a>',
+           maxZoom: 20,
+           id: 'mapbox/streets-v11',
+           accessToken: 'pk.eyJ1IjoiZmVsaXg4MTgyOTMiLCJhIjoiY2p6a2h6cjdyMGpicjNvbzlzZ3UwNmloMCJ9.a4t1KM9Gid-q29ultM7HgA'
+       }).addTo(mymap);
+       mymap.scrollWheelZoom.disable();
+       var marker = L.marker(pos).addTo(mymap);
+       marker.bindPopup("Max-Joseph-Platz, 14:00 Uhr");
+      </script>
 
       <div style="text-align:center">
           <a class="project-link" href="./assets/documents/spruchliste.pdf" style="margin:1em">Spruchliste</a>
