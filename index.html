@@ -31,6 +31,7 @@
       </div>
       <!-- menu for mobile devices / small screens -->
       <div class="dropdown-content">
+        <a class="link" href="#global_strike" data-scroll>Großstreik!</a>
         <a class="link" href="#participate" data-scroll>Mach mit!</a>
         <a class="link" href="#demands" data-scroll>Forderungen</a>
         <a class="link" href="#support" data-scroll>Unterstützen</a>
@@ -45,6 +46,7 @@
       <nav class="header">
         <span class="site-title">Fridays for Future München</span>
         <div class="header-links">
+          <a class="link" href="#global_strike" data-scroll>Großstreik!</a>
           <a class="link" href="#participate" data-scroll>Mach mit!</a>
           <a class="link" href="#demands" data-scroll>Forderungen</a>
           <a class="link" href="#support" data-scroll>Unterstützen</a>
@@ -57,7 +59,7 @@
     <div class="border-top">
       <header class="next-strike">Globaler Klimastreik: 15.&nbsp;September, 12&nbsp;Uhr, Siegestor</header>
 
-      <a class="down" href="#participate" data-scroll>
+      <a class="down" href="#global_strike" data-scroll>
         <i class="icon fa fa-chevron-down" aria-hidden="true" style="height: 40px"></i>
       </a>
       <nav class="header-icons" style="margin-top:3em">
@@ -88,6 +90,169 @@
       „I want you to behave like our house is on fire. Because it is.“ <br> — Greta Thunberg
     </div>
   </div>-->
+
+    <section id="global_strike" class="projects">
+    <h1>Globaler Klimastreik</h1>
+
+      <!--<div style="text-align:center">
+          <a class="project-link" href="https://cloud.infra4future.de/s/7KgENxrTk5Ad4z8"
+            style="margin:1em">Übersetzte Reden / Translated Speeches</a>
+</div>-->
+
+
+    <h2>Ab&shy;hol&shy;sta&shy;tio&shy;nen</h2>
+    <p>Hilf mit, die Demo am 15.9. groß zu machen und hol dir Mobimaterial bei einer unserer Abholstationen:</p>
+    <div align="justify">
+      <div id="map"
+        style="height:62vh; margin-left: auto; margin-right:auto; width:80%; border-bottom: white 2vh solid; margin-top:30px; margin-bottom: 40px;">
+      </div>
+    </div>
+
+    <script>
+
+      let pos = [48.1365276, 11.5700666]
+      var mymap = L.map('map').setView(pos, 12);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(mymap);
+      mymap.scrollWheelZoom.disable();
+      //let vollcorner1_pos = [48.1287494, 11.5928198];
+      //var vollcorner1 = L.marker(vollcorner1_pos).addTo(mymap);
+      //vollcorner1.bindPopup('Vollcorner<br>Weißenburger Str. 5<br>Mo-Sa: 8-20 Uhr');
+      let vollcorner2_pos = [48.1490021, 11.5728313];
+      var vollcorner2 = L.marker(vollcorner2_pos).addTo(mymap);
+      vollcorner2.bindPopup('Vollcorner<br>Türkenstraße 27<br>Mo-Sa: 8-20 Uhr');
+      let vollcorner3_pos = [48.137447, 11.5446531];
+      var vollcorner3 = L.marker(vollcorner3_pos).addTo(mymap);
+      vollcorner3.bindPopup('Vollcorner<br>Schwanthalerstraße 111<br>Mo-Sa: 8-20 Uhr');
+      //let vollcorner4_pos = [48.1342554, 11.5950622];
+      //var vollcorner4 = L.marker(vollcorner4_pos).addTo(mymap);
+      //vollcorner4.bindPopup('Vollcorner<br>Innere Wiener Straße 52<br>Mo-Sa: 9-20 Uhr');
+      //let vollcorner5_pos = [48.1126948, 11.5472863];
+      //var vollcorner5 = L.marker(vollcorner5_pos).addTo(mymap);
+      //vollcorner5.bindPopup('Vollcorner<br>Resi-Huber-Platz 1<br>Mo-Sa: 8-20 Uhr');
+
+      //let titus_pos = [48.1365276, 11.5700666];
+      //var titus = L.marker(titus_pos).addTo(mymap);
+      //titus.bindPopup('Titus Skater Shop<br>Färbergraben 20<br>Mo-Sa: 11-19 Uhr');
+
+      let vollcorner6_pos = [48.1125848, 11.5469145];
+      var vollcorner6 = L.marker(vollcorner6_pos).addTo(mymap);
+      vollcorner6.bindPopup('VollCorner<br>Resi-Huber-Platz 1<br>Mo-Sa: 8-20 Uhr');
+
+      let denns_pos = [48.1101482, 11.5927696];
+      var denns = L.marker(denns_pos).addTo(mymap);
+      denns.bindPopup('Benns Biomarkt<br>Giesinger Bahnhofplatz 2<br>Mo-Sa 7-20 Uhr');
+    </script>
+    <br>
+        <!--<div class="Plakat">
+      <h2>Mo&shy;bi Pla&shy;ka&shy;te</h2>
+      <p>Falls du einen Drucker parat hast, kannst du auch einfach unser Plakat selbst ausdrucken und aufhängen.</p>
+      <div class="mobiplakate">
+        <div class="plakat a0">
+          <img src="/assets/documents/2023-03-03_global_strike/Plakat_A0_optimized.png" alt="A0-Plakat" loading="lazy"/>
+          <br>
+          <a href="/assets/documents/2023-03-03_global_strike/Plakat_A0.pdf" download>Download-Link A0</a>
+        </div>
+        <div class="plakat a4">
+          <img src="/assets/documents/2023-03-03_global_strike/Plakat_A4_optimized.png" alt="A4-Plakat" loading="lazy"/>
+          <br>
+          <a href="/assets/documents/2023-03-03_global_strike/Plakat_A4.pdf" download>Download-Link A4</a>
+        </div>
+      </div>
+</div>-->
+
+        <!--<div class="two-col">
+    <div id="helfitool">
+        <h2>Hel&shy;fer&shy;*in&shy;nen&shy;tool</h2>
+        <p>Du magst uns bei der Demo selbst unterstützen? Melde dich dafür hier bei
+          unserem Helfer*innentool an, du bekommst dann
+          im Vorfeld zum Großstreik Infos, wo, wann und wie du uns unterstützen kannst.</p><br>
+        <div style="text-align:center">
+          <a class="project-link" href="https://limesurvey.fff-muc.de/index.php?r=survey/index&sid=919725"
+            style="margin:1em">Helfer*innentool</a>
+        </div>
+
+    </div>
+    <div id="profilbildgenerator">
+        <h2>Pro&shy;fil&shy;bild&shy;ge&shy;ne&shy;ra&shy;tor</h2>
+        <div class="profile-picture-generator">
+          <div class="pbg-container"></div>
+        </div>
+
+        <script type="text/javascript" src="/assets/js/profile-picture-generator.js" crossorigin="anonymous"></script>
+
+
+        <script type="application/javascript">
+          (function () {
+            window.ProfilePictureGenerator({
+              container: document.querySelector('.pbg-container'),
+              initialLanguage: 'munich',
+              languages: {
+
+                munich: {
+                  name: 'München',
+                  uploadButtonTitle: "Eigenes Profilbild generieren",
+                  downloadButtonTitle: "Profilbild herunterladen",
+                  imageAltText: "Generiertes Fridays for Future Profilbild",
+                  fileName: "ProfilePicture.png",
+                  templateUrl: "/assets/img/profile-picture-generator/2023-03-03-template.png",
+                  imagePreview: "/assets/img/profile-picture-generator/2023-03-03-preview.png",
+                  privacyNote: "Die ausgewählte Datei wird an keinen Server versendet. Die gesamte Bildgenerierung findet im Browser statt.",
+                  privacyLinkText: "Datenschutzerklärung",
+                  privacyLink: "/datenschutz.html"
+                }
+                // en: {
+                //   name: 'English',
+                //   templateUrl: "https://fridaysforfuture.de/src/templates/en/template.png",
+                //   imagePreview: "https://fridaysforfuture.de/src/templates/en/preview.png",
+                // }
+              }
+            });
+          })();
+        </script>
+        <script type="application/javascript">
+          // change selection via url query
+          let pbg_location = 'germany';
+
+          document.getElementsByClassName('fff-profile-picture-generator--language-select special-link')[0].value = pbg_location;
+        </script>
+    </div>
+  </div>
+
+</div>-->
+
+  <div>
+      <h2>Sharetext</h2>
+        <p> Du willst den Streik selbst bewerben? Teile einfach den Text oder klicke auf einen der beiden Links, um nur noch Kontakte zum versenden auswählen zu müssen!
+        <br>
+        <br>
+        <p> Am 15.9. steht unsere Zukunft im Mittelpunkt! ⚠️
+
+        <p>Trotz vieler Klimaversprechen fehlen immer noch wirksame Maßnahmen und klare Pläne. Schluss mit Scheinklimaschutz!
+        <p>Stattdessen brauchen wir eine klimagerechte Politik, die allen zugutekommt, nicht nur Großkonzernen und dem reichsten 1% der Weltbevölkerung.💰
+        <p>Wir demonstrieren deshalb am 15.09.
+        <p>🕛 um 12 Uhr
+        <p>📍am Siegestor
+        <p>Gemeinsam zeigen wir, dass wir echten Klima-, Natur- und Menschen-Schutz wollen! Die Zeit drängt - jetzt sind wir alle gefragt, um den sozialen Wandel zu vollziehen! 👥
+        <p>Kommt alle zahlreich und bringt eure Familie, Freund*innen & Arbeitskolleg*innen mit! 👩🏽‍🤝‍👩🏿
+        <p>！🌎Und vergesst nicht, auch nach dem Klimastreik aktiv zu bleiben！🌎
+          <br>
+          <br>
+<div style="text-align:center">
+      <a class="project-link" href="https://wa.me/text=Am%2015.9.%20steht%20unsere%20Zukunft%20im%20Mittelpunkt!%20%E2%9A%A0%EF%B8%8F%0A%0ATrotz%20vieler%20Klimaversprechen%20fehlen%20immer%20noch%20wirksame%20Ma%C3%9Fnahmen%20und%20klare%20Pl%C3%A4ne.%20Schluss%20mit%20Scheinklimaschutz!%0AStattdessen%20brauchen%20wir%20eine%20klimagerechte%20Politik%2C%20die%20allen%20zugutekommt%2C%20nicht%20nur%20Gro%C3%9Fkonzernen%20und%20dem%20reichsten%201%25%20der%20Weltbev%C3%B6lkerung.%F0%9F%92%B0%0AWir%20demonstrieren%20deshalb%20am%2015.09.%0A%F0%9F%95%9B%20um%2012%20Uhr%0A%F0%9F%93%8Dam%20Siegestor%0AGemeinsam%20zeigen%20wir%2C%20dass%20wir%20echten%20Klima-%2C%20Natur-%20und%20Menschen-Schutz%20wollen!%20Die%20Zeit%20dr%C3%A4ngt%20-%20jetzt%20sind%20wir%20alle%20gefragt%2C%20um%20den%20sozialen%20Wandel%20zu%20vollziehen!%20%F0%9F%91%A5%0AKommt%20alle%20zahlreich%20und%20bringt%20eure%20Familie%2C%20Freund*innen%20%26%20Arbeitskolleg*innen%20mit!%20%F0%9F%91%A9%F0%9F%8F%BD%E2%80%8D%F0%9F%A4%9D%E2%80%8D%F0%9F%91%A9%F0%9F%8F%BF%0A%EF%BC%81%F0%9F%8C%8EUnd%20vergesst%20nicht%2C%20auch%20nach%20dem%20Klimastreik%20aktiv%20zu%20bleiben%EF%BC%81%F0%9F%8C%8E"
+        style="margin:1em">Jetzt auf Whatsapp teilen!</a>
+    </div>
+<div style="text-align:center">
+      <a class="project-link" href="https://t.me/share/url?url=https://fff-muc.de&text=Am%2015.9.%20steht%20unsere%20Zukunft%20im%20Mittelpunkt!%20%E2%9A%A0%EF%B8%8F%0A%0ATrotz%20vieler%20Klimaversprechen%20fehlen%20immer%20noch%20wirksame%20Ma%C3%9Fnahmen%20und%20klare%20Pl%C3%A4ne.%20Schluss%20mit%20Scheinklimaschutz!%0AStattdessen%20brauchen%20wir%20eine%20klimagerechte%20Politik%2C%20die%20allen%20zugutekommt%2C%20nicht%20nur%20Gro%C3%9Fkonzernen%20und%20dem%20reichsten%201%25%20der%20Weltbev%C3%B6lkerung.%F0%9F%92%B0%0AWir%20demonstrieren%20deshalb%20am%2015.09.%0A%F0%9F%95%9B%20um%2012%20Uhr%0A%F0%9F%93%8Dam%20Siegestor%0AGemeinsam%20zeigen%20wir%2C%20dass%20wir%20echten%20Klima-%2C%20Natur-%20und%20Menschen-Schutz%20wollen!%20Die%20Zeit%20dr%C3%A4ngt%20-%20jetzt%20sind%20wir%20alle%20gefragt%2C%20um%20den%20sozialen%20Wandel%20zu%20vollziehen!%20%F0%9F%91%A5%0AKommt%20alle%20zahlreich%20und%20bringt%20eure%20Familie%2C%20Freund*innen%20%26%20Arbeitskolleg*innen%20mit!%20%F0%9F%91%A9%F0%9F%8F%BD%E2%80%8D%F0%9F%A4%9D%E2%80%8D%F0%9F%91%A9%F0%9F%8F%BF%0A%EF%BC%81%F0%9F%8C%8EUnd%20vergesst%20nicht%2C%20auch%20nach%20dem%20Klimastreik%20aktiv%20zu%20bleiben%EF%BC%81%F0%9F%8C%8E"
+        style="margin:1em">Jetzt auf Telegram teilen!</a>
+    </div>
+
+    </div>
+  </div>
+  </section>
+
   
   <section id="participate" class="projects">
 
@@ -141,7 +306,6 @@
         Aktionen</a>
     </div>
   </section>
-
 
 
 
