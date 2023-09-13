@@ -35,6 +35,10 @@
     src: url(../fonts/fff-jost.ttf);
 }*/
 
+#donate-widget {
+  margin: 0px;
+}
+
 html {
     scroll-behavior: smooth;
 }
