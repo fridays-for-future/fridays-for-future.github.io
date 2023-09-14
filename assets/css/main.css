@@ -5212,8 +5212,11 @@ details.with-bg:not([open]) > summary {
 }
 
 div.two-col {
+    display: flex;
+    align-items: center;
     column-count: 2;
     column-width: 260px;
+    margin: auto;
 }
 div.two-col div{
     break-inside: avoid-column;
@@ -5224,6 +5227,8 @@ div.two-col div{
 .mobiplakate {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .plakat  img {
     height: 30vw;
