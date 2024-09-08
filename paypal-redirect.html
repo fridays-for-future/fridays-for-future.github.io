@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Überprüfen des User-Agents
+            var isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                window.location.href = "https://www.paypal.com/qrcodes/managed/f8a0c32d-6e38-4078-96b9-61c4be1ccb63?utm_campaign=INITIAL_LAUNCH&utm_source=PPCP_ACTION_DOWNLOAD_SAVE";
+            } else {
+                window.location.href = "https://www.paypal.com/donate/?hosted_button_id=L9HSLY28SSWGL";
+            }
+        });
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=https://www.paypal.com/donate/?hosted_button_id=L9HSLY28SSWGL">
+    </noscript>
+</head>
+</html>

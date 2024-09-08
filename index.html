@@ -36,7 +36,8 @@
       <div class="dropdown-content">
         <a class="link" href="#participate" data-scroll>Mach mit!</a>
         <a class="link" href="#demands" data-scroll>Forderungen</a>
-        <a class="link" href="#support" data-scroll>Unterstützen</a>
+        <a class="link" href="#donate" data-scroll>Spenden</a>
+        <a class="link" href="#cooperations" data-scroll>Kooperationen</a>
         <span style="white-space:nowrap"><a class="link" href="/andere-gruppen" data-scroll>Andere Gruppen</a></span>
         <a class="link" href="/presse">Presse</a>
       </div>
@@ -50,7 +51,8 @@
         <div class="header-links">
           <a class="link" href="#participate" data-scroll>Mach mit!</a>
           <a class="link" href="#demands" data-scroll>Forderungen</a>
-          <a class="link" href="#support" data-scroll>Unterstützen</a>
+          <a class="link" href="#donate" data-scroll>Spenden</a>
+          <a class="link" href="cooperations" data-scroll>Kooperationen</a>
           <span style="white-space:nowrap"><a class="link" href="/andere-gruppen" data-scroll>Andere Gruppen</a></span>
           <a class="link" href="/presse">Presse</a>
         </div>
@@ -60,7 +62,7 @@
     <div class="border-top">
       <header class="next-strike">Globaler Klimastreik: 20.&nbsp;September</header>
 
-      <a class="down" href="#participate" data-scroll>
+      <a class="down" href="#grossstreik" data-scroll>
         <i class="icon fa fa-chevron-down" aria-hidden="true" style="height: 40px"></i>
       </a>
       <nav class="header-icons" style="margin-top:3em">
@@ -177,15 +179,6 @@
   <div class="border">
       <div class="quotation"> „I want you to behave like our house is on fire. Because it is.“ <br> — Greta Thunberg</div>
   </div>
-  
-
-  
-  
-  <!--<div class="border">
-    <div class="quotation">„Hope dies, and action begins.“ <br> — Greta Thunberg</div>
-  </div>-->
-
-
 
 
   <!-- demands section -->
@@ -251,22 +244,85 @@
     </div>
   </div>
 
-  <!-- call for support -->
-  <section id="support" class="projects">
-    <h1> Unterstützen </h1>
-    <p>
-      Du willst uns mehr oder anders unterstützen, als freitags zu streiken? Wenn du
-      unserem Orgateam beitreten willst, findest du <a href="#participate">hier</a> mehr
-      Informationen. Außerdem freuen wir uns über Überweisungen für Sticker, Plakate, Flyer,
-      GEMA, Wagen- & Boxen-Miete, etc.
-      
-      <div style="text-align:center">
-      <a class="project-link" href="https://opencollective.com/fff_muc#category-CONTRIBUTE" style="margin:1em" target="_blank">finanziell unterstützen</a>
-    </div>
+  <!-- donation section -->
+  <section id="donate" class="projects">
+    <h1> Spenden </h1>
+    
+    <p>Unsere Demos und Aktionen sind ausschließlich durch Spenden finanziert. Mit deiner Unterstützung 
+      ermöglichst du uns diese zu organisieren. Dabei hilfst du uns Technik wie Lautsprecher, Bühnen und 
+      Lautsprecherwägen zu mieten, GEMA- und Stromkosten zu decken, Mobilisierungsmaterialien wie Plakate, 
+      Sticker und Flyer zu bestellen und mehr. Diese finanziellen Mittel sind entscheidend, damit wir unsere 
+      Arbeit fortsetzen und noch mehr Menschen mobilisieren können.</p>
 
-    <!--<iframe id="donate-widget" src="https://opencollective.com/embed/fff_muc/donate/?hideFAQ=true&hideHeader=true" style="width: 100%; min-height: 100vh;" frameborder="0"></iframe>-->
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px; margin-bottom: 20px">
+        <tr style="background-color: #1DA64A; color: white;">
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Spendenkonto</th>
+          <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Details</th>
+        </tr>
+        <tr style="background-color: #f2f2f2;">
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Kontoinhaber</td>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fridays for Future München</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">IBAN</td>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">
+            <span id="iban">DE23 4306 0967 1337 5012 00</span>
+            <button id="copy-button" onclick="copyIBAN()" style="float: right; color: gray; background: none; border: none; font-size: 0.9em; cursor: pointer; width: 80px;">kopieren</button>
+          </td>
+        </tr>
+        <tr style="background-color: #f2f2f2;">
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">BIC</td>
+          <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">GENODEM1GLS</td>
+        </tr>
+    </table>
 
-    <!-- call for cooperations -->
+    <script>
+      function copyIBAN() {
+        var iban = document.getElementById('iban').innerText.replace(/\s+/g, '');
+        var textarea = document.createElement('textarea');
+        textarea.value = iban;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+
+        var button = document.getElementById('copy-button');
+        button.textContent = 'kopiert!';
+        button.style.color = '#1DA64A';
+        button.disabled = true;
+
+        setTimeout(function() {
+            button.textContent = 'kopieren';
+            button.style.color = 'gray';
+            button.disabled = false;
+        }, 1500);
+      }
+    </script>
+
+    <p>Möchtest du lieber über PayPal oder mit deiner Kreditkarte spenden? Kein Problem! Du kannst ganz 
+      einfach über die untenstehenden Buttons spenden. Beachte jedoch, dass PayPal hohe Gebühren erhebt, 
+      weshalb uns deine Spende nicht in voller Höhe erreicht. Daneben sind die Geschäftspraktiken von 
+      PayPal nicht unumstritten. Wenn möglich, bitten wir dich, die Überweisung direkt auf unser Konto 
+      vorzunehmen – so kommt deine Spende ohne Abzüge bei uns an und kann direkt in den Klimaschutz fließen.</p>
+    
+    <div style="display: flex; justify-content: space-around; align-items: center; width: 100%; padding: 10px; margin: 0 auto; flex-wrap: wrap; gap: 20px;">
+      <a href="/paypal-redirect.html" style="text-align: center; flex-basis: 30%; flex-grow: 1; max-width: 400px; min-width: 250px;">
+          <img src="/assets/img/einmalige-Spenden-PayPal.png" alt="einmalige Spende" style="width: 100%; height: auto;">
+      </a>
+      <a href="https://www.paypal.com/donate/?hosted_button_id=KEH552E7VHPGQ" style="text-align: center; flex-basis: 30%; flex-grow: 1; max-width: 400px; min-width: 250px;">
+          <img src="/assets/img/regelmaessige-Spenden-PayPal.png" alt="regelmäßige Spende" style="width: 100%; height: auto;">
+      </a>
+    </div>                    
+  </section>  
+
+
+  <div class="border">
+    <div class="quotation">„Hope dies, and action begins.“ <br> — Greta Thunberg</div>
+  </div>
+  
+
+  <!-- call for cooperations -->
+  <section id="cooperations" class="projects">
     <h1> Koope&shy;ra&shy;ti&shy;onen </h1>
     <p>
       Egal ob Presseanfrage oder Forschungsvorhaben - du kannst uns gerne einfach per
@@ -275,13 +331,6 @@
       zur Verfügung.
     </p>
   </section>
-
-
-
-  <!--<div class="border">
-      <div class="quotation"> „I want you to behave like our house is on fire. Because it is.“ <br> — Greta Thunberg</div>
-  </div>-->
-
 
 
   <footer class="footer">
