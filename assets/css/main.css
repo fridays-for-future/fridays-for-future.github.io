@@ -5216,16 +5216,32 @@ details.with-bg:not([open]) > summary {
 }
 
 div.two-col {
+    column-count: 1;
+}
+
+@media only screen and (min-width: 550px){
+    div.two-col {
     display: flex;
     align-items: center;
     column-count: 2;
-    column-width: 260px;
+    /*column-width: 50%;*/
+    column-gap: 3em;
     margin: auto;
+  }
+
+    div.two-col div{
+    break-inside: avoid-column;
+    display: table;
+    margin: auto;
+    width: 50%
+  }
 }
+
 div.two-col div{
     break-inside: avoid-column;
     display: table;
     margin: auto;
+    width: 100%
 }
 
 .mobiplakate {
