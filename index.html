@@ -17,7 +17,10 @@
   <script src="./assets/osm/leaflet.js" crossorigin=""></script>
 
   <!-- Emoji script for chrome -->
-  <script src="assets/twemoji.min.js"></script>
+  <script src="./assets/js/twemoji.min.js" crossorigin=""></script>
+  
+  <!-- Script for copying iban -->
+  <script src="./assets/js/copy_iban.js" crossorigin=""></script>
 
   <!-- Google Site verification -->
   <meta name="google-site-verification" content="AUB5B4FivH3i7JpUEtAhBAgt6J5KzMFi_87KCeQeKW8" />
@@ -124,7 +127,7 @@
     <h1> Mach mit! </h1>  
     
 
-    <p>Als globale Bewegung streiken wir seit über fünf Jahren freitags für die
+    <p>Als globale Bewegung streiken wir seit über sechs Jahren freitags für die
       Einhaltung des Pariser Klimaabkommens und effizienten Klimaschutz.</p>
     <p>Hier erfährst du, wann die nächsten Demos in München stattfinden, sobald es mehr Informationen dazu gibt.</p>
     
@@ -308,8 +311,9 @@
           <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">GENODEM1GLS</td>
         </tr>
     </table>
+    
 
-    <script>
+    <!--<script>
       function copyIBAN() {
         var iban = document.getElementById('iban').innerText.replace(/\s+/g, '');
         var textarea = document.createElement('textarea');
@@ -330,7 +334,7 @@
             button.disabled = false;
         }, 1500);
       }
-    </script>
+    </script>-->
 
     <p>Möchtest du lieber über PayPal oder mit deiner Kreditkarte spenden? Kein Problem! Du kannst ganz 
       einfach über die untenstehenden Buttons spenden. Beachte jedoch, dass PayPal hohe Gebühren erhebt, 
